@@ -4,6 +4,12 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Link Google Business card
+- Hero's "Google Business Page" card now links out to the real Google
+  Business profile (https://share.google/KvOTxHkh2qv7CQfyB) in a new tab
+- Add a hover effect: lighter background, visible border, and a lift with
+  shadow so the card reads as clickable
+
 ### Shorten hero to reduce blank space under CTA
 - Reduce doctor photo height from 80vh to 66vh; since hero height follows
   the tallest column, this shrinks the whole hero and removes the large

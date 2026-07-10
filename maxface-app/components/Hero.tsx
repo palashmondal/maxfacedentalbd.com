@@ -41,7 +41,12 @@ export default function Hero() {
           <div className={styles.actions}>
             <ArrowButton href="#appointment">Make Appointment Now</ArrowButton>
 
-            <div className={styles.googleCard}>
+            <a
+              href={site.googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.googleCard}
+            >
               <Image
                 src="/images/icon-google.svg"
                 alt="Google"
@@ -59,7 +64,7 @@ export default function Hero() {
                 </div>
                 <div className={styles.googleLabel}>Google Business Page</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
