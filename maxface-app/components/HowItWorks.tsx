@@ -13,7 +13,7 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className={styles.grid}>
+        <div className={styles.grid} data-fade data-fade-children>
           {steps.map((step) => (
             <article key={step.title} className={styles.card}>
               <span className={styles.chip}>{step.chip}</span>

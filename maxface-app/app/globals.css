@@ -98,3 +98,33 @@ textarea {
 .eyebrow--light {
   color: var(--white-color);
 }
+
+/* Diagonal sheen sweep on hover — copied verbatim from the theme's
+   .at-shiny-glass-effect (style.css) */
+.shiny-glass {
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny-glass::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 1;
+}
+
+.shiny-glass:hover::after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
+
+/* SplitText line wrapper (prevents descender clipping during char reveal) */
+.split-line {
+  overflow: hidden;
+}

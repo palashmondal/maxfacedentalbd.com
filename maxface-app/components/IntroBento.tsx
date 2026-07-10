@@ -17,8 +17,8 @@ export default function IntroBento() {
           </h2>
         </div>
 
-        <div className={styles.grid}>
-          <article className={`${styles.card} ${styles.photoCard}`}>
+        <div className={styles.grid} data-fade data-fade-children>
+          <article className={`${styles.card} ${styles.photoCard} shiny-glass`}>
             <h3 className={styles.photoTitle}>
               Why Families Count On Us For Dentistry
             </h3>
@@ -38,7 +38,7 @@ export default function IntroBento() {
             </p>
           </article>
 
-          <article className={`${styles.card} ${styles.teamCard}`}>
+          <article className={`${styles.card} ${styles.teamCard} shiny-glass`}>
             <h3>Personalized Dental Solutions</h3>
             <Image
               src="/images/about-us-item-dr-image-prime.png"

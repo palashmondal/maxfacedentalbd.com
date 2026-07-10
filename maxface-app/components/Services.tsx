@@ -15,7 +15,7 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className={styles.grid}>
+        <div className={styles.grid} data-fade data-fade-children>
           {services.map((s) => {
             const Icon = serviceIcons[s.icon];
             return (

@@ -24,7 +24,7 @@ export default function AboutDoctor() {
   return (
     <section id="doctor" className={styles.section}>
       <div className={`container ${styles.grid}`}>
-        <div className={styles.photoWrap}>
+        <div className={`${styles.photoWrap} shiny-glass`}>
           <Image
             src="/images/yoshita2.jpg"
             alt={`${site.doctor} at ${site.name}`}

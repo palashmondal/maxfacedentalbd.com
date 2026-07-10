@@ -39,7 +39,7 @@ export default function BeforeAfter() {
           })}
         </div>
 
-        <div className={styles.panel}>
+        <div className={styles.panel} data-fade data-fade-children>
           {transformationTabs[active].pairs.map((n) => (
             <CompareSlider
               key={`${active}-${n}`}
