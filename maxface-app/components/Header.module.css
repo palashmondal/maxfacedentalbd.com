@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  top: 0;
+  top: var(--section-gutter);
   left: var(--section-gutter);
   right: var(--section-gutter);
   z-index: 100;
@@ -17,6 +17,7 @@
    every other section. */
 .scrolled {
   position: fixed;
+  top: 0;
   border-radius: 0 0 var(--radius-section) var(--radius-section);
   background: rgba(15, 19, 38, 0.85);
   backdrop-filter: blur(14px);

@@ -4,6 +4,12 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Hero top gutter
+- Add a top white margin above the hero equal to `--section-gutter`, matching
+  the existing left/right gutters, so the hero box is framed on all four
+  sides at rest (header shifts down in lockstep; still snaps flush to the
+  browser's top edge once scrolled)
+
 ### Header: boxy-at-rest, pinned-on-scroll
 - Header now has two states instead of always-fixed: at rest it's transparent
   and inset by the same gutter as the hero, so the nav visually sits inside
