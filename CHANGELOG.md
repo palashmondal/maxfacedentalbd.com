@@ -4,6 +4,12 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Restore original background-image treatment for pixel-grid decoration
+- Replace the small absolutely-positioned `<img>` decoration with the theme's
+  original approach: hero-image-bg-prime.png as a CSS `background-image` on
+  the image column itself (`background-position: bottom left 80px`,
+  `no-repeat`, `background-size: cover`)
+
 ### Bigger hero text
 - Increase hero H1 from 52px to 68px and the intro paragraph from 16px to 19px
 

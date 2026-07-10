@@ -65,14 +65,6 @@ export default function Hero() {
 
         <div className={styles.imageWrap}>
           <Image
-            src="/images/hero-image-bg-prime.png"
-            alt=""
-            width={640}
-            height={640}
-            className={styles.imageBg}
-            aria-hidden
-          />
-          <Image
             src="/images/yoshita.png"
             alt={site.doctor}
             width={760}
