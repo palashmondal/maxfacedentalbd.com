@@ -4,6 +4,12 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Move hero text block up
+- Hero content column (avatar pill, heading, paragraph, CTAs) now aligns to
+  the top of the row instead of the bottom, so it stays near the header
+  instead of trailing the now much-taller doctor photo; the photo itself
+  stays grounded at the hero's bottom edge
+
 ### Reposition hero pixel-grid decoration
 - Move hero-image-bg-prime.png from a large full-height overlay behind the
   photo to a small translucent block beside the doctor's head/shoulder,

@@ -19,7 +19,8 @@
 }
 
 .content {
-  padding-bottom: 50px;
+  align-self: start;
+  padding-top: 30px;
 }
 
 .avatarPill {
@@ -149,7 +150,7 @@
   }
 
   .content {
-    padding-bottom: 40px;
+    padding-top: 20px;
   }
 
   .title {
