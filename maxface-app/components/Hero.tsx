@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ArrowButton from "./ArrowButton";
+import Counter from "./Counter";
 import RotatingBadge from "./RotatingBadge";
 import StarRating from "./StarRating";
 import { site } from "@/lib/site";
@@ -56,7 +57,15 @@ export default function Hero() {
               />
               <div>
                 <div className={styles.ratingRow}>
-                  <span className={styles.rating}>5/5</span>
+                  <Counter
+                    from={1}
+                    to={5}
+                    decimals={1}
+                    suffix="/5"
+                    snapToWholeAtEnd
+                    duration={1600}
+                    className={styles.rating}
+                  />
                   <StarRating className={styles.stars} />
                 </div>
                 <div className={styles.googleLabel}>Google Business Page</div>

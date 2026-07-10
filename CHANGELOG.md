@@ -4,6 +4,13 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Animate the rating number itself
+- Add `from` and `snapToWholeAtEnd` to the shared Counter component so it can
+  count up from a non-zero start and drop the trailing ".0" once it lands on
+  a whole number
+- Hero's Google Business rating now animates 1.0 → 1.1 → 1.2 … → 5 (over
+  1.6s, triggered on scroll into view) instead of showing a static "5/5"
+
 ### Animated 5/5 stars on Google Business card
 - New `StarRating` component: 5 stars pop in sequentially (1→5) with a
   staggered scale/rotate animation, triggered once when scrolled into view
