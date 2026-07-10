@@ -4,6 +4,14 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Bigger, better-centered rotating badge, linked to Maps
+- Enlarge the "15+ Years Excellence" badge from 160px to 210px and increase
+  the text-path radius/textLength to match, so the circular text hugs the
+  ring evenly instead of leaving uneven gaps
+- Badge is now a link to the clinic's Google Maps location
+  (https://maps.app.goo.gl/XR74vcFzUs7QV8Jg6), opening in a new tab, with a
+  hover lift/shadow effect
+
 ### Link Google Business card
 - Hero's "Google Business Page" card now links out to the real Google
   Business profile (https://share.google/KvOTxHkh2qv7CQfyB) in a new tab

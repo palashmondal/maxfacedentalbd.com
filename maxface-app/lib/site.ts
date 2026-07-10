@@ -12,6 +12,7 @@ export const site = {
   rating: "4.9",
   reviews: "520 reviews",
   googleReviewUrl: "https://share.google/KvOTxHkh2qv7CQfyB",
+  mapsUrl: "https://maps.app.goo.gl/XR74vcFzUs7QV8Jg6",
 };
 
 export const nav = [
