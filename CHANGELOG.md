@@ -4,6 +4,19 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Phase 4 — Functionality & SEO
+- Appointment form and newsletter submit via WhatsApp deep link
+  (wa.me/8801344473973 with a prefilled message) — no backend needed
+- tel: links on all phone CTAs; nav/footer anchors wired to sections
+- OpenGraph metadata, Dentist JSON-LD schema (address, hours, rating),
+  local favicon, robots.txt + sitemap.xml
+
+### Phase 5 — Performance & export
+- `output: "export"` — fully static site in `maxface-app/out/`, deploys to any host
+- Recompressed JPGs (q72) and pruned 25 unused images: public/images 8.5MB → 3.4MB
+- GSAP dynamic-imported; no jQuery, no three.js; fonts self-hosted; zero external requests
+- Production build + static export verified end-to-end in headless Chrome
+
 ### Phase 3 — Animations
 - Preloader overlay (600ms fade like the theme, but capped ~1s, not load-gated)
 - Magic cursor follower (rAF lerp, grows over interactive elements, desktop only)
