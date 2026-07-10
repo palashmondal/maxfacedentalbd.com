@@ -4,6 +4,11 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Bigger hero doctor photo
+- Increase the doctor photo (and its pixel-grid backdrop) from 62vh to 80vh;
+  since the hero's height is driven by the tallest grid column, this also
+  makes the blue hero section noticeably taller
+
 ### Even hero gutter
 - Hero top margin now equals `--section-gutter`, matching the left/right
   margins exactly instead of a smaller custom value
