@@ -4,6 +4,12 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Shorten hero to reduce blank space under CTA
+- Reduce doctor photo height from 80vh to 66vh; since hero height follows
+  the tallest column, this shrinks the whole hero and removes the large
+  empty blue gap that had opened up below the "Make Appointment Now" button
+  once the text content moved to the top
+
 ### Smaller header CTA
 - Add a `size="sm"` variant to the shared ArrowButton and use it for the
   header's "Dr. Yoshita Mazumder" pill so it doesn't dominate the nav bar,
