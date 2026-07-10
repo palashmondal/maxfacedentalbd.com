@@ -4,6 +4,10 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Tighten white gutters sitewide
+- Reduce --section-gutter from 30px to 16px (affects every section's side
+  margins consistently) and the hero's top margin from 14px to 8px
+
 ### Trim hero top gutter
 - Reduce the hero's top white margin from 30px (--section-gutter) to 14px so
   it reads as a slim reveal rather than matching the full side gutter width
