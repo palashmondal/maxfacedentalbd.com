@@ -7,7 +7,7 @@
     var(--primary-color) 0%,
     var(--accent-color) 174.98%
   );
-  padding: 170px 0 0;
+  padding: 110px 0 0;
   overflow: visible;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .content {
-  padding-bottom: 110px;
+  padding-bottom: 50px;
 }
 
 .avatarPill {
@@ -47,17 +47,17 @@
 
 .title {
   color: var(--white-color);
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 600;
   line-height: 1.15;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .text {
   color: #ffffffcc;
-  font-size: 17px;
-  max-width: 620px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  max-width: 600px;
+  margin-bottom: 28px;
 }
 
 .text strong {
@@ -106,12 +106,15 @@
 .imageWrap {
   position: relative;
   align-self: end;
+  height: 62vh;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .imageBg {
   position: absolute;
   right: 0;
-  top: -40px;
+  top: -30px;
   width: 90%;
   height: auto;
   opacity: 0.9;
@@ -119,21 +122,24 @@
 
 .image {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-height: 62vh;
+  object-fit: contain;
+  object-position: bottom;
 }
 
 .badge {
   position: absolute;
   left: 50%;
-  bottom: -80px;
+  bottom: -70px;
   transform: translateX(-50%);
   z-index: 5;
 }
 
 @media (max-width: 1024px) {
   .hero {
-    padding-top: 120px;
+    padding-top: 110px;
   }
 
   .inner {
@@ -141,11 +147,22 @@
   }
 
   .content {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 
   .title {
-    font-size: 44px;
+    font-size: 40px;
+  }
+
+  .imageWrap {
+    height: auto;
+    justify-content: center;
+  }
+
+  .image {
+    height: auto;
+    max-height: none;
+    width: 100%;
   }
 
   .badge {

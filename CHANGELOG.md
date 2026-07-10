@@ -4,6 +4,14 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Header/Hero refinements (per updated reference screenshot)
+- Reduce section corner radius 40px → 24px sitewide to match the current design
+- Header is now `position: fixed` (persistent on scroll) with a translucent
+  backdrop-blur background and a slim white bottom border, replacing the
+  scroll-away absolute header
+- Shrink hero vertical padding/title size and cap the doctor photo to 62vh so
+  it fits within the first viewport on load instead of overflowing below the fold
+
 ### Phase 4 — Functionality & SEO
 - Appointment form and newsletter submit via WhatsApp deep link
   (wa.me/8801344473973 with a prefilled message) — no backend needed
