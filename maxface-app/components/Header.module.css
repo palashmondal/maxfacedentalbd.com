@@ -1,14 +1,28 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: var(--section-gutter);
+  right: var(--section-gutter);
   z-index: 100;
   padding: 14px 0;
-  background: rgba(15, 19, 38, 0.7);
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background 0.3s ease, box-shadow 0.3s ease,
+    border-radius 0.3s ease;
+}
+
+/* Boxy at rest: header blends into the hero's own rounded top corners.
+   On scroll it detaches and pins to the browser's top edge (square top,
+   rounded bottom) while keeping the same left/right white gutters as
+   every other section. */
+.scrolled {
+  position: fixed;
+  border-radius: 0 0 var(--radius-section) var(--radius-section);
+  background: rgba(15, 19, 38, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 30px rgba(8, 10, 24, 0.25);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
 }
 
 .inner {

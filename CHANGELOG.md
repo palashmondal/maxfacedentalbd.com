@@ -4,6 +4,15 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Header: boxy-at-rest, pinned-on-scroll
+- Header now has two states instead of always-fixed: at rest it's transparent
+  and inset by the same gutter as the hero, so the nav visually sits inside
+  the hero's rounded box (matches the reference screenshot exactly); past a
+  40px scroll threshold it becomes `position: fixed`, attaches flush to the
+  browser's top edge (square top corners), rounds only the bottom two
+  corners, and gains a blurred dark background — while keeping the same
+  left/right white gutters as every other section instead of going edge-to-edge
+
 ### Header/Hero refinements (per updated reference screenshot)
 - Reduce section corner radius 40px → 24px sitewide to match the current design
 - Header is now `position: fixed` (persistent on scroll) with a translucent
