@@ -11,7 +11,7 @@ export const site = {
     "411/B, Malibagh Chowdhury Para Road, Dhaka-1219 (Inside Nirvana Health Care)",
   rating: "4.9",
   reviews: "520 reviews",
-  googleReviewUrl: "https://share.google/KvOTxHkh2qv7CQfyB",
+  googleReviewUrl: "https://maps.app.goo.gl/iuEprZ4gZawq8gNEA",
   mapsUrl: "https://maps.app.goo.gl/XR74vcFzUs7QV8Jg6",
 };
 

@@ -4,6 +4,11 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Update Google Business card link
+- Hero's "Google Business Page" card now links to
+  https://maps.app.goo.gl/iuEprZ4gZawq8gNEA instead of the previous
+  share.google URL
+
 ### Skip the "5.0" frame in rating counter
 - The cubic ease-out curve reached values that rounded to "5.0" a few
   frames before the animation actually finished, so the sequence briefly
