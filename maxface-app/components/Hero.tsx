@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ArrowButton from "./ArrowButton";
 import RotatingBadge from "./RotatingBadge";
+import StarRating from "./StarRating";
 import { site } from "@/lib/site";
 import styles from "./Hero.module.css";
 
@@ -55,12 +56,8 @@ export default function Hero() {
               />
               <div>
                 <div className={styles.ratingRow}>
-                  <span className={styles.rating} data-counter="4.9">
-                    {site.rating}/5
-                  </span>
-                  <span className={styles.stars} aria-label="5 stars">
-                    ★★★★★
-                  </span>
+                  <span className={styles.rating}>5/5</span>
+                  <StarRating className={styles.stars} />
                 </div>
                 <div className={styles.googleLabel}>Google Business Page</div>
               </div>

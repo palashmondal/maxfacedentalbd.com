@@ -4,6 +4,13 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Animated 5/5 stars on Google Business card
+- New `StarRating` component: 5 stars pop in sequentially (1→5) with a
+  staggered scale/rotate animation, triggered once when scrolled into view
+  (IntersectionObserver, respects prefers-reduced-motion)
+- Hero's Google Business card now shows 5/5 with this animation instead of
+  static "★★★★★" text
+
 ### Bigger, better-centered rotating badge, linked to Maps
 - Enlarge the "15+ Years Excellence" badge from 160px to 210px and increase
   the text-path radius/textLength to match, so the circular text hugs the
