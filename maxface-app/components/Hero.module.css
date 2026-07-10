@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  margin: var(--section-gutter) var(--section-gutter) 0;
+  margin: 14px var(--section-gutter) 0;
   border-radius: var(--radius-section);
   background-image: linear-gradient(
     180deg,

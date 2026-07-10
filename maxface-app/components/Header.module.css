@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  top: var(--section-gutter);
+  top: 14px;
   left: var(--section-gutter);
   right: var(--section-gutter);
   z-index: 100;

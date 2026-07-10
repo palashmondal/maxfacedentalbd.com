@@ -4,6 +4,10 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Trim hero top gutter
+- Reduce the hero's top white margin from 30px (--section-gutter) to 14px so
+  it reads as a slim reveal rather than matching the full side gutter width
+
 ### Hero top gutter
 - Add a top white margin above the hero equal to `--section-gutter`, matching
   the existing left/right gutters, so the hero box is framed on all four
