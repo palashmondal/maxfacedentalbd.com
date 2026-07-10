@@ -4,6 +4,11 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Center pixel-grid decoration behind head
+- Re-anchor hero-image-bg-prime.png from the right edge (matching the
+  right-aligned doctor photo) and enlarge it to 58% width so the checkered
+  pattern sits directly behind her head/shoulders, matching the reference
+
 ### Move hero text block up
 - Hero content column (avatar pill, heading, paragraph, CTAs) now aligns to
   the top of the row instead of the bottom, so it stays near the header
