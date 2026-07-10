@@ -5,6 +5,7 @@ type Props = {
   href: string;
   children: React.ReactNode;
   variant?: "white" | "outline";
+  size?: "md" | "sm";
   className?: string;
 };
 
@@ -13,12 +14,13 @@ export default function ArrowButton({
   href,
   children,
   variant = "white",
+  size = "md",
   className,
 }: Props) {
   return (
     <Link
       href={href}
-      className={`${styles.btn} ${variant === "outline" ? styles.outline : ""} ${className ?? ""}`}
+      className={`${styles.btn} ${variant === "outline" ? styles.outline : ""} ${size === "sm" ? styles.sm : ""} ${className ?? ""}`}
     >
       <span className={styles.label}>{children}</span>
       <span className={styles.chip} aria-hidden>

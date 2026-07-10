@@ -4,6 +4,11 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Smaller header CTA
+- Add a `size="sm"` variant to the shared ArrowButton and use it for the
+  header's "Dr. Yoshita Mazumder" pill so it doesn't dominate the nav bar,
+  without affecting the larger buttons elsewhere on the page
+
 ### Restore original background-image treatment for pixel-grid decoration
 - Replace the small absolutely-positioned `<img>` decoration with the theme's
   original approach: hero-image-bg-prime.png as a CSS `background-image` on

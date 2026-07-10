@@ -47,7 +47,9 @@ export default function Header() {
         </nav>
 
         <div className={styles.cta}>
-          <ArrowButton href="#doctor">{site.doctor}</ArrowButton>
+          <ArrowButton href="#doctor" size="sm">
+            {site.doctor}
+          </ArrowButton>
         </div>
 
         <button
