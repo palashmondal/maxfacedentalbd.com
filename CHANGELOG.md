@@ -4,6 +4,13 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Skip the "5.0" frame in rating counter
+- The cubic ease-out curve reached values that rounded to "5.0" a few
+  frames before the animation actually finished, so the sequence briefly
+  showed "5.0" before snapping to "5". Counter now clamps the displayed
+  value to one decimal step short of the target (4.9) while still
+  animating, so it reads "...4.8, 4.9, 5" with no "5.0" in between.
+
 ### Animate the rating number itself
 - Add `from` and `snapToWholeAtEnd` to the shared Counter component so it can
   count up from a non-zero start and drop the trailing ".0" once it lands on

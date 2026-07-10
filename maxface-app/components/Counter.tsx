@@ -35,14 +35,18 @@ export default function Counter({
         if (!entry.isIntersecting) return;
         observer.disconnect();
         const start = performance.now();
+        const step = Math.pow(10, -decimals);
         const tick = (now: number) => {
           const t = Math.min((now - start) / duration, 1);
           const eased = 1 - Math.pow(1 - t, 3);
-          const value = from + (to - from) * eased;
+          let value = from + (to - from) * eased;
+          if (snapToWholeAtEnd && t < 1) {
+            // Never show the final whole number early (e.g. "5.0") — hold
+            // at one step short (e.g. "4.9") until animation completes.
+            value = Math.min(value, to - step);
+          }
           const label =
-            t >= 1 && snapToWholeAtEnd
-              ? to.toFixed(0)
-              : value.toFixed(decimals);
+            t >= 1 && snapToWholeAtEnd ? to.toFixed(0) : value.toFixed(decimals);
           el.textContent = label + suffix;
           if (t < 1) raf = requestAnimationFrame(tick);
         };
