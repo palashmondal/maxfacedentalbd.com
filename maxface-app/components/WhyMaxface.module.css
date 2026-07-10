@@ -1,0 +1,82 @@
+.section {
+  margin: 0 var(--section-gutter);
+  border-radius: var(--radius-section);
+  background:
+    url("/images/why-choose-us-bg-metal.png") bottom center no-repeat,
+    linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 174.98%);
+  padding: 110px 0 60px;
+  color: #ffffffd9;
+}
+
+.head {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.title {
+  color: var(--white-color);
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.imageWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+.feature h3 {
+  color: var(--white-color);
+  font-size: 22px;
+  margin: 18px 0 12px;
+}
+
+.feature p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.iconTile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #ffffff14;
+  border: 1px solid #ffffff29;
+  color: var(--white-color);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .column {
+    gap: 40px;
+  }
+}

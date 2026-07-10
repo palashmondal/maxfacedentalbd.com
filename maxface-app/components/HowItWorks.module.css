@@ -1,0 +1,73 @@
+.section {
+  margin: 0 var(--section-gutter);
+  border-radius: var(--radius-section);
+  background:
+    url("/images/how-it-work-bg-prime.png") top right no-repeat,
+    linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 174.98%);
+  padding: 110px 0 90px;
+}
+
+.head {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 70px;
+}
+
+.title {
+  color: var(--white-color);
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 70px;
+}
+
+.card {
+  background: #ffffff14;
+  border-radius: var(--radius-card);
+  padding: 32px;
+  min-height: 320px;
+  color: #ffffffd9;
+}
+
+.chip {
+  display: inline-block;
+  border: 1px solid #ffffff66;
+  border-radius: var(--radius-pill);
+  color: var(--white-color);
+  padding: 8px 18px;
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+
+.card h3 {
+  color: var(--white-color);
+  font-size: 24px;
+  margin-bottom: 60px;
+  max-width: 240px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

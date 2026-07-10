@@ -1,0 +1,38 @@
+.note {
+  text-align: center;
+  font-size: 17px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dark {
+  color: var(--white-color);
+}
+
+.pill {
+  background: var(--white-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  padding: 4px 16px;
+  font-size: 15px;
+}
+
+.note:not(.dark) .pill {
+  background: var(--accent-color);
+  color: var(--white-color);
+}
+
+.link {
+  color: var(--accent-color);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.dark .link {
+  color: var(--white-color);
+}

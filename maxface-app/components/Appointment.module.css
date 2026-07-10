@@ -1,0 +1,168 @@
+.section {
+  margin: 0 var(--section-gutter);
+  border-radius: var(--radius-section);
+  background:
+    linear-gradient(0deg, #161a2dbf, #161a2dbf),
+    url("/images/book-appointment-bg.jpg") center / cover no-repeat fixed;
+  padding: 130px 0;
+  color: var(--white-color);
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.title {
+  color: var(--white-color);
+  font-size: 52px;
+  margin: 18px 0 24px;
+}
+
+.text {
+  color: #ffffffcc;
+  font-size: 17px;
+  max-width: 520px;
+  margin-bottom: 44px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.infoRow h3 {
+  color: var(--white-color);
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.infoRow a,
+.infoRow p {
+  color: #ffffffcc;
+  font-size: 16.5px;
+}
+
+.infoIcon {
+  color: var(--white-color);
+  display: inline-flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff40;
+  flex-shrink: 0;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--dark-divider-color);
+  margin: 28px 0;
+  max-width: 420px;
+}
+
+.form {
+  background: #ffffff14;
+  backdrop-filter: blur(14px);
+  border-radius: var(--radius-card);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formTitle {
+  color: var(--white-color);
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: var(--radius-input);
+  color: var(--white-color);
+  padding: 16px 20px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color-scheme: dark;
+}
+
+.form input::placeholder {
+  color: #ffffffb3;
+}
+
+.form select:invalid {
+  color: #ffffffb3;
+}
+
+.form select option {
+  color: var(--primary-color);
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: var(--accent-color);
+}
+
+.error {
+  color: #ffb4b4;
+  font-size: 15px;
+}
+
+.submit {
+  background: var(--accent-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 6px;
+}
+
+.submit:hover {
+  background: #2257da;
+}
+
+.hint {
+  font-size: 14px;
+  color: #ffffff99;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .formTitle {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 80px 0;
+    background-attachment: scroll;
+  }
+}

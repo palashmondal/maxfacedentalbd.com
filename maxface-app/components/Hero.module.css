@@ -1,0 +1,154 @@
+.hero {
+  position: relative;
+  margin: 0 var(--section-gutter);
+  border-radius: var(--radius-section);
+  background-image: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--accent-color) 174.98%
+  );
+  padding: 170px 0 0;
+  overflow: visible;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: end;
+  gap: 40px;
+}
+
+.content {
+  padding-bottom: 110px;
+}
+
+.avatarPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff14;
+  border-radius: var(--radius-pill);
+  padding: 8px 24px 8px 10px;
+  color: var(--white-color);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.avatars {
+  display: inline-flex;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+  margin-right: -10px;
+  object-fit: cover;
+}
+
+.title {
+  color: var(--white-color);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 28px;
+}
+
+.text {
+  color: #ffffffcc;
+  font-size: 17px;
+  max-width: 620px;
+  margin-bottom: 40px;
+}
+
+.text strong {
+  color: var(--white-color);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.googleCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff14;
+  border-radius: var(--radius-card);
+  padding: 14px 24px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.rating {
+  color: #f8e7c9;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stars {
+  color: var(--star-color);
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.googleLabel {
+  color: var(--white-color);
+  font-size: 15px;
+}
+
+.imageWrap {
+  position: relative;
+  align-self: end;
+}
+
+.imageBg {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 90%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.badge {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding-bottom: 60px;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .badge {
+    display: none;
+  }
+}
