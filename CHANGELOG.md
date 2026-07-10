@@ -4,6 +4,9 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Bigger hero text
+- Increase hero H1 from 52px to 68px and the intro paragraph from 16px to 19px
+
 ### Center pixel-grid decoration behind head
 - Re-anchor hero-image-bg-prime.png from the right edge (matching the
   right-aligned doctor photo) and enlarge it to 58% width so the checkered

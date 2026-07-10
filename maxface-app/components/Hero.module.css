@@ -48,16 +48,16 @@
 
 .title {
   color: var(--white-color);
-  font-size: 52px;
+  font-size: 68px;
   font-weight: 600;
   line-height: 1.15;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .text {
   color: #ffffffcc;
-  font-size: 16px;
-  max-width: 600px;
+  font-size: 19px;
+  max-width: 640px;
   margin-bottom: 28px;
 }
 
