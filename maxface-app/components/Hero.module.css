@@ -113,11 +113,12 @@
 
 .imageBg {
   position: absolute;
-  right: 0;
-  top: -40px;
-  width: 95%;
+  left: 38%;
+  top: 6%;
+  width: 30%;
   height: auto;
-  opacity: 0.9;
+  opacity: 0.6;
+  z-index: 0;
 }
 
 .image {
@@ -127,6 +128,7 @@
   max-height: 80vh;
   object-fit: contain;
   object-position: bottom;
+  z-index: 1;
 }
 
 .badge {

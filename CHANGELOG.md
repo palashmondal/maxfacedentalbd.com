@@ -4,6 +4,11 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Reposition hero pixel-grid decoration
+- Move hero-image-bg-prime.png from a large full-height overlay behind the
+  photo to a small translucent block beside the doctor's head/shoulder,
+  matching its role as a decorative accent rather than a background fill
+
 ### Bigger hero doctor photo
 - Increase the doctor photo (and its pixel-grid backdrop) from 62vh to 80vh;
   since the hero's height is driven by the tallest grid column, this also
