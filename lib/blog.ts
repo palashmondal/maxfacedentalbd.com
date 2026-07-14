@@ -1367,7 +1367,7 @@ export const posts: BlogPost[] = [
     imageAlt: "Close-up of a denture being cleaned in a glass of water",
     intro: [
       "A denture replaces missing teeth, but it is not a 'fit once, forget forever' device. Gums and jawbone keep changing shape even after teeth are gone, and a denture that isn't cleaned or checked regularly can quietly cause the sore spots, bad breath, and bone loss it was meant to prevent.",
-      "Most of the discomfort people accept as 'normal for dentures' — clicking, slipping while eating, a burning feeling on the gums — is actually a sign the denture needs attention, not something to live with.",
+      "The WHO's Global Oral Health Status Report lists untreated tooth loss among the most widespread oral health burdens worldwide, especially past middle age — exactly the group that relies most on dentures. Most of the discomfort people accept as 'normal for dentures' — clicking, slipping while eating, a burning feeling on the gums — is actually a sign the denture needs attention, not something to live with.",
     ],
     sections: [
       {
@@ -1408,7 +1408,7 @@ export const posts: BlogPost[] = [
       },
     ],
     takeaway:
-      "A denture is a long-term relationship with your dentist, not a one-time purchase. Regular check-ups catch fit changes early — before they turn into sore gums, bone loss, or a broken denture at the worst possible moment.",
+      "A denture is a long-term relationship with your dentist, not a one-time purchase. Book a fit check with Maxface Dental Care every year — catching a loose denture early is far easier than treating the sore gums or bone loss it leaves behind.",
   },
   {
     slug: "dental-emergency-first-aid-before-the-chamber",
@@ -1428,7 +1428,7 @@ export const posts: BlogPost[] = [
       {
         heading: "A tooth knocked out completely",
         paragraphs: [
-          "A permanent tooth that has been knocked clean out of its socket has the best chance of being saved if it is put back within 30 to 60 minutes — after that, the odds drop sharply.",
+          "The International Association of Dental Traumatology's guidelines are clear: a permanent tooth knocked clean out of its socket has the best chance of survival when replanted within 5 minutes, and the odds fall sharply the longer it stays dry outside the mouth — which is why storing it correctly while you travel to the chamber matters as much as speed.",
         ],
         list: [
           "Pick the tooth up by the crown (the chewing surface), never the root",
@@ -1462,7 +1462,7 @@ export const posts: BlogPost[] = [
       },
     ],
     takeaway:
-      "Dental emergencies are rarely convenient, but quick, correct first aid in the first few minutes can be the difference between saving a tooth and losing it. Keep a chamber's emergency contact saved, not just for appointments.",
+      "Dental emergencies are rarely convenient, but quick, correct first aid in the first few minutes can be the difference between saving a tooth and losing it. Save Maxface Dental Care's number for emergencies, not just routine appointments — a same-day call is what actually saves a tooth.",
   },
 ];
 

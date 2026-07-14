@@ -4,6 +4,23 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add denture care and dental emergency first-aid blog posts
+- New post: "Denture Care 101: Cleaning, Fit, and Knowing When to Replace
+  Them" (Restorative Dentistry), citing the WHO Global Oral Health Status
+  Report
+- New post: "Dental Emergency First Aid: What to Do Before You Reach the
+  Chamber" (Patient Guide), citing IADT tooth-avulsion replantation
+  guidelines
+- Both posts follow BLOG-GUIDELINES.md; sitemap.xml picks them up
+  automatically, no manual sitemap edits needed
+
+### Add blog post authoring guidelines
+- New BLOG-GUIDELINES.md, included from CLAUDE.md, directing all future
+  posts to: take a Bangladesh-specific angle, cite real data/research where
+  possible, stay plain-language, use point-based lists where appropriate,
+  end with a single clear takeaway, and always route the reader to Maxface
+  Dental Care by name
+
 ### Update Google Business card link
 - Hero's "Google Business Page" card now links to
   https://maps.app.goo.gl/iuEprZ4gZawq8gNEA instead of the previous
