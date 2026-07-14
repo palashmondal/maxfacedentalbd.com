@@ -38,7 +38,7 @@ jobs:
           SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
           SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
         run: |
-          lftp -u "$SFTP_USERNAME,$SFTP_PASSWORD" -p "$SFTP_PORT" sftp://$SFTP_HOST -e "
+          lftp -u "$SFTP_USERNAME,$SFTP_PASSWORD" -p "${SFTP_PORT:-1157}" sftp://$SFTP_HOST -e "
             set sftp:auto-confirm yes;
             mirror -R --verbose ./out/ /home/zpkushti/maxfacedentalbd.com/;
             bye
