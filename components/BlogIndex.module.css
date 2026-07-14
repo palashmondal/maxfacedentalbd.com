@@ -1,0 +1,94 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.chip {
+  border: 1px solid var(--divider-color);
+  background: var(--white-color);
+  color: var(--primary-color);
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.chip:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.chipActive,
+.chipActive:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 70px;
+}
+
+.pageBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--divider-color);
+  background: var(--white-color);
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.pageBtn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.pageBtnActive,
+.pageBtnActive:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px 28px;
+  }
+
+  .filters {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

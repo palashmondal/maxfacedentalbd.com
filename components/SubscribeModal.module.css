@@ -1,0 +1,155 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #161a2d99;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.25s ease;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: min(720px, 100%);
+  background: var(--white-color);
+  border-radius: var(--radius-section);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(8, 10, 24, 0.35);
+  animation: popIn 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.imageWrap {
+  position: relative;
+  min-height: 100%;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.content {
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.content h3 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.content p {
+  font-size: 16.5px;
+  line-height: 1.7;
+}
+
+.email {
+  color: var(--primary-color);
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.signature {
+  margin-top: 6px;
+  padding-top: 16px;
+  border-top: 1px solid var(--divider-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signature strong {
+  color: var(--primary-color);
+  font-size: 17px;
+}
+
+.signature span {
+  font-size: 14px;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--divider-color);
+  background: var(--white-color);
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.close:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-color);
+  transform: rotate(90deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .imageWrap {
+    min-height: 0;
+    height: auto;
+    /* Match the source photo's own ratio (943x1017) so the full image
+       shows with no cropping at all — a fixed short height was cutting
+       her face. */
+    aspect-ratio: 943 / 1017;
+  }
+
+  .image {
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  .content {
+    padding: 30px 26px 34px;
+  }
+
+  .content h3 {
+    font-size: 24px;
+  }
+}

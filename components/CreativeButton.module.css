@@ -1,0 +1,58 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 32px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-color);
+  overflow: hidden;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.icon {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  color: var(--white-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover .icon {
+  transform: translateX(2px);
+}
+
+.sweep {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--white-color);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.btn:hover .sweep {
+  width: 300%;
+  height: 300px;
+}
+
+.btn:hover .text,
+.btn:hover .icon {
+  color: var(--primary-color);
+}

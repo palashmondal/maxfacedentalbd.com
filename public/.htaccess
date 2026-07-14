@@ -1,0 +1,34 @@
+# MaxFace Dental Care — Apache config for the static Next.js export.
+# Lives in public/ so `npm run build` copies it into out/ automatically.
+
+# Branded 404 page
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# Force HTTPS (safe on cPanel with SSL installed; remove if the host
+# already handles this at the panel level)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Old *.html URLs -> new clean trailing-slash URLs
+# e.g. /blog/some-post.html -> /blog/some-post/
+RewriteCond %{THE_REQUEST} \s/([^?\s]+)\.html[?\s] [NC]
+RewriteRule ^ /%1/ [R=301,L]
+
+# Long cache for fingerprinted build assets; modest cache for images
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Gzip text responses
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>

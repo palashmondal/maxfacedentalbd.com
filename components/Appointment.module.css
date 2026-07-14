@@ -1,0 +1,235 @@
+.section {
+  margin: 0 var(--section-gutter);
+  border-radius: var(--radius-section);
+  background:
+    linear-gradient(0deg, #161a2dbf, #161a2dbf),
+    url("/images/chamber.jpg") 25% center / cover no-repeat fixed;
+  padding: 80px 0 120px;
+  color: var(--white-color);
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: stretch;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--white-color);
+  font-size: 52px;
+  margin: 18px 0 24px;
+}
+
+.text {
+  color: #ffffffcc;
+  font-size: 17px;
+  max-width: 520px;
+  margin-bottom: 44px;
+}
+
+.infoCols {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.infoRow h3 {
+  color: var(--white-color);
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.infoRow a,
+.infoRow p {
+  color: #ffffffcc;
+  font-size: 16.5px;
+  white-space: nowrap;
+}
+
+/* Phone number — the only link in the info rows — reads as a headline. */
+.infoRow a {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.infoIcon {
+  color: var(--white-color);
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff40;
+  flex-shrink: 0;
+}
+
+.mapBox {
+  flex: 1;
+  min-height: 320px;
+  margin-top: 32px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--white-color);
+  padding: 5px;
+}
+
+.mapBox iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: calc(var(--radius-card) - 5px);
+  /* Inert until the user clicks the map, so a cursor passing over it
+     mid-scroll can't capture wheel events and stall the page. */
+  pointer-events: none;
+}
+
+.mapActive iframe {
+  pointer-events: auto;
+}
+
+.form {
+  background: #ffffff14;
+  backdrop-filter: blur(14px);
+  border-radius: var(--radius-card);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formTitle {
+  color: var(--white-color);
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: var(--radius-input);
+  color: var(--white-color);
+  padding: 16px 20px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color-scheme: dark;
+  font-family: inherit;
+  resize: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #ffffffb3;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.phoneField {
+  display: flex;
+  align-items: stretch;
+  background: #ffffff14;
+  border: 1px solid #ffffff26;
+  border-radius: var(--radius-input);
+  transition: border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.phoneField:focus-within {
+  border-color: var(--accent-color);
+}
+
+.phonePrefix {
+  display: flex;
+  align-items: center;
+  padding: 16px 12px 16px 20px;
+  color: var(--white-color);
+  font-size: 16px;
+  border-right: 1px solid #ffffff26;
+  flex-shrink: 0;
+}
+
+.phoneField input {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  padding-left: 12px;
+}
+
+.error {
+  color: #ffb4b4;
+  font-size: 15px;
+}
+
+.submit {
+  background: var(--accent-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 6px;
+}
+
+.submit:hover {
+  background: #2257da;
+}
+
+.hint {
+  font-size: 14px;
+  color: #ffffff99;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .formTitle {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 80px 0;
+    background-attachment: scroll;
+  }
+
+  .mapBox {
+    flex: none;
+    height: 260px;
+  }
+
+  .infoCols {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

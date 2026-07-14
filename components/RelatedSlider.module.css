@@ -1,0 +1,85 @@
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.head h2 {
+  font-size: 40px;
+  margin-top: 8px;
+}
+
+.arrows {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.arrow {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--divider-color);
+  background: var(--white-color);
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.arrow:hover:not(:disabled) {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 80px) / 3);
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.track > * {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 1024px) {
+  .head h2 {
+    font-size: 30px;
+  }
+
+  .arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .track {
+    grid-auto-columns: calc((100% - 28px) / 2);
+    gap: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .track {
+    grid-auto-columns: 100%;
+  }
+}

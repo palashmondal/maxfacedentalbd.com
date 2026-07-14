@@ -1,0 +1,48 @@
+.badge {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: 12px solid var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 24px rgba(8, 10, 24, 0.2);
+}
+
+.badge:hover {
+  box-shadow: 0 16px 32px rgba(8, 10, 24, 0.28);
+}
+
+.text {
+  position: absolute;
+  inset: 0;
+  animation: badge-rotate 12s linear infinite;
+}
+
+.text text {
+  fill: var(--white-color);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.icon {
+  color: var(--white-color);
+  display: inline-flex;
+}
+
+@keyframes badge-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text {
+    animation: none;
+  }
+}
