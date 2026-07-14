@@ -4,6 +4,16 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add recurring mouth ulcers blog post
+- New post: "Mouth Ulcers That Keep Coming Back: Causes, Home Care and When
+  to Worry" (General Dentistry), covering Bangladesh-specific triggers
+  (jhal food, hot cha, paan/zarda, exam-season and Ramadan stress) and
+  common nutritional deficiencies flagged by national nutrition surveys
+- Distinguishes ordinary aphthous ulcers from warning-sign patterns (same
+  spot every time, painless sores past two to three weeks) that need a
+  dental exam rather than home remedies
+- Follows BLOG-GUIDELINES.md; sitemap.xml picks it up automatically
+
 ### Add denture care and dental emergency first-aid blog posts
 - New post: "Denture Care 101: Cleaning, Fit, and Knowing When to Replace
   Them" (Restorative Dentistry), citing the WHO Global Oral Health Status

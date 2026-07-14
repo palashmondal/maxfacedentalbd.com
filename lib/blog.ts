@@ -1464,6 +1464,65 @@ export const posts: BlogPost[] = [
     takeaway:
       "Dental emergencies are rarely convenient, but quick, correct first aid in the first few minutes can be the difference between saving a tooth and losing it. Save Maxface Dental Care's number for emergencies, not just routine appointments — a same-day call is what actually saves a tooth.",
   },
+  {
+    slug: "recurring-mouth-ulcers-causes-treatment",
+    title: "Mouth Ulcers That Keep Coming Back: Causes, Home Care and When to Worry",
+    excerpt:
+      "A canker sore usually heals on its own in two weeks — but jhal food, hot cha, sharp teeth and exam-season stress make many people in Bangladesh get them again and again. Here's what actually helps, and when it's not 'just an ulcer.'",
+    category: "General Dentistry",
+    date: "2026-07-16",
+    readTime: "5 min read",
+    image: "/images/blog/checkups.jpg",
+    imageAlt: "Dentist reviewing a dental X-ray with a patient in the chair",
+    intro: [
+      "Almost everyone in Bangladesh has had a mouth ulcer (aphthous ulcer) — a small, painful sore inside the cheek, lip or under the tongue that makes even sipping cha uncomfortable. Most heal on their own within one to two weeks, but for many patients they come back again and again, sometimes every month.",
+      "At Maxface Dental Care, recurring mouth ulcers are one of our most common complaints — especially during exam season, the hottest months, and Ramadan. The good news: most causes are simple to find and fix once you know what to look for.",
+    ],
+    sections: [
+      {
+        heading: "What's actually causing your ulcer",
+        list: [
+          "A sharp, broken tooth or the rough edge of an old filling constantly rubbing the same spot on your cheek or tongue",
+          "Very hot cha or spicy, acidic food — jhal curry, tetul (tamarind), lebu (lime) — irritating an already sensitive mouth",
+          "Accidentally biting your cheek while eating quickly, or a rough spot on dentures or braces",
+          "Stress and lack of sleep, which is why ulcers often cluster around exams, deadlines and Ramadan fasting",
+          "Low iron, vitamin B12 or folate — deficiencies that national nutrition surveys show are common in Bangladesh, particularly among women",
+          "Toothpaste containing sodium lauryl sulfate (SLS), a foaming agent that irritates the mouth's lining in some people",
+        ],
+      },
+      {
+        heading: "What actually helps it heal",
+        paragraphs: [
+          "Most ulcers just need time and less irritation — you cannot cure one overnight, but you can stop making it worse.",
+        ],
+        list: [
+          "Rinse with warm salt water (half a teaspoon of salt in a glass of lukewarm water), two to three times a day",
+          "Avoid jhal, very hot food and drinks, and acidic fruits like tetul or lebu until it heals",
+          "Switch temporarily to an SLS-free toothpaste if ulcers are frequent",
+          "A dab of honey or an over-the-counter oral gel can soothe the area — but a sore that keeps forming a thick coating that won't rinse away needs a dentist's look, not a home remedy",
+          "Stop probing it with your tongue or fingernail — it only delays healing",
+        ],
+      },
+      {
+        heading: "When it's not 'just an ulcer'",
+        paragraphs: [
+          "A normal aphthous ulcer is painful early and heals within two weeks. Two patterns should never be waited out.",
+        ],
+        list: [
+          "An ulcer that appears in the exact same spot every time — that's not bad luck, it's a sharp tooth or filling edge that needs smoothing, and it will keep recurring until it's fixed.",
+          "Any ulcer or patch lasting longer than two to three weeks — especially if it is painless, feels thick or hard-edged, or you use paan, zarda or tobacco — needs a professional oral examination, not more salt water.",
+        ],
+      },
+      {
+        heading: "Preventing the next one",
+        paragraphs: [
+          "If ulcers keep returning, look for the pattern instead of treating each one separately. A dental check-up can find and smooth the sharp tooth or filling edge causing repeat trauma, adjust a denture or brace that's rubbing, and check whether your toothpaste is the trigger. If a deficiency is suspected, your dentist can point you toward a simple blood test rather than guessing.",
+        ],
+      },
+    ],
+    takeaway:
+      "A mouth ulcer that heals within two weeks and never returns in the same spot is normal — one that keeps coming back or won't heal is your mouth asking for an exam, not more salt water. Book a check-up at Maxface Dental Care and let us find the actual cause.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1499,6 +1558,7 @@ const postTags: Record<string, string[]> = {
   "scaling-myths-bangla": ["স্কেলিং", "ভুল ধারণা", "দাঁতের যত্ন"],
   "denture-care-cleaning-fit-and-replacement": ["Dentures", "Restorative Care", "Denture Cleaning"],
   "dental-emergency-first-aid-before-the-chamber": ["Dental Emergency", "First Aid", "Patient Guide"],
+  "recurring-mouth-ulcers-causes-treatment": ["Mouth Ulcers", "Oral Health", "Patient Guide"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
