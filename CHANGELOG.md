@@ -4,6 +4,13 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add jaw fracture / facial trauma blog post
+- New post: "Jaw Fracture After a Road Accident: What to Do in the First
+  Hour" (Oral Surgery), covering Dhaka road-accident context, first-aid
+  steps before reaching a surgeon, why OMFS assessment and imaging matter,
+  and what plating/wiring treatment and recovery involve
+- Follows BLOG-GUIDELINES.md; sitemap.xml picks it up automatically
+
 ### Add recurring mouth ulcers blog post
 - New post: "Mouth Ulcers That Keep Coming Back: Causes, Home Care and When
   to Worry" (General Dentistry), covering Bangladesh-specific triggers

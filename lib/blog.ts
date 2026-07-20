@@ -1523,6 +1523,66 @@ export const posts: BlogPost[] = [
     takeaway:
       "A mouth ulcer that heals within two weeks and never returns in the same spot is normal — one that keeps coming back or won't heal is your mouth asking for an exam, not more salt water. Book a check-up at Maxface Dental Care and let us find the actual cause.",
   },
+  {
+    slug: "jaw-fracture-facial-injury-road-accident-bangladesh",
+    title: "Jaw Fracture After a Road Accident: What to Do in the First Hour",
+    excerpt:
+      "A fall from a motorbike or a crowded bus can fracture the jaw or cheekbone — and the first hour of first aid often decides how smooth the recovery is. Here's what to do before you reach a surgeon.",
+    category: "Oral Surgery",
+    date: "2026-07-20",
+    readTime: "6 min read",
+    image: "/images/blog/xray.jpg",
+    imageAlt: "Dental X-ray image used to assess jaw and facial bone structure",
+    intro: [
+      "Dhaka's roads are unforgiving — potholed lanes, overloaded buses, and motorbikes weaving through traffic all add up to a steady stream of facial injuries in our chamber. A fall from a bike, a collision at a rickshaw crossing, or being struck while crossing the road can fracture the jawbone or cheekbone, not just cut the skin.",
+      "As an Oral & Maxillofacial Surgery practice, treating these injuries is part of our daily work. What a patient (or the people around them) does in the first hour after the accident — before reaching a surgeon — genuinely affects how the healing goes.",
+    ],
+    sections: [
+      {
+        heading: "Signs your jaw or facial bones may be fractured",
+        list: [
+          "Your upper and lower teeth no longer meet the way they used to when you bite down",
+          "Pain, swelling or stiffness that makes it hard to open your mouth fully",
+          "A visibly uneven or shifted jawline, or a flattened, sunken cheek",
+          "Numbness in the lip, chin or cheek on one side",
+          "Loose, chipped or missing teeth after the impact",
+          "Difficulty speaking clearly or swallowing normally",
+        ],
+      },
+      {
+        heading: "First aid before you reach the chamber or hospital",
+        paragraphs: [
+          "A suspected facial fracture is an emergency, but a few careful steps in the first minutes protect the airway and limit further injury while you arrange transport.",
+        ],
+        list: [
+          "Keep the person calm and sitting upright, leaning slightly forward if there is bleeding, so blood or loose teeth don't block the airway",
+          "Support the jaw gently with a hand or a soft cloth wrapped under the chin — don't try to push a shifted jaw back into place yourself",
+          "Apply a cold compress to the outside of the face to limit swelling — never press directly on an open wound",
+          "Do not give food or water; surgery may be needed soon, and an empty stomach is safer for anaesthesia",
+          "If any teeth were knocked out, collect them and bring them along — see our dental emergency first-aid guide for how to keep a tooth alive until you arrive",
+          "Go straight to a hospital or a dental chamber with X-ray facilities — do not wait to see if the swelling goes down on its own",
+        ],
+      },
+      {
+        heading: "Why this needs an OMFS surgeon, not just a general check-up",
+        paragraphs: [
+          "The mandible (lower jaw) is one of the facial bones most frequently fractured in road traffic injuries and falls, according to published oral and maxillofacial surgery literature — and a fracture there can be easy to miss on a casual look, especially if the skin isn't broken. A panoramic X-ray (OPG) or CT scan shows exactly where the bone is broken and whether it has shifted, which decides the entire treatment plan.",
+          "An Oral & Maxillofacial Surgeon is trained specifically in the jaw, face and mouth, and works alongside your bite and teeth when planning treatment — something a general trauma assessment alone doesn't cover. Getting the bite realigned correctly is as important as healing the bone itself.",
+        ],
+      },
+      {
+        heading: "What treatment and recovery actually involve",
+        list: [
+          "Minor, non-displaced fractures may only need a soft diet and monitoring while the bone heals on its own",
+          "Displaced fractures are typically fixed with small titanium plates and screws (open reduction and internal fixation), or in some cases the jaws are temporarily wired or banded together to hold the bite steady while it heals",
+          "Healing generally takes four to six weeks, with a strictly soft or liquid diet during that time to protect the repair",
+          "Follow-up visits check that the bite has settled correctly and that healing is on track, since a jaw that heals slightly misaligned can cause chewing and jaw-joint problems for years afterward",
+        ],
+      },
+    ],
+    takeaway:
+      "After any hard impact to the face, don't just treat the visible cut and go home — a jaw or cheekbone fracture can hide behind swelling with no open wound at all. If your bite feels different after an accident, get an X-ray the same day. Maxface Dental Care's Oral & Maxillofacial Surgery team handles facial trauma from assessment through to recovery — call us immediately after any road accident involving the face or jaw.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1559,6 +1619,7 @@ const postTags: Record<string, string[]> = {
   "denture-care-cleaning-fit-and-replacement": ["Dentures", "Restorative Care", "Denture Cleaning"],
   "dental-emergency-first-aid-before-the-chamber": ["Dental Emergency", "First Aid", "Patient Guide"],
   "recurring-mouth-ulcers-causes-treatment": ["Mouth Ulcers", "Oral Health", "Patient Guide"],
+  "jaw-fracture-facial-injury-road-accident-bangladesh": ["Facial Trauma", "Oral Surgery", "Road Accidents"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
