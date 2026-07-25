@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import { HeadsetIcon, ClockIcon } from "./icons";
 import { site } from "@/lib/site";
 import { subscribeToMailchimp } from "@/lib/mailchimp";
+import { fill } from "@/lib/i18n/template";
+import type { Dictionary } from "@/lib/i18n";
 import styles from "./Appointment.module.css";
 
-export default function Appointment() {
+export default function Appointment({ dict }: { dict: Dictionary["appointment"] }) {
   const [error, setError] = useState("");
   // The Maps embed is heavy: mount it only when the section nears the
   // viewport, and keep it click-to-interact so hovering it mid-scroll
@@ -38,7 +40,7 @@ export default function Appointment() {
     const phoneRest = String(data.get("phone") ?? "").trim();
 
     if (!name || !phoneRest) {
-      setError("Please fill in your name and phone number.");
+      setError(dict.error);
       return;
     }
     setError("");
@@ -57,7 +59,7 @@ export default function Appointment() {
     // Open WhatsApp — kept inside the click gesture so it isn't popup-blocked.
     window.open(
       `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`,
-      "_blank"
+      "_blank",
     );
 
     // Email the same details to the clinic (+ cc) at the same time, via
@@ -93,15 +95,9 @@ export default function Appointment() {
     <section id="appointment" className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.content}>
-          <span className="eyebrow eyebrow--light">Book An Appointment</span>
-          <h2 className={styles.title}>
-            Toothache? Don&apos;t suffer in silence.
-          </h2>
-          <p className={styles.text}>
-            From wisdom tooth pain to a brighter smile — thousands of patients
-            across Dhaka trust Dr. Yoshita for gentle, honest, and affordable
-            dental care. Book your visit today.
-          </p>
+          <span className="eyebrow eyebrow--light">{dict.eyebrow}</span>
+          <h2 className={styles.title}>{dict.title}</h2>
+          <p className={styles.text}>{dict.text}</p>
 
           <div className={styles.infoCols}>
             <div className={styles.infoRow}>
@@ -109,7 +105,7 @@ export default function Appointment() {
                 <HeadsetIcon size={22} />
               </span>
               <div>
-                <h3>Talk to Dr. Yoshita</h3>
+                <h3>{dict.talkTitle}</h3>
                 <a href={site.phoneHref}>{site.phone}</a>
               </div>
             </div>
@@ -119,11 +115,11 @@ export default function Appointment() {
                 <ClockIcon size={22} />
               </span>
               <div>
-                <h3>Opening Hours</h3>
+                <h3>{dict.hoursTitle}</h3>
                 <p>
-                  Saturday – Thursday (6PM – 10PM)
+                  {dict.hoursLines[0]}
                   <br />
-                  Friday (Closed)
+                  {dict.hoursLines[1]}
                 </p>
               </div>
             </div>
@@ -137,7 +133,7 @@ export default function Appointment() {
           >
             {showMap && (
               <iframe
-                title={`${site.name} location on Google Maps`}
+                title={fill(dict.mapTitle, { name: site.name })}
                 src="https://www.google.com/maps?q=MaxFace+Dental+Care+(Dr.+Yoshita+Mazumder)+Khilgaon+Dhaka&z=16&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -148,36 +144,33 @@ export default function Appointment() {
         </div>
 
         <form className={styles.form} onSubmit={onSubmit} noValidate>
-          <h2 className={styles.formTitle}>Make an Appointment</h2>
+          <h2 className={styles.formTitle}>{dict.formTitle}</h2>
 
-          <input name="name" placeholder="Name" required />
-          <input name="email" type="email" placeholder="E-mail" />
+          <input name="name" placeholder={dict.namePlaceholder} required />
+          <input name="email" type="email" placeholder={dict.emailPlaceholder} />
 
           <div className={styles.phoneField}>
             <span className={styles.phonePrefix}>+880</span>
             <input
               name="phone"
               type="tel"
-              placeholder="1XXX-XXXXXX"
+              placeholder={dict.phonePlaceholder}
               required
             />
           </div>
 
           <textarea
             name="problem"
-            placeholder="Briefly describe your problem"
+            placeholder={dict.problemPlaceholder}
             rows={6}
           />
 
           {error && <p className={styles.error}>{error}</p>}
 
           <button type="submit" className={styles.submit}>
-            Submit Message
+            {dict.submit}
           </button>
-          <p className={styles.hint}>
-            Your request opens in WhatsApp — send it there and we&apos;ll
-            confirm your appointment.
-          </p>
+          <p className={styles.hint}>{dict.hint}</p>
         </form>
       </div>
     </section>

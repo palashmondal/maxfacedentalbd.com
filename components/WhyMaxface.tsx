@@ -1,45 +1,21 @@
 import Image from "next/image";
-import {
-  ToothIcon,
-  CapsulesIcon,
-  KitIcon,
-  MicroscopeIcon,
-} from "./icons";
+import { serviceIcons } from "./icons";
+import type { Dictionary } from "@/lib/i18n";
 import styles from "./WhyMaxface.module.css";
 
-const features = [
-  {
-    icon: ToothIcon,
-    title: "Modern Dental Technology",
-    text: "Digital X-rays, precise instruments, and up-to-date techniques mean faster, more accurate treatment with less discomfort.",
-  },
-  {
-    icon: CapsulesIcon,
-    title: "Affordable Treatment",
-    text: "Quality dental care shouldn't break the bank. We keep our pricing transparent and reasonable for every patient in Khilgaon, Dhaka.",
-  },
-  {
-    icon: KitIcon,
-    title: "Personalized Treatment Plans",
-    text: "No two smiles are the same. Every treatment plan is tailored to your specific needs, concerns, and budget.",
-  },
-  {
-    icon: MicroscopeIcon,
-    title: "Safe for the Whole Family",
-    text: "From your child's first checkup to specialized surgery, our gentle approach makes every visit comfortable for patients of all ages.",
-  },
-];
+type Feature = Dictionary["why"]["features"][number];
 
-export default function WhyMaxface() {
+export default function WhyMaxface({ dict }: { dict: Dictionary["why"] }) {
+  const features = dict.features;
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.head}>
-          <span className="eyebrow eyebrow--light">WHY MaxFace Dental Care</span>
+          <span className="eyebrow eyebrow--light">{dict.eyebrow}</span>
           <h2 className={styles.title}>
-            Where Khilgaon &amp; Malibagh Chowdhurypara
+            {dict.titleLines[0]}
             <br />
-            Come to Smile with Confidence.
+            {dict.titleLines[1]}
           </h2>
         </div>
 
@@ -53,7 +29,7 @@ export default function WhyMaxface() {
           <div className={styles.imageWrap}>
             <Image
               src="/images/why-choose-image.png"
-              alt="Dental implant with crown — permanent tooth replacement offered at MaxFace Dental Care, Dhaka"
+              alt={dict.imageAlt}
               width={520}
               height={860}
               className={styles.image}
@@ -71,16 +47,11 @@ export default function WhyMaxface() {
   );
 }
 
-function Feature({
-  icon: Icon,
-  title,
-  text,
-}: (typeof features)[number]) {
+function Feature({ icon, title, text }: Feature) {
+  const Icon = serviceIcons[icon];
   return (
     <div className={styles.feature}>
-      <span className={styles.iconTile}>
-        <Icon size={26} />
-      </span>
+      <span className={styles.iconTile}>{Icon && <Icon size={26} />}</span>
       <h3>{title}</h3>
       <p>{text}</p>
     </div>

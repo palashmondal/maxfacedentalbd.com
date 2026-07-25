@@ -3,14 +3,21 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { site } from "@/lib/site";
+import type { Dictionary } from "@/lib/i18n";
 import styles from "./SubscribeModal.module.css";
 
 export default function SubscribeModal({
   email,
   onClose,
+  doctorName,
+  credentials,
+  dict,
 }: {
   email: string;
   onClose: () => void;
+  doctorName: string;
+  credentials: string;
+  dict: Dictionary["subscribeModal"];
 }) {
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -60,7 +67,7 @@ export default function SubscribeModal({
         <div className={styles.imageWrap}>
           <Image
             src="/images/thankyou.jpg"
-            alt={site.doctor}
+            alt={doctorName}
             width={943}
             height={1017}
             className={styles.image}
@@ -68,18 +75,13 @@ export default function SubscribeModal({
         </div>
 
         <div className={styles.content}>
-          <span className="eyebrow">Thank You!</span>
-          <h3 id="subscribe-thanks-title">You&apos;re on the list.</h3>
-          <p>
-            Thank you for trusting me with your smile. Every so often
-            I&apos;ll send you the same simple, practical dental advice I
-            give my own patients at the chamber — no spam, just healthy
-            teeth.
-          </p>
+          <span className="eyebrow">{dict.eyebrow}</span>
+          <h3 id="subscribe-thanks-title">{dict.title}</h3>
+          <p>{dict.body}</p>
           <p className={styles.signature}>
-            <strong>{site.doctor}</strong>
+            <strong>{doctorName}</strong>
             <span>
-              {site.credentials} — {site.name}
+              {credentials} — {site.name}
             </span>
           </p>
         </div>

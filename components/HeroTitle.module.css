@@ -1,20 +1,30 @@
-/* Reserve two lines so the layout doesn't jump while titles rotate. */
+/* Fixed height (not min-height) so the box never resizes as titles rotate —
+   whichever tagline is showing, the content below stays put. Sized for the
+   tallest tagline; shorter ones just leave blank space below. */
 .title {
-  min-height: 2.3em;
+  height: 2.5em;
+  overflow: hidden;
+}
+
+/* Bangla uses a taller line-height (1.45), so it reserves a slightly bigger
+   fixed box for the same two lines. */
+:global([lang="bn"]) .title {
+  height: 3.3em;
 }
 
 @media (max-width: 1024px) {
-  /* On narrower screens some rotating titles wrap to 4 lines, pushing
-     everything below the hero down as the title changes. Lock the box to
-     exactly 3 lines (matches Hero.module.css's line-height: 1.15 at this
-     breakpoint) and clip anything past that, so the height never moves. */
+  /* Lock to a fixed multi-line box and clip the overflow so the height never
+     moves (matches Hero.module.css's line-height at this breakpoint). */
   .title {
-    min-height: 0;
-    height: 3.45em;
-    overflow: hidden;
+    height: 3.6em;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+
+  :global([lang="bn"]) .title {
+    height: 4em;
+    -webkit-line-clamp: 3;
   }
 }
 

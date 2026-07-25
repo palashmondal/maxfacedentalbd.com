@@ -11,21 +11,31 @@ import Footer from "@/components/Footer";
 import CreativeButton from "@/components/CreativeButton";
 import { posts, getPost, getPostTags, formatPostDate } from "@/lib/blog";
 import { site } from "@/lib/site";
+import { isLocale } from "@/lib/i18n/config";
+import { getDictionary } from "@/lib/i18n";
+import { localizedHref } from "@/lib/i18n/href";
+import { fill, tmpl } from "@/lib/i18n/template";
+import { postsForLang, postLocale } from "@/lib/i18n/posts";
 import styles from "./article.module.css";
 
 export function generateStaticParams() {
-  return posts.map((post) => ({ slug: post.slug }));
+  // Enumerate the full {lang, slug} set so each post builds only under its own
+  // language (required, and unambiguous, for `output: export`).
+  return posts.map((post) => ({ lang: postLocale(post), slug: post.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
-  const post = getPost((await params).slug);
+  const { lang, slug } = await params;
+  if (!isLocale(lang)) return {};
+  const post = getPost(slug);
   if (!post) return {};
+  const d = getDictionary(lang);
   return {
-    title: `${post.title} | MaxFace Dental Care`,
+    title: `${post.title} | ${d.meta.aliasSuffix}`,
     description: post.excerpt,
     keywords: [
       ...getPostTags(post),
@@ -33,7 +43,7 @@ export async function generateMetadata({
       "dental care Bangladesh",
       "dentist Dhaka",
     ],
-    alternates: { canonical: `/blog/${post.slug}/` },
+    alternates: { canonical: `/${lang}/blog/${post.slug}/` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -48,17 +58,30 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }) {
-  const post = getPost((await params).slug);
-  if (!post) notFound();
+  const { lang, slug } = await params;
+  if (!isLocale(lang)) notFound();
+  const post = getPost(slug);
+  // Only serve a post under its own language.
+  if (!post || postLocale(post) !== lang) notFound();
+
+  const d = getDictionary(lang);
+  const localePosts = postsForLang(posts, lang);
 
   // Same category first, then the rest — the slider shows them all.
   const related = [
-    ...posts.filter((p) => p.slug !== post.slug && p.category === post.category),
-    ...posts.filter((p) => p.slug !== post.slug && p.category !== post.category),
+    ...localePosts.filter(
+      (p) => p.slug !== post.slug && p.category === post.category,
+    ),
+    ...localePosts.filter(
+      (p) => p.slug !== post.slug && p.category !== post.category,
+    ),
   ];
-  const nextPost = posts[(posts.findIndex((p) => p.slug === post.slug) + 1) % posts.length];
+  const idx = localePosts.findIndex((p) => p.slug === post.slug);
+  const nextPost = localePosts[(idx + 1) % localePosts.length];
+
+  const canonical = `https://maxfacedentalbd.com/${lang}/blog/${post.slug}/`;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -67,7 +90,7 @@ export default async function BlogPostPage({
     description: post.excerpt,
     image: `https://maxfacedentalbd.com${post.image}`,
     datePublished: post.date,
-    inLanguage: post.lang === "bn" ? "bn" : "en",
+    inLanguage: lang,
     author: {
       "@type": "Person",
       name: "Dr. Yoshita Mazumder",
@@ -81,15 +104,25 @@ export default async function BlogPostPage({
         url: "https://maxfacedentalbd.com/images/maxface-logo.png",
       },
     },
-    mainEntityOfPage: `https://maxfacedentalbd.com/blog/${post.slug}/`,
+    mainEntityOfPage: canonical,
   };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://maxfacedentalbd.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://maxfacedentalbd.com/blog/" },
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: d.blog.crumbHome,
+        item: `https://maxfacedentalbd.com/${lang}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: d.blog.crumbBlog,
+        item: `https://maxfacedentalbd.com/${lang}/blog/`,
+      },
       { "@type": "ListItem", position: 3, name: post.title },
     ],
   };
@@ -105,14 +138,19 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <MagicCursor />
-      <Header />
+      <Header
+        lang={lang}
+        nav={d.nav}
+        doctorName={d.doctorName}
+        switcher={d.switcher}
+      />
       <main lang={post.lang === "bn" ? "bn" : undefined}>
         <PageHero
           title={post.title}
           eyebrow={post.category}
           crumbs={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
+            { label: d.blog.crumbHome, href: localizedHref(lang, "/") },
+            { label: d.blog.crumbBlog, href: localizedHref(lang, "/blog") },
             { label: post.title },
           ]}
         />
@@ -138,7 +176,7 @@ export default async function BlogPostPage({
                 <span className={styles.dot} aria-hidden="true" />
                 <span>{post.readTime}</span>
                 <span className={styles.dot} aria-hidden="true" />
-                <span>By {site.doctor}</span>
+                <span>{fill(d.blog.by, { doctor: site.doctor })}</span>
               </div>
 
               <div className={styles.body}>
@@ -163,32 +201,36 @@ export default async function BlogPostPage({
                 ))}
 
                 <div className={styles.takeaway}>
-                  <h2>The takeaway</h2>
+                  <h2>{d.blog.takeawayTitle}</h2>
                   <p>{post.takeaway}</p>
                 </div>
 
                 <ShareBar
-                  url={`https://maxfacedentalbd.com/blog/${post.slug}/`}
+                  url={canonical}
                   title={post.title}
                   tags={getPostTags(post)}
+                  tagsLabel={d.blog.tagsLabel}
                 />
               </div>
 
               <div className={styles.cta}>
                 <div>
-                  <h2>Have a question about your teeth?</h2>
+                  <h2>{d.blog.ctaTitle}</h2>
                   <p>
-                    {site.doctor} — {site.credentials} — is available six days
-                    a week at {site.name}, Malibagh, Dhaka.
+                    {tmpl(d.blog.ctaText, {
+                      doctor: site.doctor,
+                      credentials: site.credentials,
+                      name: site.name,
+                    })}
                   </p>
                 </div>
-                <CreativeButton href="/#appointment">
-                  Book an Appointment
+                <CreativeButton href={localizedHref(lang, "/#appointment")}>
+                  {d.blog.ctaButton}
                 </CreativeButton>
               </div>
 
               <div className={styles.backRow}>
-                <Link href="/blog" className={styles.back}>
+                <Link href={localizedHref(lang, "/blog")} className={styles.back}>
                   <svg
                     width="18"
                     height="18"
@@ -202,15 +244,15 @@ export default async function BlogPostPage({
                   >
                     <path d="M19 12H5m6-6-6 6 6 6" />
                   </svg>
-                  Back to all articles
+                  {d.blog.backToAll}
                 </Link>
                 <Link
-                  href={`/blog/${nextPost.slug}`}
+                  href={`/${lang}/blog/${nextPost.slug}`}
                   className={styles.next}
                   title={nextPost.title}
                 >
                   <span className={styles.nextTitle}>
-                    Next: {nextPost.title}
+                    {fill(d.blog.next, { title: nextPost.title })}
                   </span>
                   <svg
                     width="18"
@@ -230,12 +272,17 @@ export default async function BlogPostPage({
             </article>
 
             <aside className={styles.related} aria-label="Related articles">
-              <RelatedSlider posts={related} />
+              <RelatedSlider posts={related} lang={lang} dict={d.blog} />
             </aside>
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer
+        lang={lang}
+        dict={d.footer}
+        doctorName={d.doctorName}
+        subscribeModal={d.subscribeModal}
+      />
     </>
   );
 }

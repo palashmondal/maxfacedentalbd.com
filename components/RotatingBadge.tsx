@@ -7,7 +7,13 @@ import styles from "./RotatingBadge.module.css";
  * continuously via CSS animation (replaces ElementsKit text-path +
  * animate-circle.js).
  */
-export default function RotatingBadge({ className }: { className?: string }) {
+export default function RotatingBadge({
+  className,
+  text,
+}: {
+  className?: string;
+  text: string;
+}) {
   return (
     <a
       href={site.mapsUrl}
@@ -25,7 +31,7 @@ export default function RotatingBadge({ className }: { className?: string }) {
         </defs>
         <text textLength="478" lengthAdjust="spacingAndGlyphs">
           <textPath href="#badge-circle" textLength="478" lengthAdjust="spacingAndGlyphs">
-            15+ Years Excellence * 15+ Years Excellence *&nbsp;
+            {text}&nbsp;
           </textPath>
         </text>
       </svg>

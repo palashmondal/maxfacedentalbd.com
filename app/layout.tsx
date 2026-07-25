@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Sora, Noto_Serif_Bengali } from "next/font/google";
+import { Sora } from "next/font/google";
 import Script from "next/script";
 import SmoothScroll from "@/components/SmoothScroll";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "lenis/dist/lenis.css";
 import "./globals.css";
 
@@ -11,14 +10,6 @@ const sora = Sora({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-sora",
-});
-
-// Bangla serif for lang="bn" content.
-const notoBengali = Noto_Serif_Bengali({
-  subsets: ["bengali"],
-  weight: ["400", "600", "700"],
-  display: "swap",
-  variable: "--font-bangla",
 });
 
 export const metadata: Metadata = {
@@ -145,7 +136,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${sora.variable} ${notoBengali.variable}`}>
+    <html lang="en" className={sora.variable}>
       <body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EJ2C70LP3F"
@@ -159,7 +150,6 @@ gtag('config', 'G-EJ2C70LP3F');`}
         </Script>
         <SmoothScroll />
         {children}
-        <WhatsAppFloat />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

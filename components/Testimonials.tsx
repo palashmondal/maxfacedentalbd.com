@@ -3,21 +3,28 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import { testimonials, site } from "@/lib/site";
+import { site } from "@/lib/site";
+import type { Dictionary } from "@/lib/i18n";
 import styles from "./Testimonials.module.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function Testimonials() {
+export default function Testimonials({
+  dict,
+}: {
+  dict: Dictionary["testimonials"];
+}) {
+  const items = dict.items;
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.head}>
-          <span className="eyebrow">Testimonials</span>
+          <span className="eyebrow">{dict.eyebrow}</span>
           <h2 className={styles.title}>
-            5/5 ★ Rated on Google ★<br />
-            Happy Patients
+            {dict.titleLines[0]}
+            <br />
+            {dict.titleLines[1]}
           </h2>
         </div>
 
@@ -34,10 +41,10 @@ export default function Testimonials() {
           }}
           className={styles.swiper}
         >
-          {[...testimonials, ...testimonials].map((t, i) => (
+          {[...items, ...items].map((t, i) => (
             <SwiperSlide key={i} className={styles.slide}>
               <article className={styles.card}>
-                <div className={styles.stars} aria-label="5 out of 5 stars">
+                <div className={styles.stars} aria-label={dict.starsAria}>
                   ★★★★★
                 </div>
                 <div className={styles.quote}>
@@ -83,7 +90,7 @@ export default function Testimonials() {
             rel="noopener noreferrer"
             className={styles.reviewsBtn}
           >
-            {site.reviews}
+            {dict.reviewsLabel}
             <span className={styles.reviewsBtnArrow} aria-hidden>
               →
             </span>
@@ -95,11 +102,8 @@ export default function Testimonials() {
             <span className={styles.reviewCtaStars} aria-hidden>
               ★★★★★
             </span>
-            <h3>Loved your visit?</h3>
-            <p>
-              Your review helps neighbours in Malibagh &amp; Khilgaon find
-              trustworthy dental care.
-            </p>
+            <h3>{dict.reviewCta.title}</h3>
+            <p>{dict.reviewCta.text}</p>
           </div>
           <a
             href={site.googleWriteReviewUrl}
@@ -107,13 +111,8 @@ export default function Testimonials() {
             rel="noopener noreferrer"
             className={styles.reviewCtaBtn}
           >
-            <Image
-              src="/images/icon-google.svg"
-              alt=""
-              width={22}
-              height={22}
-            />
-            Leave Us a Review
+            <Image src="/images/icon-google.svg" alt="" width={22} height={22} />
+            {dict.reviewCta.button}
           </a>
         </div>
       </div>

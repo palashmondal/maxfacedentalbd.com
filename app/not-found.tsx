@@ -5,23 +5,37 @@ import Header from "@/components/Header";
 import PageHero from "@/components/PageHero";
 import CreativeButton from "@/components/CreativeButton";
 import Footer from "@/components/Footer";
+import { defaultLocale } from "@/lib/i18n/config";
+import { getDictionary } from "@/lib/i18n";
+import { localizedHref } from "@/lib/i18n/href";
 import styles from "./not-found.module.css";
 
+const lang = defaultLocale;
+const d = getDictionary(lang);
+
 export const metadata: Metadata = {
-  title: "Page Not Found | MaxFace Dental Care",
+  title: d.meta.notFound.title,
   robots: { index: false },
 };
 
 export default function NotFound() {
   return (
-    <>
+    <div lang={lang}>
       <MagicCursor />
-      <Header />
+      <Header
+        lang={lang}
+        nav={d.nav}
+        doctorName={d.doctorName}
+        switcher={d.switcher}
+      />
       <main>
         <PageHero
-          title="Page Not Found"
-          eyebrow="404 Error"
-          crumbs={[{ label: "Home", href: "/" }, { label: "404 Page Not Found" }]}
+          title={d.notFound.heroTitle}
+          eyebrow={d.notFound.heroEyebrow}
+          crumbs={[
+            { label: d.blog.crumbHome, href: localizedHref(lang, "/") },
+            { label: d.notFound.crumb },
+          ]}
         />
 
         <section className={styles.section}>
@@ -34,18 +48,22 @@ export default function NotFound() {
               className={styles.image}
               priority
             />
-            <h2 className={styles.heading}>Oops! Page not found</h2>
-            <p className={styles.text}>
-              The page you are looking for doesn&rsquo;t exist or may have
-              moved. Let&rsquo;s get you back to a healthy place.
-            </p>
+            <h2 className={styles.heading}>{d.notFound.heading}</h2>
+            <p className={styles.text}>{d.notFound.text}</p>
             <div className={styles.actions}>
-              <CreativeButton href="/">Back To Home</CreativeButton>
+              <CreativeButton href={localizedHref(lang, "/")}>
+                {d.notFound.backHome}
+              </CreativeButton>
             </div>
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+      <Footer
+        lang={lang}
+        dict={d.footer}
+        doctorName={d.doctorName}
+        subscribeModal={d.subscribeModal}
+      />
+    </div>
   );
 }

@@ -61,9 +61,20 @@
   transition: color 0.3s ease;
 }
 
+/* Bangla nav labels read a size up from the English default. */
+:global([lang="bn"]) .nav {
+  font-size: 18px;
+}
+
 .nav a:hover,
 .nav .active {
   color: #e4c316;
+}
+
+/* Language switch stays visible on every breakpoint (unlike the CTA). */
+.langWrap {
+  display: inline-flex;
+  align-items: center;
 }
 
 .burger {
@@ -125,6 +136,12 @@
 
   .cta {
     display: none;
+  }
+
+  /* Push the switcher + burger together to the right edge. */
+  .langWrap {
+    margin-left: auto;
+    margin-right: 6px;
   }
 
   .burger {

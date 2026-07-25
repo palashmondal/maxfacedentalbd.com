@@ -3,9 +3,18 @@
 import { useEffect, useRef, useState } from "react";
 import BlogCard from "./BlogCard";
 import type { BlogPost } from "@/lib/blog";
+import type { Dictionary, Locale } from "@/lib/i18n";
 import styles from "./RelatedSlider.module.css";
 
-export default function RelatedSlider({ posts }: { posts: BlogPost[] }) {
+export default function RelatedSlider({
+  posts,
+  lang,
+  dict,
+}: {
+  posts: BlogPost[];
+  lang: Locale;
+  dict: Dictionary["blog"];
+}) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(false);
@@ -36,8 +45,8 @@ export default function RelatedSlider({ posts }: { posts: BlogPost[] }) {
     <>
       <div className={styles.head}>
         <div>
-          <span className="eyebrow">Keep Reading</span>
-          <h2>Related Articles</h2>
+          <span className="eyebrow">{dict.relatedEyebrow}</span>
+          <h2>{dict.relatedTitle}</h2>
         </div>
         <div className={styles.arrows}>
           <button
@@ -87,7 +96,12 @@ export default function RelatedSlider({ posts }: { posts: BlogPost[] }) {
 
       <div className={styles.track} ref={trackRef} onScroll={update}>
         {posts.map((post) => (
-          <BlogCard key={post.slug} post={post} />
+          <BlogCard
+            key={post.slug}
+            post={post}
+            lang={lang}
+            readMore={dict.readMore}
+          />
         ))}
       </div>
     </>

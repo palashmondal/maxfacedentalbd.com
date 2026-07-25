@@ -5,11 +5,19 @@ import Counter from "./Counter";
 import RotatingBadge from "./RotatingBadge";
 import StarRating from "./StarRating";
 import { site } from "@/lib/site";
+import { tmpl, fill } from "@/lib/i18n/template";
+import type { Dictionary } from "@/lib/i18n";
 import styles from "./Hero.module.css";
 
 const avatars = [1, 2, 3, 4].map((n) => `/images/author-${n}.jpg`);
 
-export default function Hero() {
+export default function Hero({
+  dict,
+  doctorName,
+}: {
+  dict: Dictionary["hero"];
+  doctorName: string;
+}) {
   return (
     <section id="home" className={styles.hero}>
       <div className={`container ${styles.inner}`}>
@@ -27,22 +35,25 @@ export default function Hero() {
                 />
               ))}
             </span>
-            1000+ Happy Smiles &amp; Counting
+            {dict.happySmiles}
           </div>
 
-          <HeroTitle className={styles.title} />
+          <HeroTitle
+            className={styles.title}
+            titles={dict.titles}
+            introLines={dict.introLines}
+          />
 
           <p className={styles.text}>
-            <strong>{site.doctor}</strong> — {site.credentials}, 15 years
-            experience — provides expert, gentle dental care at{" "}
-            <strong>{site.name}</strong> in Malibagh, Dhaka. Open evenings,
-            six days a week.
+            {tmpl(dict.bio, {
+              doctor: <strong className={styles.docName}>{doctorName}</strong>,
+              credentials: site.credentials,
+              name: <strong>{site.name}</strong>,
+            })}
           </p>
 
           <div className={styles.actions}>
-            <CreativeButton href="#appointment">
-              Make Appointment Now
-            </CreativeButton>
+            <CreativeButton href="#appointment">{dict.cta}</CreativeButton>
 
             <a
               href={site.googleReviewUrl}
@@ -69,7 +80,7 @@ export default function Hero() {
                   />
                   <StarRating className={styles.stars} />
                 </div>
-                <div className={styles.googleLabel}>Google Business Page</div>
+                <div className={styles.googleLabel}>{dict.googleLabel}</div>
               </div>
             </a>
           </div>
@@ -78,7 +89,7 @@ export default function Hero() {
         <div className={styles.imageWrap}>
           <Image
             src="/images/yoshita.png"
-            alt={`${site.doctor}, dental surgeon and oral & maxillofacial specialist at ${site.name}, Malibagh, Dhaka`}
+            alt={fill(dict.imageAlt, { doctor: site.doctor, name: site.name })}
             width={760}
             height={880}
             className={styles.image}
@@ -87,7 +98,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <RotatingBadge className={styles.badge} />
+      <RotatingBadge className={styles.badge} text={dict.badge} />
     </section>
   );
 }

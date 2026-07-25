@@ -1,37 +1,46 @@
-import Preloader from "@/components/Preloader";
-import MagicCursor from "@/components/MagicCursor";
-import ScrollAnimations from "@/components/ScrollAnimations";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import IntroBento from "@/components/IntroBento";
-import WhyMaxface from "@/components/WhyMaxface";
-import AboutDoctor from "@/components/AboutDoctor";
-import HowItWorks from "@/components/HowItWorks";
-import BeforeAfter from "@/components/BeforeAfter";
-import Achievements from "@/components/Achievements";
-import Testimonials from "@/components/Testimonials";
-import Appointment from "@/components/Appointment";
-import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+import Link from "next/link";
+import RootRedirect from "@/components/RootRedirect";
 
-export default function Home() {
+// Language gate. Search engines get hreflang alternates to both locales;
+// visitors are sent client-side to Bangla (default) or their saved language.
+export const metadata: Metadata = {
+  alternates: {
+    languages: {
+      en: "/en",
+      bn: "/bn",
+      "x-default": "/bn",
+    },
+  },
+};
+
+export default function RootPage() {
   return (
     <>
-      <Preloader />
-      <MagicCursor />
-      <ScrollAnimations />
-      <Header />
-      <main>
-        <Hero />
-        <IntroBento />
-        <WhyMaxface />
-        <AboutDoctor />
-        <HowItWorks />
-        <BeforeAfter />
-        <Achievements />
-        <Testimonials />
-        <Appointment />
+      <RootRedirect />
+      <main
+        style={{
+          minHeight: "70vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "12px",
+          textAlign: "center",
+          padding: "40px 20px",
+        }}
+      >
+        <p>MaxFace Dental Care — Malibagh, Dhaka</p>
+        <p>
+          <Link href="/bn/" style={{ textDecoration: "underline" }}>
+            বাংলা
+          </Link>
+          {"  ·  "}
+          <Link href="/en/" style={{ textDecoration: "underline" }}>
+            English
+          </Link>
+        </p>
       </main>
-      <Footer />
     </>
   );
 }

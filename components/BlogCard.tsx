@@ -1,20 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { type BlogPost, formatPostDate } from "@/lib/blog";
+import type { Locale } from "@/lib/i18n";
 import styles from "./BlogCard.module.css";
 
-export default function BlogCard({ post }: { post: BlogPost }) {
+export default function BlogCard({
+  post,
+  lang,
+  readMore,
+}: {
+  post: BlogPost;
+  lang: Locale;
+  readMore: string;
+}) {
+  const href = `/${lang}/blog/${post.slug}`;
   return (
     <article
       className={styles.card}
       data-fade
       lang={post.lang === "bn" ? "bn" : undefined}
     >
-      <Link
-        href={`/blog/${post.slug}`}
-        className={styles.imageLink}
-        aria-label={post.title}
-      >
+      <Link href={href} className={styles.imageLink} aria-label={post.title}>
         <Image
           src={post.image}
           alt={post.imageAlt}
@@ -29,10 +35,10 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         <time dateTime={post.date}>{formatPostDate(post.date, post.lang)}</time>
       </div>
       <h3 className={styles.title}>
-        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+        <Link href={href}>{post.title}</Link>
       </h3>
-      <Link href={`/blog/${post.slug}`} className={styles.readMore}>
-        Read More{" "}
+      <Link href={href} className={styles.readMore}>
+        {readMore}{" "}
         <svg
           width="18"
           height="18"

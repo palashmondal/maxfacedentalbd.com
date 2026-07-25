@@ -2,30 +2,41 @@
 
 import { useMemo, useRef, useState } from "react";
 import BlogCard from "./BlogCard";
-import { posts } from "@/lib/blog";
+import type { BlogPost } from "@/lib/blog";
+import type { Dictionary, Locale } from "@/lib/i18n";
 import styles from "./BlogIndex.module.css";
 
 const PER_PAGE = 9;
 
-/** Blog listing with category navigation chips and numbered pagination. */
-export default function BlogIndex() {
-  const [active, setActive] = useState("All");
+/** Blog listing with category navigation chips and numbered pagination.
+ *  `posts` are pre-filtered to the active locale by the page. */
+export default function BlogIndex({
+  posts,
+  lang,
+  dict,
+}: {
+  posts: BlogPost[];
+  lang: Locale;
+  dict: Dictionary["blog"];
+}) {
+  const allLabel = dict.filterAll;
+  const [active, setActive] = useState(allLabel);
   const [page, setPage] = useState(1);
   const topRef = useRef<HTMLElement>(null);
 
   const categories = useMemo(
-    () => ["All", ...Array.from(new Set(posts.map((p) => p.category)))],
-    [],
+    () => [allLabel, ...Array.from(new Set(posts.map((p) => p.category)))],
+    [posts, allLabel],
   );
 
   // Newest first, regardless of order in the data file.
   const sorted = useMemo(
     () => [...posts].sort((a, b) => b.date.localeCompare(a.date)),
-    [],
+    [posts],
   );
 
   const filtered =
-    active === "All" ? sorted : sorted.filter((p) => p.category === active);
+    active === allLabel ? sorted : sorted.filter((p) => p.category === active);
   const pageCount = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
   const shown = filtered.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
@@ -62,11 +73,20 @@ export default function BlogIndex() {
         ))}
       </nav>
 
-      <div className={styles.grid}>
-        {shown.map((post) => (
-          <BlogCard key={post.slug} post={post} />
-        ))}
-      </div>
+      {shown.length === 0 ? (
+        <p className={styles.empty}>{dict.empty}</p>
+      ) : (
+        <div className={styles.grid}>
+          {shown.map((post) => (
+            <BlogCard
+              key={post.slug}
+              post={post}
+              lang={lang}
+              readMore={dict.readMore}
+            />
+          ))}
+        </div>
+      )}
 
       {pageCount > 1 && (
         <nav className={styles.pagination} aria-label="Blog pages">

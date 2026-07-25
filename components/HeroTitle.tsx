@@ -4,29 +4,40 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import styles from "./HeroTitle.module.css";
 
 /**
- * Rotating hero headline. The first title plays the theme's char-reveal
- * (x:50 → 0, back.out, 0.02 stagger — same params as ScrollAnimations),
- * then a typewriter loop backspaces it and types the next titles forever.
+ * Rotating hero headline. The first title plays an intro reveal, then a
+ * typewriter loop backspaces it and types the next titles forever.
  * Reduced-motion users get the first title, static.
+ *
+ * The typewriter (`full.slice(0, pos)`) is rendered as one contiguous string,
+ * so it shapes correctly in Bangla too. The one thing that must NOT happen for
+ * Bangla is splitting the text into per-code-point spans — that separates
+ * consonants from their vowel-signs/conjuncts and renders ◌ dotted circles.
+ * So English gets the char-by-char reveal on the first title; Bangla gets a
+ * whole-headline fade, then both share the same typewriter rotation.
+ *
+ * `titles` come from the active locale's dictionary; `introLines` is the first
+ * title pre-split into the two-line static layout (used for English only).
  */
-const TITLES = [
-  "Creating confident smiles with care!",
-  "Best dental care in Malibagh, Dhaka!",
-  "Gentle care, stunning smiles!",
-];
-
-// First title's intro layout matches the old static <br /> line break.
-const INTRO_LINES = ["Creating confident", "smiles with care!"];
-
 const HOLD_MS = 3800; // full title rests on screen
 const DELETE_MS = 26; // per-char backspace
 const TYPE_MS = 55; // per-char typing
 const SWAP_PAUSE_MS = 350; // empty-line beat between titles
 
-export default function HeroTitle({ className }: { className?: string }) {
+const isBangla = (s: string) => /[ঀ-৿]/.test(s);
+
+export default function HeroTitle({
+  className,
+  titles,
+  introLines,
+}: {
+  className?: string;
+  titles: string[];
+  introLines: string[];
+}) {
+  const bangla = isBangla(titles[0] ?? "");
   const ref = useRef<HTMLHeadingElement>(null);
   const [rotating, setRotating] = useState(false);
-  const [text, setText] = useState(TITLES[0]);
+  const [text, setText] = useState(titles[0]);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -39,23 +50,32 @@ export default function HeroTitle({ className }: { className?: string }) {
     (async () => {
       const { gsap } = await import("gsap");
       if (cancelled || !ref.current) return;
-      gsap.set(ref.current, { perspective: 400 });
-      gsap.fromTo(
-        ref.current.querySelectorAll("[data-char]"),
-        { opacity: 0, x: 50 },
-        { opacity: 1, x: 0, duration: 1, ease: "back.out", stagger: 0.02 },
-      );
+      if (bangla) {
+        // Whole-headline fade — never split Bangla into per-char spans.
+        gsap.fromTo(
+          ref.current,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" },
+        );
+      } else {
+        gsap.set(ref.current, { perspective: 400 });
+        gsap.fromTo(
+          ref.current.querySelectorAll("[data-char]"),
+          { opacity: 0, x: 50 },
+          { opacity: 1, x: 0, duration: 1, ease: "back.out", stagger: 0.02 },
+        );
+      }
     })();
 
     const step = (mode: "del" | "type", index: number, pos: number) => {
       if (cancelled) return;
-      const full = TITLES[index];
+      const full = titles[index];
       setText(full.slice(0, pos));
       if (mode === "del") {
         if (pos > 0) later(() => step("del", index, pos - 1), DELETE_MS);
         else
           later(
-            () => step("type", (index + 1) % TITLES.length, 1),
+            () => step("type", (index + 1) % titles.length, 1),
             SWAP_PAUSE_MS,
           );
       } else {
@@ -66,24 +86,32 @@ export default function HeroTitle({ className }: { className?: string }) {
 
     later(() => {
       setRotating(true);
-      step("del", 0, TITLES[0].length - 1);
+      step("del", 0, titles[0].length - 1);
     }, HOLD_MS);
 
     return () => {
       cancelled = true;
       timeouts.forEach(clearTimeout);
     };
-  }, []);
+  }, [titles, bangla]);
 
   return (
-    <h1 ref={ref} className={`${className ?? ""} ${styles.title}`} data-no-split>
+    <h1
+      ref={ref}
+      className={`${className ?? ""} ${styles.title}`}
+      data-no-split
+      lang={bangla ? "bn" : undefined}
+    >
       {rotating ? (
         <>
           {text}
           <span className={styles.caret} aria-hidden />
         </>
+      ) : bangla ? (
+        // Contiguous text — shapes correctly; no per-char splitting.
+        titles[0]
       ) : (
-        INTRO_LINES.map((line, li) => (
+        introLines.map((line, li) => (
           <Fragment key={line}>
             {line.split(" ").map((word, wi, words) => (
               <Fragment key={`${word}-${wi}`}>
@@ -97,7 +125,7 @@ export default function HeroTitle({ className }: { className?: string }) {
                 {wi < words.length - 1 ? " " : null}
               </Fragment>
             ))}
-            {li < INTRO_LINES.length - 1 && <br />}
+            {li < introLines.length - 1 && <br />}
           </Fragment>
         ))
       )}

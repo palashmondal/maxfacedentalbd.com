@@ -7,7 +7,7 @@
     var(--primary-color) 0%,
     var(--accent-color) 174.98%
   );
-  padding: 110px 0 0;
+  padding: 150px 0 70px;
   overflow: visible;
 }
 
@@ -54,6 +54,11 @@
   margin-bottom: 24px;
 }
 
+/* Bangla headline glyphs are taller — give the lines more breathing room. */
+:global([lang="bn"]) .title {
+  line-height: 1.45;
+}
+
 .text {
   color: #ffffffcc;
   font-size: 22px;
@@ -63,6 +68,22 @@
 
 .text strong {
   color: var(--white-color);
+}
+
+/* Doctor's name in the bio — always bold, a touch larger than the sentence. */
+.docName {
+  font-weight: 700;
+  font-size: 1.12em;
+}
+
+/* Bangla bio reads larger and roomier than the English default. */
+:global([lang="bn"]) .text {
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+:global([lang="bn"]) .docName {
+  font-size: 1.2em;
 }
 
 .actions {

@@ -15,6 +15,12 @@
   margin-top: 22px;
 }
 
+/* Bangla headings need more leading than Latin — the taller glyphs and
+   vowel-signs crowd otherwise. */
+:global([lang="bn"]) .title {
+  line-height: 1.6;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -31,13 +31,21 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Bangla content: newspaper-style serif with roomier lines. */
+/* Self-hosted Bangla UI font. */
+@font-face {
+  font-family: "SolaimanLipi";
+  src: url("/fonts/solaimanlipi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bangla content renders in SolaimanLipi with roomier lines. */
 [lang="bn"],
 [lang="bn"] h1,
 [lang="bn"] h2,
 [lang="bn"] h3 {
-  font-family: var(--font-bangla), Helmet, Freesans, Helvetica, Arial,
-    sans-serif;
+  font-family: "SolaimanLipi", sans-serif;
 }
 
 /* Bangla body text renders a size up from the site's English default —

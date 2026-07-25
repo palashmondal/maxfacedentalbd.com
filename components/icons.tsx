@@ -167,4 +167,6 @@ export const serviceIcons: Record<string, (p: IconProps) => React.ReactNode> = {
   microscope: MicroscopeIcon,
   medal: MedalIcon,
   person: PersonIcon,
+  gradcap: GradCapIcon,
+  money: MoneyIcon,
 };

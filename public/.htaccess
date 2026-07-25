@@ -16,6 +16,23 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{THE_REQUEST} \s/([^?\s]+)\.html[?\s] [NC]
 RewriteRule ^ /%1/ [R=301,L]
 
+# --- Bilingual migration: old root-level URLs -> /en or /bn ------------------
+# The site is now served under /en and /bn. These 301s move the previously
+# indexed single-language URLs to their new homes. "/" stays as the language
+# gate (client-side redirect to /bn by default, or the visitor's saved choice).
+
+# Bangla blog posts moved to /bn/blog/…
+RewriteRule ^blog/(bleeding-gums-warning-bangla|diabetes-dental-care-bangla|milk-teeth-care-bangla|paan-jorda-mouth-cancer-bangla|pregnancy-dental-treatment-bangla|root-canal-cost-misconceptions-bangla|scaling-myths-bangla|teeth-whitening-safe-way-bangla|toothache-emergency-solution-bangla|wisdom-tooth-pain-bangla)/?$ /bn/blog/$1/ [R=301,L]
+
+# Blog index + every other (English) post moved to /en/blog/…
+RewriteRule ^blog/?$ /en/blog/ [R=301,L]
+RewriteRule ^blog/(.+)$ /en/blog/$1 [R=301,L]
+
+# Standalone pages moved under /en/
+RewriteRule ^privacy-policy/?$ /en/privacy-policy/ [R=301,L]
+RewriteRule ^(services|contact|appointment|doctor)/?$ /en/$1/ [R=301,L]
+# ---------------------------------------------------------------------------
+
 # Long cache for fingerprinted build assets; modest cache for images
 <IfModule mod_expires.c>
   ExpiresActive On

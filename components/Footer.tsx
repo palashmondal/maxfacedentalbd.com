@@ -6,8 +6,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SubscribeModal from "./SubscribeModal";
 import { PhoneIcon, MailIcon, PinIcon } from "./icons";
-import { site, footerLinks } from "@/lib/site";
+import { site } from "@/lib/site";
 import { subscribeToMailchimp } from "@/lib/mailchimp";
+import { localizedHref } from "@/lib/i18n/href";
+import { tmpl } from "@/lib/i18n/template";
+import type { Dictionary, Locale } from "@/lib/i18n";
 import styles from "./Footer.module.css";
 
 const socials = [
@@ -28,8 +31,19 @@ const socials = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({
+  lang,
+  dict,
+  doctorName,
+  subscribeModal,
+}: {
+  lang: Locale;
+  dict: Dictionary["footer"];
+  doctorName: string;
+  subscribeModal: Dictionary["subscribeModal"];
+}) {
   const pathname = usePathname();
+  const home = `/${lang}`;
   const [thanksEmail, setThanksEmail] = useState<string | null>(null);
   const [subscribeError, setSubscribeError] = useState("");
   const [pending, setPending] = useState(false);
@@ -62,7 +76,7 @@ export default function Footer() {
       form.reset();
       setThanksEmail(email);
     } else {
-      setSubscribeError(result.msg || "Something went wrong. Please try again.");
+      setSubscribeError(result.msg || dict.subscribeError);
     }
   };
 
@@ -71,10 +85,10 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.subscribeBar}>
           <Link
-            href="/"
+            href={home}
             className={styles.brand}
             onClick={(e) => {
-              if (pathname === "/") {
+              if (pathname === home || pathname === `${home}/`) {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }
@@ -87,19 +101,21 @@ export default function Footer() {
               height={50}
             />
           </Link>
-          <h2 className={styles.subscribeTitle}>
-            Subscribe for Free Dental Tips
-          </h2>
+          <h2 className={styles.subscribeTitle}>{dict.subscribeTitle}</h2>
           <div className={styles.subscribeCell}>
             <form className={styles.subscribeForm} onSubmit={subscribe}>
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email address"
+                placeholder={dict.subscribePlaceholder}
                 required
                 disabled={pending}
               />
-              <button type="submit" aria-label="Subscribe" disabled={pending}>
+              <button
+                type="submit"
+                aria-label={dict.subscribeAria}
+                disabled={pending}
+              >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round">
                   <path d="M21.5 2.5 13 11m8.5-8.5-6 19-3.5-8.5m9.5-10.5-19 6 8.5 3.5" />
                 </svg>
@@ -125,9 +141,10 @@ export default function Footer() {
               <span>{site.address}</span>
             </p>
             <p>
-              Comprehensive dental services designed to create confident smiles
-              through personalized care at <strong>{site.name}</strong> with{" "}
-              <strong>{site.doctor}</strong>.
+              {tmpl(dict.about, {
+                name: <strong>{site.name}</strong>,
+                doctor: <strong>{doctorName}</strong>,
+              })}
             </p>
             <div className={styles.socials}>
               {socials.map((s) => (
@@ -147,22 +164,22 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3>Quick Links</h3>
+            <h3>{dict.quickLinksTitle}</h3>
             <ul className={styles.links}>
-              {footerLinks.quickLinks.map((l) => (
+              {dict.quickLinks.map((l) => (
                 <li key={l.label}>
-                  <Link href={l.href}>{l.label}</Link>
+                  <Link href={localizedHref(lang, l.href)}>{l.label}</Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3>Our Services</h3>
+            <h3>{dict.servicesTitle}</h3>
             <ul className={styles.links}>
-              {footerLinks.services.map((s) => (
+              {dict.services.map((s) => (
                 <li key={s}>
-                  <Link href="/#services">{s}</Link>
+                  <Link href={localizedHref(lang, "/#services")}>{s}</Link>
                 </li>
               ))}
             </ul>
@@ -179,9 +196,9 @@ export default function Footer() {
                 <span>{site.notify.to}</span>
               </a>
             </div>
-            <h3>Chamber Working Hours</h3>
+            <h3>{dict.hoursTitle}</h3>
             <ul className={styles.hours}>
-              {footerLinks.hours.map((h) => (
+              {dict.hours.map((h) => (
                 <li key={h.day}>
                   <span>{h.day}</span>
                   <span>{h.time}</span>
@@ -192,8 +209,10 @@ export default function Footer() {
         </div>
 
         <div className={styles.copyright}>
-          Copyright © {site.name} | {new Date().getFullYear()} | All Rights
-          Reserved.
+          {tmpl(dict.copyright, {
+            name: site.name,
+            year: String(new Date().getFullYear()),
+          })}
         </div>
       </div>
 
@@ -201,6 +220,9 @@ export default function Footer() {
         <SubscribeModal
           email={thanksEmail}
           onClose={() => setThanksEmail(null)}
+          doctorName={doctorName}
+          credentials={site.credentials}
+          dict={subscribeModal}
         />
       )}
     </footer>

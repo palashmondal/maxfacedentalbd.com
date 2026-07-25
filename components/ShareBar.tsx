@@ -7,10 +7,11 @@ type Props = {
   url: string;
   title: string;
   tags?: string[];
+  tagsLabel: string;
 };
 
 /** End-of-article row: tag pills on the left, round share buttons on the right. */
-export default function ShareBar({ url, title, tags = [] }: Props) {
+export default function ShareBar({ url, title, tags = [], tagsLabel }: Props) {
   const [copied, setCopied] = useState(false);
 
   const copyLink = async () => {
@@ -31,7 +32,7 @@ export default function ShareBar({ url, title, tags = [] }: Props) {
   return (
     <div className={styles.bar}>
       <div className={styles.tags}>
-        <span className={styles.tagsLabel}>Tags:</span>
+        <span className={styles.tagsLabel}>{tagsLabel}</span>
         {tags.map((tag) => (
           <span key={tag} className={styles.tag}>
             {tag}

@@ -87,6 +87,12 @@
   }
 }
 
+.empty {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-color);
+}
+
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
