@@ -115,7 +115,7 @@
 }
 
 .about p {
-  font-size: 16px;
+  font-size: 16.5px;
   margin-bottom: 18px;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .contact a:first-child {
-  font-size: 22px;
+  font-size: 16.5px;
   font-weight: 600;
   color: var(--white-color);
 }
@@ -226,7 +226,25 @@
   text-align: center;
   color: #ffffffcc;
   padding: 28px 0 34px;
-  font-size: 16px;
+  font-size: 16.5px;
+}
+
+/* Keep every footer heading one size and every footer body text one size in
+   Bangla too — override the global [lang="bn"] p/li 1.2em bump that would
+   otherwise make some items (links, hours, about) larger than the rest. */
+:global([lang="bn"]) .columns h3 {
+  font-size: 22px;
+}
+
+:global([lang="bn"]) .about p,
+:global([lang="bn"]) .links,
+:global([lang="bn"]) .links li,
+:global([lang="bn"]) .links a,
+:global([lang="bn"]) .contact a,
+:global([lang="bn"]) .hours,
+:global([lang="bn"]) .hours li {
+  font-size: 16.5px;
+  line-height: 1.7;
 }
 
 @media (max-width: 1024px) {

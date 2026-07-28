@@ -91,7 +91,7 @@ export default function Header({
           }}
         >
           <Image
-            src="/images/logo-white.png"
+            src={`/images/logo-white-${lang}.png`}
             alt={site.name}
             width={412}
             height={50}

@@ -95,9 +95,9 @@ export default function Footer({
             }}
           >
             <Image
-              src="/images/home-version2-logo-white.png"
+              src={`/images/logo-white-${lang}.png`}
               alt={site.name}
-              width={230}
+              width={412}
               height={50}
             />
           </Link>
@@ -133,16 +133,16 @@ export default function Footer({
           <div className={styles.about}>
             <h3>
               <a href="https://maps.app.goo.gl/NMKCww73ZoPWAtAA7" target="_blank" rel="noopener noreferrer">
-                {site.name}
+                {dict.brand}
               </a>
             </h3>
             <p className={styles.address}>
               <PinIcon size={20} />
-              <span>{site.address}</span>
+              <span>{dict.address}</span>
             </p>
             <p>
               {tmpl(dict.about, {
-                name: <strong>{site.name}</strong>,
+                name: <strong>{dict.brand}</strong>,
                 doctor: <strong>{doctorName}</strong>,
               })}
             </p>
@@ -210,7 +210,7 @@ export default function Footer({
 
         <div className={styles.copyright}>
           {tmpl(dict.copyright, {
-            name: site.name,
+            name: dict.brand,
             year: String(new Date().getFullYear()),
           })}
         </div>

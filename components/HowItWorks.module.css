@@ -57,7 +57,7 @@
 
 .card h3 {
   color: var(--primary-color);
-  font-size: 21px;
+  font-size: 25px;
   padding-bottom: 16px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(22, 26, 45, 0.12);
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--text-color);
 }
 

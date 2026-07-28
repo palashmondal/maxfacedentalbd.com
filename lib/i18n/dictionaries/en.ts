@@ -313,6 +313,9 @@ export const en = {
   },
 
   footer: {
+    brand: "MaxFace Dental Care",
+    address:
+      "411/B, Malibagh Chowdhury Para Road, Dhaka-1219 (Inside Nirvana Health Care)",
     subscribeTitle: "Subscribe for Free Dental Tips",
     subscribePlaceholder: "Enter your email address",
     subscribeError: "Something went wrong. Please try again.",

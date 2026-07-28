@@ -7,7 +7,7 @@
     var(--primary-color) 0%,
     var(--accent-color) 174.98%
   );
-  padding: 150px 0 70px;
+  padding: 150px 0 0;
   overflow: visible;
 }
 
