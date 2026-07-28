@@ -300,7 +300,7 @@ export const bn: Dictionary = {
     hoursTitle: "খোলার সময়",
     hoursLines: ["শনিবার – বৃহস্পতিবার (সন্ধ্যা ৬টা – রাত ১০টা)", "শুক্রবার (বন্ধ)"],
     mapTitle: "গুগল ম্যাপে {name}-এর অবস্থান",
-    formTitle: "অ্যাপয়েন্টমেন্ট নিন",
+    formTitle: "ডাক্তার বুক করুন",
     namePlaceholder: "নাম",
     emailPlaceholder: "ই-মেইল",
     phonePlaceholder: "1XXX-XXXXXX",
