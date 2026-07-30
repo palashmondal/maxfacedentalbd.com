@@ -6,12 +6,11 @@ import Header from "@/components/Header";
 import PageHero from "@/components/PageHero";
 import BlogIndex from "@/components/BlogIndex";
 import Footer from "@/components/Footer";
-import { posts } from "@/lib/blog";
 import { isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import { localizedHref } from "@/lib/i18n/href";
 import { pageMetadata } from "@/lib/i18n/metadata";
-import { postsForLang } from "@/lib/i18n/posts";
+import { articlesForLang } from "@/lib/i18n/posts";
 import styles from "./blog.module.css";
 
 export async function generateMetadata({
@@ -38,7 +37,7 @@ export default async function BlogPage({
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const d = getDictionary(lang);
-  const localePosts = postsForLang(posts, lang);
+  const localePosts = articlesForLang(lang);
 
   return (
     <>

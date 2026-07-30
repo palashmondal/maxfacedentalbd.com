@@ -1583,6 +1583,64 @@ export const posts: BlogPost[] = [
     takeaway:
       "After any hard impact to the face, don't just treat the visible cut and go home — a jaw or cheekbone fracture can hide behind swelling with no open wound at all. If your bite feels different after an accident, get an X-ray the same day. Maxface Dental Care's Oral & Maxillofacial Surgery team handles facial trauma from assessment through to recovery — call us immediately after any road accident involving the face or jaw.",
   },
+  {
+    slug: "scaling-professional-teeth-cleaning-myths-facts",
+    title: "Scaling (Professional Teeth Cleaning): Myths vs Facts",
+    excerpt:
+      "\"Scaling makes your teeth loose and thin\" is one of the most repeated warnings in Bangladeshi households — and it keeps people away from the one visit that actually protects their gums. Here's what scaling really does.",
+    category: "Preventive Care",
+    date: "2026-07-30",
+    readTime: "5 min read",
+    image: "/images/blog/gum-care.jpg",
+    imageAlt: "Dentist holding periodontal scaling instruments used to clean teeth",
+    intro: [
+      "Ask a patient in our chamber why they've never had their teeth professionally cleaned, and the answer is almost always the same: someone — an uncle, a neighbour, a co-worker — warned them that scaling wears down the teeth, makes them loose, or opens up gaps between them. So they skip it, sometimes for years, and only come in once a tooth is already wobbling.",
+      "That fear is understandable, but it has the story backwards. Scaling doesn't damage healthy teeth — it removes the one thing that's already damaging them quietly in the background: hardened plaque sitting along and under the gumline.",
+    ],
+    sections: [
+      {
+        heading: "What scaling actually removes",
+        paragraphs: [
+          "Plaque is the soft, sticky film of bacteria that builds up on teeth every day — this is what your toothbrush is designed to clear. Left in place for a few days, it hardens into calculus (also called tartar): a rough, cement-like deposit that no amount of brushing can remove, because it has essentially bonded to the tooth surface.",
+          "Scaling uses a fine ultrasonic vibration (and hand instruments for tight spots) to break this hardened tartar off the tooth and gumline. It cannot cut, thin, or reshape enamel — it isn't designed to, and it physically isn't capable of it. Every dental body worldwide that certifies the procedure — including the ones used to train dentists in Bangladesh — teaches scaling as a safe, non-invasive routine cleaning, not a treatment that removes tooth structure.",
+        ],
+      },
+      {
+        heading: "Why teeth can feel 'looser' or gappier right after",
+        paragraphs: [
+          "This is where the myth actually comes from, and the real explanation is almost the opposite of what people fear. Tartar builds up between and around teeth over months or years, quietly pushing the gum away and filling in small gaps. When it's removed, the gum and the true shape of the tooth are revealed for the first time — the gap was already there, just hidden under a layer of buildup.",
+          "Mild sensitivity for a few days afterward is normal too. The tooth root has been covered by tartar for so long that it reacts briefly to hot, cold, or cold air once exposed — a sensitivity toothpaste and a week or two usually settles it completely. None of this means the tooth has been weakened.",
+        ],
+      },
+      {
+        heading: "What happens if you keep skipping it",
+        list: [
+          "Bacteria trapped in tartar keep the gums chronically inflamed, which is what actually causes bleeding — not the brushing",
+          "Inflamed gums slowly pull away from the tooth, forming pockets where more bacteria collect",
+          "Left untreated, this progresses to bone loss around the root — the real reason otherwise healthy teeth eventually become loose and are lost",
+          "Persistent bad breath that no mouthwash fully covers is often tartar and gum inflammation, not something you ate",
+        ],
+        paragraphs: [
+          "The World Health Organization's 2022 Global Oral Health Status Report estimates that severe gum disease affects close to one in five adults worldwide, and it remains one of the leading causes of adult tooth loss — almost always because plaque and tartar were left to build up for years, not because of a scaling visit.",
+        ],
+      },
+      {
+        heading: "Why Bangladeshi mouths often need it more, not less",
+        paragraphs: [
+          "Paan, zarda, gul, and sweetened cha taken several times a day all add to faster tartar buildup and staining — paan and zarda in particular leave a rough, dark deposit that traps plaque even more effectively than tartar alone. For regular users, calculus can build up in months, not years, which is exactly why the chamber sees so many badly infected gums in people who never had a single cleaning.",
+          "For most adults, scaling once or twice a year is enough. If you use paan, zarda, gul, or any tobacco product, have diabetes, wear braces, or already have gum disease, your dentist may recommend it every three to four months instead.",
+        ],
+      },
+      {
+        heading: "What an actual scaling visit involves",
+        paragraphs: [
+          "A routine scaling session takes roughly 20–30 minutes, causes little to no pain for most patients, and needs no anaesthesia unless the gums are already badly inflamed. Afterward, teeth typically feel noticeably smoother and look visibly cleaner along the gumline — that's the tartar gone, not enamel lost.",
+        ],
+      },
+    ],
+    takeaway:
+      "Scaling doesn't wear your teeth down — the tartar it removes is what was wearing your gums down all along, silently, for months. If it's been over a year since your last cleaning, book a scaling appointment at Maxface Dental Care in Malibagh and let a hygienist show you what's actually under that buildup.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1620,6 +1678,7 @@ const postTags: Record<string, string[]> = {
   "dental-emergency-first-aid-before-the-chamber": ["Dental Emergency", "First Aid", "Patient Guide"],
   "recurring-mouth-ulcers-causes-treatment": ["Mouth Ulcers", "Oral Health", "Patient Guide"],
   "jaw-fracture-facial-injury-road-accident-bangladesh": ["Facial Trauma", "Oral Surgery", "Road Accidents"],
+  "scaling-professional-teeth-cleaning-myths-facts": ["Scaling", "Gum Care", "Preventive Care"],
 };
 
 export function getPostTags(post: BlogPost): string[] {

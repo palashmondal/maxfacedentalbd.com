@@ -9,19 +9,19 @@ import RelatedSlider from "@/components/RelatedSlider";
 import ShareBar from "@/components/ShareBar";
 import Footer from "@/components/Footer";
 import CreativeButton from "@/components/CreativeButton";
-import { posts, getPost, getPostTags, formatPostDate } from "@/lib/blog";
+import { getPostTags, formatPostDate } from "@/lib/blog";
 import { site } from "@/lib/site";
 import { isLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import { localizedHref } from "@/lib/i18n/href";
 import { fill, tmpl } from "@/lib/i18n/template";
-import { postsForLang, postLocale } from "@/lib/i18n/posts";
+import { getArticle, articlesForLang, articleParams } from "@/lib/i18n/posts";
 import styles from "./article.module.css";
 
 export function generateStaticParams() {
-  // Enumerate the full {lang, slug} set so each post builds only under its own
-  // language (required, and unambiguous, for `output: export`).
-  return posts.map((post) => ({ lang: postLocale(post), slug: post.slug }));
+  // Every article is generated under BOTH locales (shared slug), so /en and
+  // /bn show the identical set — required for `output: export`.
+  return articleParams();
 }
 
 export async function generateMetadata({
@@ -31,7 +31,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang, slug } = await params;
   if (!isLocale(lang)) return {};
-  const post = getPost(slug);
+  const post = getArticle(slug, lang);
   if (!post) return {};
   const d = getDictionary(lang);
   return {
@@ -43,7 +43,14 @@ export async function generateMetadata({
       "dental care Bangladesh",
       "dentist Dhaka",
     ],
-    alternates: { canonical: `/${lang}/blog/${post.slug}/` },
+    alternates: {
+      canonical: `/${lang}/blog/${post.slug}/`,
+      languages: {
+        en: `/en/blog/${post.slug}/`,
+        bn: `/bn/blog/${post.slug}/`,
+        "x-default": `/bn/blog/${post.slug}/`,
+      },
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -62,12 +69,11 @@ export default async function BlogPostPage({
 }) {
   const { lang, slug } = await params;
   if (!isLocale(lang)) notFound();
-  const post = getPost(slug);
-  // Only serve a post under its own language.
-  if (!post || postLocale(post) !== lang) notFound();
+  const post = getArticle(slug, lang);
+  if (!post) notFound();
 
   const d = getDictionary(lang);
-  const localePosts = postsForLang(posts, lang);
+  const localePosts = articlesForLang(lang);
 
   // Same category first, then the rest — the slider shows them all.
   const related = [

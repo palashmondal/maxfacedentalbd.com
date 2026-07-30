@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
-import { posts } from "@/lib/blog";
 import { locales } from "@/lib/i18n/config";
-import { postLocale } from "@/lib/i18n/posts";
+import { blogArticleSlugs } from "@/lib/i18n/posts";
 
 const BASE = "https://maxfacedentalbd.com";
 
@@ -36,14 +35,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Each post lives under its own language only — no cross-language alternate.
-  for (const post of posts) {
-    entries.push({
-      url: `${BASE}/${postLocale(post)}/blog/${post.slug}/`,
-      lastModified: new Date(`${post.date}T00:00:00`),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    });
+  // Each article exists in both languages under the same slug, with hreflang.
+  for (const { slug, date } of blogArticleSlugs) {
+    for (const lang of locales) {
+      entries.push({
+        url: `${BASE}/${lang}/blog/${slug}/`,
+        lastModified: new Date(`${date}T00:00:00`),
+        changeFrequency: "yearly",
+        priority: 0.6,
+        alternates: {
+          languages: {
+            en: `${BASE}/en/blog/${slug}/`,
+            bn: `${BASE}/bn/blog/${slug}/`,
+          },
+        },
+      });
+    }
   }
 
   return entries;

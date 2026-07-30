@@ -43,14 +43,35 @@
     linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.55) 80%, rgba(0, 0, 0, 0.95) 100%),
     url("/images/feature-image-2-metal.jpg") center / cover no-repeat;
   justify-content: flex-end;
-  padding: 36px;
+  padding: 36px 20px;
+}
+
+/* Frosted glass caption box shared by the three bento photo titles:
+   semi-transparent gradient, soft blur, rounded corners, white text. */
+.photoTitle,
+.patientTitle,
+.adultTitle {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0.06)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  padding: 16px 20px 6px;
+  box-shadow: 0 8px 24px rgba(8, 10, 24, 0.18);
+  /* Each caption spans 80% of its image/card width. */
+  width: 80%;
 }
 
 .photoTitle {
   color: var(--white-color);
   font-size: 24px;
-  max-width: 300px;
   margin-top: auto;
+  /* Full width of the card; 20px left/right padding from the shared rule. */
+  width: 100%;
 }
 
 .tags {
@@ -92,10 +113,11 @@
 .patientTitle {
   color: var(--white-color);
   font-size: 24px;
-  max-width: 300px;
   position: absolute;
   bottom: 36px;
-  left: 36px;
+  left: 20px;
+  right: 20px;
+  width: auto;
   z-index: 2;
 }
 
@@ -121,8 +143,9 @@
   margin-top: auto;
   position: absolute;
   bottom: 24px;
-  left: 24px;
-  right: 24px;
+  left: 20px;
+  right: 20px;
+  width: auto;
   z-index: 2;
 }
 

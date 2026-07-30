@@ -4,6 +4,18 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add scaling (professional teeth cleaning) blog post, English + Bangla
+- New bilingual post: "Scaling (Professional Teeth Cleaning): Myths vs
+  Facts" (Preventive Care), debunking the widespread Bangladeshi belief
+  that scaling loosens or thins teeth, explaining plaque vs. hardened
+  tartar in plain terms, and citing the WHO 2022 Global Oral Health Status
+  Report on gum disease prevalence
+- Covers why paan, zarda, gul and sweetened cha speed up tartar buildup
+  and staining, and how often scaling is needed for regular users
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add jaw fracture / facial trauma blog post
 - New post: "Jaw Fracture After a Road Accident: What to Do in the First
   Hour" (Oral Surgery), covering Dhaka road-accident context, first-aid

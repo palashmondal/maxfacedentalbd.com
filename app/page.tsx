@@ -18,28 +18,44 @@ export default function RootPage() {
   return (
     <>
       <RootRedirect />
+      <style>{`@keyframes mfSpin{to{transform:rotate(360deg)}}`}</style>
       <main
         style={{
-          minHeight: "70vh",
+          position: "fixed",
+          inset: 0,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: "12px",
-          textAlign: "center",
-          padding: "40px 20px",
+          gap: "20px",
+          background: "#161a2d",
         }}
+        aria-busy="true"
+        aria-label="Loading"
       >
-        <p>MaxFace Dental Care — Malibagh, Dhaka</p>
-        <p>
-          <Link href="/bn/" style={{ textDecoration: "underline" }}>
-            বাংলা
-          </Link>
-          {"  ·  "}
-          <Link href="/en/" style={{ textDecoration: "underline" }}>
-            English
-          </Link>
-        </p>
+        <span
+          style={{
+            width: "44px",
+            height: "44px",
+            borderRadius: "50%",
+            border: "3px solid rgba(255,255,255,0.22)",
+            borderTopColor: "#316dff",
+            animation: "mfSpin 0.8s linear infinite",
+          }}
+        />
+        {/* Crawlers & no-JS visitors get real language links; JS visitors are
+            redirected before this ever paints for long. */}
+        <noscript>
+          <p style={{ color: "#ffffffcc", textAlign: "center" }}>
+            <Link href="/bn/" style={{ color: "#fff" }}>
+              বাংলা
+            </Link>
+            {"  ·  "}
+            <Link href="/en/" style={{ color: "#fff" }}>
+              English
+            </Link>
+          </p>
+        </noscript>
       </main>
     </>
   );
