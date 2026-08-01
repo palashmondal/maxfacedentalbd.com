@@ -4,7 +4,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { site } from "@/lib/site";
-import type { Dictionary } from "@/lib/i18n";
+import type { Dictionary, Locale } from "@/lib/i18n";
+import { fill, localeDigits } from "@/lib/i18n/template";
 import styles from "./Testimonials.module.css";
 
 import "swiper/css";
@@ -12,10 +13,15 @@ import "swiper/css/pagination";
 
 export default function Testimonials({
   dict,
+  lang,
 }: {
   dict: Dictionary["testimonials"];
+  lang: Locale;
 }) {
   const items = dict.items;
+  const reviewsLabel = fill(dict.reviewsLabel, {
+    count: localeDigits(site.reviewsCount, lang),
+  });
   return (
     <section className={styles.section}>
       <div className="container">
@@ -81,7 +87,7 @@ export default function Testimonials({
               width={28}
               height={28}
             />
-            <strong>{site.rating}/5</strong>
+            <strong>{localeDigits(`${site.rating}/5`, lang)}</strong>
             <span className={styles.googleStars}>★★★★★</span>
           </div>
           <a
@@ -90,7 +96,7 @@ export default function Testimonials({
             rel="noopener noreferrer"
             className={styles.reviewsBtn}
           >
-            {dict.reviewsLabel}
+            {reviewsLabel}
             <span className={styles.reviewsBtnArrow} aria-hidden>
               →
             </span>

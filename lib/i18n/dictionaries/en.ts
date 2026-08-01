@@ -263,7 +263,7 @@ export const en = {
     eyebrow: "Testimonials",
     titleLines: ["5/5 ★ Rated on Google ★", "Happy Patients"],
     starsAria: "5 out of 5 stars",
-    reviewsLabel: "30 reviews",
+    reviewsLabel: "{count} reviews",
     reviewCta: {
       title: "Loved your visit?",
       text: "Your review helps neighbours in Malibagh & Khilgaon find trustworthy dental care.",

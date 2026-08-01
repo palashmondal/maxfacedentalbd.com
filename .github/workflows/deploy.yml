@@ -26,6 +26,12 @@ jobs:
         run: npm install
 
       - name: Build static export
+        env:
+          # Used by scripts/fetch-google-rating.mjs (npm prebuild) to bake the
+          # live Google Business rating into the export. If unset, the build
+          # falls back to the committed lib/google-rating.json.
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_PLACE_ID: ${{ secrets.GOOGLE_PLACE_ID }}
         run: npm run build
 
       - name: Install lftp

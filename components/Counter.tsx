@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { localeDigits } from "@/lib/i18n/template";
 
 type Props = {
   to: number;
@@ -11,6 +12,8 @@ type Props = {
   duration?: number;
   /** Drop trailing ".0" once the count reaches its final whole-number value. */
   snapToWholeAtEnd?: boolean;
+  /** Locale for digit rendering — "bn" shows Bangla numerals. */
+  lang?: string;
 };
 
 /** Count-up number that animates when scrolled into view (replaces jquery-numerator). */
@@ -22,6 +25,7 @@ export default function Counter({
   className,
   duration = 2000,
   snapToWholeAtEnd = false,
+  lang = "en",
 }: Props) {
   const ref = useRef<HTMLSpanElement>(null);
 
@@ -47,7 +51,7 @@ export default function Counter({
           }
           const label =
             t >= 1 && snapToWholeAtEnd ? to.toFixed(0) : value.toFixed(decimals);
-          el.textContent = label + suffix;
+          el.textContent = localeDigits(label + suffix, lang);
           if (t < 1) raf = requestAnimationFrame(tick);
         };
         raf = requestAnimationFrame(tick);
@@ -59,12 +63,11 @@ export default function Counter({
       observer.disconnect();
       cancelAnimationFrame(raf);
     };
-  }, [to, from, decimals, suffix, duration, snapToWholeAtEnd]);
+  }, [to, from, decimals, suffix, duration, snapToWholeAtEnd, lang]);
 
   return (
     <span ref={ref} className={className}>
-      {from.toFixed(decimals)}
-      {suffix}
+      {localeDigits(from.toFixed(decimals) + suffix, lang)}
     </span>
   );
 }

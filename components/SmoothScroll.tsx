@@ -21,7 +21,9 @@ export default function SmoothScroll() {
       if (cancelled) return;
 
       lenis = new Lenis({
-        lerp: 0.1,
+        // Higher lerp = the page tracks the wheel more tightly (snappier,
+        // less inertial drift). 0.1 felt sluggish; 0.14 is a bit faster.
+        lerp: 0.14,
         // Smooth-scroll plain "#hash" links (hero, section notes) too.
         anchors: true,
       });

@@ -27,3 +27,12 @@ export function fill(text: string, map: Record<string, string>): string {
     key in map ? map[key] : whole,
   );
 }
+
+const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
+
+/** Render digits in the reader's script — Bangla numerals for `bn`, ASCII
+ *  otherwise. Keeps build-time numbers (e.g. the Google review count) localized. */
+export function localeDigits(value: string | number, lang: string): string {
+  const s = String(value);
+  return lang === "bn" ? s.replace(/[0-9]/g, (d) => BN_DIGITS[Number(d)]) : s;
+}

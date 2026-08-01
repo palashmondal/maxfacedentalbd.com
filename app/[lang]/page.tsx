@@ -56,14 +56,14 @@ export default async function Home({
         switcher={d.switcher}
       />
       <main>
-        <Hero dict={d.hero} doctorName={d.doctorName} />
+        <Hero dict={d.hero} doctorName={d.doctorName} lang={lang} />
         <IntroBento dict={d.introBento} />
         <WhyMaxface dict={d.why} />
         <AboutDoctor dict={d.about} />
         <HowItWorks dict={d.services} />
         <BeforeAfter dict={d.beforeAfter} />
         <Achievements dict={d.achievements} />
-        <Testimonials dict={d.testimonials} />
+        <Testimonials dict={d.testimonials} lang={lang} />
         <Appointment dict={d.appointment} />
       </main>
       <Footer

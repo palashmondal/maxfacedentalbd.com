@@ -6,7 +6,7 @@ import RotatingBadge from "./RotatingBadge";
 import StarRating from "./StarRating";
 import { site } from "@/lib/site";
 import { tmpl, fill } from "@/lib/i18n/template";
-import type { Dictionary } from "@/lib/i18n";
+import type { Dictionary, Locale } from "@/lib/i18n";
 import styles from "./Hero.module.css";
 
 const avatars = [1, 2, 3, 4].map((n) => `/images/author-${n}.jpg`);
@@ -14,9 +14,11 @@ const avatars = [1, 2, 3, 4].map((n) => `/images/author-${n}.jpg`);
 export default function Hero({
   dict,
   doctorName,
+  lang,
 }: {
   dict: Dictionary["hero"];
   doctorName: string;
+  lang: Locale;
 }) {
   return (
     <section id="home" className={styles.hero}>
@@ -71,12 +73,13 @@ export default function Hero({
                 <div className={styles.ratingRow}>
                   <Counter
                     from={1}
-                    to={5}
+                    to={Number(site.rating)}
                     decimals={1}
                     suffix="/5"
-                    snapToWholeAtEnd
+                    snapToWholeAtEnd={Number.isInteger(Number(site.rating))}
                     duration={3200}
                     className={styles.rating}
+                    lang={lang}
                   />
                   <StarRating className={styles.stars} />
                 </div>

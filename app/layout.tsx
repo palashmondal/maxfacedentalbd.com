@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
 import Script from "next/script";
 import SmoothScroll from "@/components/SmoothScroll";
+import { site } from "@/lib/site";
 import "lenis/dist/lenis.css";
 import "./globals.css";
 
@@ -126,9 +127,11 @@ const jsonLd = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
+    // Live values from the Google Business listing (see lib/site.ts) — this is
+    // the star rating Google may show in search results, so keep it accurate.
+    ratingValue: site.rating,
     bestRating: "5",
-    ratingCount: "30",
+    ratingCount: String(site.reviewsCount),
   },
 };
 

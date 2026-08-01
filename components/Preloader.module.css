@@ -2,7 +2,8 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: var(--primary-color);
+  /* Subtle radial lift so the mark reads as lit from centre. */
+  background: radial-gradient(circle at 50% 45%, #1d2340 0%, var(--primary-color) 62%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,17 +16,93 @@
   pointer-events: none;
 }
 
-.spinner {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: 3px solid #ffffff2b;
-  border-top-color: var(--accent-color);
-  animation: spin 0.9s linear infinite;
+.stage {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes spin {
+/* The brand mark — gently breathing in place. */
+.mark {
+  position: relative;
+  z-index: 2;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 26px rgba(0, 0, 0, 0.45));
+  animation: pl-breathe 2.4s ease-in-out infinite;
+}
+
+/* Warm glow behind the mark. */
+.glow {
+  position: absolute;
+  inset: 16px;
+  z-index: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(217, 164, 65, 0.38) 0%, transparent 70%);
+  animation: pl-pulse 2.4s ease-in-out infinite;
+}
+
+/* Thin gold arc orbiting just outside the mark's own ring. */
+.ring {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 64%,
+    #e7c069 84%,
+    #d9a441 100%
+  );
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 3px),
+    #000 calc(100% - 3px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 3px),
+    #000 calc(100% - 3px)
+  );
+  animation: pl-spin 1.15s linear infinite;
+}
+
+@keyframes pl-spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes pl-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes pl-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark,
+  .glow,
+  .ring {
+    animation: none;
   }
 }

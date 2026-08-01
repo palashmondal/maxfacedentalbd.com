@@ -1,6 +1,11 @@
 /** Language-neutral site constants (contact details, URLs, recipients).
  *  Translatable UI text lives in lib/i18n/dictionaries/{en,bn}.ts. */
 
+// Fetched from the live Google Business listing at build time by
+// scripts/fetch-google-rating.mjs (npm "prebuild"). The committed JSON is the
+// fallback if that fetch is skipped or fails, so the rating never blanks out.
+import googleRating from "./google-rating.json";
+
 export const site = {
   name: "MaxFace Dental Care",
   doctor: "Dr. Yoshita Mazumder",
@@ -10,8 +15,9 @@ export const site = {
   whatsapp: "8801344473973",
   address:
     "411/B, Malibagh Chowdhury Para Road, Dhaka-1219 (Inside Nirvana Health Care)",
-  rating: "5",
-  reviews: "30 reviews",
+  // Live Google Business rating + review count (see google-rating.json above).
+  rating: googleRating.rating,
+  reviewsCount: googleRating.reviewsCount,
   googleReviewUrl: "https://maps.app.goo.gl/iuEprZ4gZawq8gNEA",
   // Direct "write a review" link — opens the rating box immediately.
   googleWriteReviewUrl: "https://g.page/r/CfWI2MRDFkeBEBM/review",
