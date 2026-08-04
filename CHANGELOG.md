@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add Ramadan fasting and oral health blog post, English + Bangla
+- New bilingual post: "Fasting in Ramadan and Your Teeth: A Dentist's Guide
+  for Bangladeshi Patients" (Patient Guide), answering the two questions
+  patients ask every Ramadan — does brushing break the fast, and why does
+  breath get worse by afternoon — with plain dental facts, deferring actual
+  fiqh rulings to religious guidance
+- Covers when routine treatment (fillings, scaling, injections) is fine
+  during fasting hours vs. when bleeding-risk procedures should wait for
+  iftar, why a severe toothache/infection should never be delayed for Eid,
+  and the iftar/suhoor cavity risk from khejur, piyaju and jilapi
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add scaling (professional teeth cleaning) blog post, English + Bangla
 - New bilingual post: "Scaling (Professional Teeth Cleaning): Myths vs
   Facts" (Preventive Care), debunking the widespread Bangladeshi belief

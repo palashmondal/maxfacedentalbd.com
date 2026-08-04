@@ -1641,6 +1641,69 @@ export const posts: BlogPost[] = [
     takeaway:
       "Scaling doesn't wear your teeth down — the tartar it removes is what was wearing your gums down all along, silently, for months. If it's been over a year since your last cleaning, book a scaling appointment at Maxface Dental Care in Malibagh and let a hygienist show you what's actually under that buildup.",
   },
+  {
+    slug: "ramadan-fasting-oral-health-bangladesh",
+    title: "Fasting in Ramadan and Your Teeth: A Dentist's Guide for Bangladeshi Patients",
+    excerpt:
+      "Does brushing break your fast? Why does your mouth feel worse by afternoon during Roza? Here's what's medically true about fasting and dental care — and when a toothache can't wait for Iftar.",
+    category: "Patient Guide",
+    date: "2026-08-04",
+    readTime: "6 min read",
+    image: "/images/blog/hygiene.jpg",
+    imageAlt: "Toothbrushes in a glass jar on a clean bathroom counter",
+    intro: [
+      "Every Ramadan, the same questions come up in our chamber: is it okay to brush while fasting? Why does my mouth feel so dry and my breath so bad by the afternoon? Can a filling or an extraction wait until after Eid? Patients often delay dental care for the whole month out of caution — sometimes unnecessarily, sometimes at real cost to a tooth that needed attention weeks earlier.",
+      "None of this needs to be confusing. Most day-to-day dental care fits comfortably around a fasting schedule, and knowing what to do — and what genuinely can't wait — makes Ramadan easier on both your teeth and your mind.",
+    ],
+    sections: [
+      {
+        heading: "Does brushing break your fast?",
+        paragraphs: [
+          "This is the single most common question we hear in Ramadan. The dental fact is simple: brushing itself does nothing to your fast. The concern scholars raise is about swallowing — toothpaste, water, or anything else — not the act of brushing. Most Islamic scholars hold that brushing carefully, without swallowing, does not invalidate the fast, and using a miswak while fasting is a practice with long precedent.",
+          "For exact rulings on borderline situations — swallowing a small amount by accident, using flavoured toothpaste, and so on — that is a religious question best answered by your local imam or a fiqh scholar, not your dentist. What we can tell you is the practical, dentist's version: brush gently, spit thoroughly, and avoid swallowing, and you protect both your fast and your teeth.",
+        ],
+      },
+      {
+        heading: "Why your mouth feels worse by the afternoon",
+        paragraphs: [
+          "Saliva does more than keep your mouth comfortable — it constantly washes away food debris and bacteria and neutralises the acid they produce. During a long fast, saliva flow naturally drops, especially by mid-afternoon, so bacteria build up undisturbed and volatile sulphur compounds — the actual cause of bad breath — accumulate faster than usual. This is a normal, temporary effect of fasting, not a sign anything is wrong.",
+          "It becomes a problem worth checking when it doesn't match this pattern — breath that is bad even shortly after suhoor, or bleeding gums alongside it. That points to gum disease or tartar buildup underneath, not just fasting, and a scaling appointment (see our guide on scaling myths) usually resolves it.",
+        ],
+        list: [
+          "Brush and clean between your teeth thoroughly after suhoor, before the fast begins",
+          "Clean your tongue gently with a tongue scraper or your brush — most bad-breath bacteria live there, not on the teeth",
+          "Sip enough water between iftar and suhoor to avoid dehydration, which worsens dry mouth",
+          "Cut back on paan, zarda and cigarettes during non-fasting hours in Ramadan — they compound dry-mouth breath significantly",
+        ],
+      },
+      {
+        heading: "When to schedule dental treatment during Ramadan",
+        paragraphs: [
+          "Routine dental work is not off-limits during Ramadan. Examinations, fillings, scaling and even injections of local anaesthesia do not involve swallowing anything and are widely considered acceptable while fasting — dental associations that publish guidance for treating fasting patients agree there is no medical reason to avoid them.",
+          "The one genuine complication is bleeding: swallowing blood is generally considered to break a fast, so procedures likely to bleed — an extraction, deep scaling on inflamed gums, oral surgery — are best scheduled for after iftar, or done carefully with the patient positioned to spit rather than swallow. Tell your dentist you are fasting; a good clinician will simply plan around it.",
+        ],
+      },
+      {
+        heading: "The one thing that should never wait for Eid",
+        paragraphs: [
+          "A severe toothache, a facial swelling, or an infection spreading in the jaw is a medical emergency, fasting or not. Untreated dental infection can spread rapidly and, in serious cases, become dangerous — this is not a risk worth carrying for a month out of religious caution. Islamic teaching itself makes allowance for illness during Ramadan; a dentist can treat the emergency, and any question about the fast itself is between you and your religious guidance, not a reason to delay care.",
+        ],
+      },
+      {
+        heading: "Iftar and suhoor: the hidden cavity risk",
+        paragraphs: [
+          "After twelve-plus hours without food, iftar tables in Bangladesh lean sweet and starchy — khejur (dates), piyaju, jilapi, sweet sherbet — often eaten quickly and in quantity. Dates in particular are naturally sugary and sticky, clinging to teeth far longer than a normal meal would. None of this needs to be avoided, but it does mean your teeth face a concentrated sugar exposure right when saliva flow is only just recovering from the day's fast.",
+        ],
+        list: [
+          "Rinse with water or brush 20–30 minutes after iftar, once the initial rush of eating has settled",
+          "Avoid falling asleep after suhoor without at least rinsing — hours of sugar sitting on teeth overnight is the worst-case scenario for decay",
+          "Where possible, finish iftar with plain water rather than another sweet drink",
+        ],
+      },
+    ],
+    takeaway:
+      "Brushing does not break your fast, and a real toothache should never wait for Eid — the timing of dental care can almost always be adjusted around Ramadan, but the tooth itself can't wait forever. If something is bothering you this Ramadan, book an appointment at Maxface Dental Care in Malibagh; we'll work around your fasting hours, not the other way round.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1679,6 +1742,7 @@ const postTags: Record<string, string[]> = {
   "recurring-mouth-ulcers-causes-treatment": ["Mouth Ulcers", "Oral Health", "Patient Guide"],
   "jaw-fracture-facial-injury-road-accident-bangladesh": ["Facial Trauma", "Oral Surgery", "Road Accidents"],
   "scaling-professional-teeth-cleaning-myths-facts": ["Scaling", "Gum Care", "Preventive Care"],
+  "ramadan-fasting-oral-health-bangladesh": ["Ramadan", "Oral Hygiene", "Patient Guide"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
