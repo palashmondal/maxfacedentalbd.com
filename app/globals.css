@@ -29,6 +29,12 @@
 
 html {
   scroll-behavior: smooth;
+  /* Clip any stray horizontal overflow (e.g. the hero image's translateX
+     nudge / rotating badge) at the viewport. `clip` — not `hidden` — avoids
+     creating a scroll container, so the fixed header and smooth anchor
+     scrolling keep working. Without this, the root gains horizontal scroll
+     and every `margin:0 auto` block drifts right of centre. */
+  overflow-x: clip;
 }
 
 /* Self-hosted Bangla UI font. */
@@ -63,7 +69,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background: var(--secondary-color);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1,

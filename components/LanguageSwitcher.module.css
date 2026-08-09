@@ -32,9 +32,23 @@
   line-height: 1;
 }
 
+/* Short code (EN/BN) shown only on mobile, beside the flag. */
+.short {
+  display: none;
+  line-height: 1;
+}
+
 @media (max-width: 1024px) {
   .switch {
     padding: 8px 12px;
     font-size: 13px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .short {
+    display: inline;
   }
 }

@@ -47,6 +47,9 @@ export default function LanguageSwitcher({
       <span className={styles.label} lang={target}>
         {label}
       </span>
+      <span className={styles.short} aria-hidden>
+        {target.toUpperCase()}
+      </span>
     </button>
   );
 }

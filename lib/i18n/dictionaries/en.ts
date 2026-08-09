@@ -233,11 +233,11 @@ export const en = {
     },
     transformations: [
       { pair: 1, label: "Full-Mouth Rehabilitation" },
-      { pair: 4, label: "Veneers" },
+      { pair: 4, label: "Wisdom Tooth Extraction" },
       { pair: 7, label: "Smile Design" },
       { pair: 2, label: "Teeth Whitening" },
       { pair: 5, label: "Dental Implants" },
-      { pair: 9, label: "Clear Aligners" },
+      { pair: 9, label: "Crowns & Bridges" },
     ],
     resultAlt: "{label} result",
   },
