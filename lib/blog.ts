@@ -1704,6 +1704,78 @@ export const posts: BlogPost[] = [
     takeaway:
       "Brushing does not break your fast, and a real toothache should never wait for Eid — the timing of dental care can almost always be adjusted around Ramadan, but the tooth itself can't wait forever. If something is bothering you this Ramadan, book an appointment at Maxface Dental Care in Malibagh; we'll work around your fasting hours, not the other way round.",
   },
+  {
+    slug: "cracked-tooth-bad-habits-bangladesh",
+    title: "Cracked Tooth Syndrome: The Everyday Habits Silently Fracturing Bangladeshi Teeth",
+    excerpt:
+      "Chewing ice from your water glass, cracking supari with your molars, opening a bottle cap with your teeth — small habits that can fracture a tooth long before it ever hurts.",
+    category: "Restorative Dentistry",
+    date: "2026-08-10",
+    readTime: "6 min read",
+    image: "/images/blog/root-canal.jpg",
+    imageAlt: "Modern dental treatment room with dental chair and equipment",
+    intro: [
+      "Teeth get used as tools more often than people realise: a bottle cap twisted open with the back molars, a stubborn packet torn with the front teeth, a piece of supari (betel nut) cracked directly between the teeth instead of with a shupari-katha (nut cutter). On a hot day, chewing the ice left at the bottom of a glass of water feels harmless. Most of the time, nothing happens. But each of these small impacts can leave a hairline crack in a tooth — invisible, painless, and easy to ignore until it isn't.",
+      "Dentists call this cracked tooth syndrome: a crack too fine to see on an X-ray or in the mirror, but real enough to cause sharp, unpredictable pain. It is one of the more commonly missed problems in dentistry precisely because it hides so well, and in a country where biting hard things is part of daily habit, it is far more common than most patients assume.",
+    ],
+    sections: [
+      {
+        heading: "Why Bangladeshi teeth are especially exposed",
+        paragraphs: [
+          "Some of the most common local habits put direct, repeated stress on the same one or two teeth, every single day.",
+        ],
+        list: [
+          "Chewing ice cubes straight from a glass of water — a common way to cool down in Dhaka's heat and humidity",
+          "Biting supari or betel nut directly with the back teeth instead of crushing it first with a nut cutter",
+          "Opening bottle caps, tearing packets, or snapping thread with the front teeth",
+          "Students biting down on pen caps or pencils during exam stress — HSC and admission-test season sees a visible rise in this habit",
+          "Roadside muri and chanachur that occasionally hide a small stone or hard grain",
+          "Boroi (jujube) and similar fruit eaten quickly, with the hard seed bitten into by accident",
+        ],
+      },
+      {
+        heading: "The tell-tale signs of a cracked tooth",
+        list: [
+          "Sharp pain the instant you bite down on something, which disappears the moment you release the bite — the single most recognisable sign",
+          "Pain that comes from one specific spot when chewing, not the whole mouth",
+          "Sensitivity to cold or sweet that comes and goes unpredictably, without a visible cavity",
+          "No hole or dark spot to see or feel, which makes the problem easy to dismiss as 'nothing'",
+          "In some cases, no pain at all in the early stages, even though the crack is already there",
+        ],
+      },
+      {
+        heading: "Why 'wait and see' backfires",
+        paragraphs: [
+          "A crack in a tooth cannot heal itself the way a cut on skin does. Every time you bite on it, the two sides flex slightly and the crack is driven a little deeper. Left long enough, it can reach the pulp — the nerve and blood vessels inside the tooth — causing infection and the kind of throbbing pain that needs a root canal. In the worst cases, the tooth splits and cannot be saved at all.",
+          "General dental consensus is clear on this: cracked tooth syndrome tends to get worse, not better, without treatment, and the earlier it is caught, the simpler and cheaper the fix.",
+        ],
+      },
+      {
+        heading: "Diagnosis and treatment: what to expect",
+        paragraphs: [
+          "Because a crack often does not show up clearly on a standard X-ray, diagnosis relies on a careful clinical exam: biting on a special stick to reproduce the pain, staining dye that seeps into the crack line, and magnification to spot what the naked eye misses.",
+        ],
+        list: [
+          "A shallow craze line with no real symptoms: often just monitored, or smoothed and bonded",
+          "A confirmed crack causing bite pain: usually treated with a crown, which holds the two sides of the tooth together under the chewing forces that were pulling them apart",
+          "A crack that has reached the nerve: needs root canal treatment first, followed by a crown",
+          "A crack extending below the gumline or splitting the root: unfortunately often means the tooth cannot be saved, and extraction is the only option",
+        ],
+      },
+      {
+        heading: "Protecting your teeth going forward",
+        list: [
+          "Drink your ice, don't chew it — however tempting on a hot afternoon",
+          "Use a proper nut cutter for supari instead of your molars",
+          "Keep scissors or a bottle opener within reach instead of reaching for your teeth",
+          "If you catch yourself biting pens or clenching under stress, mention it at your next check-up — a night guard protects your teeth the same way it protects a jaw joint",
+          "Be extra careful with teeth that already have a large filling or a root canal — they are more brittle and crack more easily than an untouched tooth",
+        ],
+      },
+    ],
+    takeaway:
+      "If biting down on something gives you a sharp, brief pain that a filling or a cavity doesn't explain, don't wait for it to become a root canal — book an assessment at Maxface Dental Care in Malibagh while a crown can still save the tooth.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1743,6 +1815,7 @@ const postTags: Record<string, string[]> = {
   "jaw-fracture-facial-injury-road-accident-bangladesh": ["Facial Trauma", "Oral Surgery", "Road Accidents"],
   "scaling-professional-teeth-cleaning-myths-facts": ["Scaling", "Gum Care", "Preventive Care"],
   "ramadan-fasting-oral-health-bangladesh": ["Ramadan", "Oral Hygiene", "Patient Guide"],
+  "cracked-tooth-bad-habits-bangladesh": ["Cracked Tooth", "Restorative Dentistry", "Tooth Pain"],
 };
 
 export function getPostTags(post: BlogPost): string[] {

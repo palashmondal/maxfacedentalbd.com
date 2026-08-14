@@ -4,6 +4,18 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add cracked tooth syndrome blog post, English + Bangla
+- New bilingual post: "Cracked Tooth Syndrome: The Everyday Habits Silently
+  Fracturing Bangladeshi Teeth" (Restorative Dentistry), covering local
+  habits that fracture teeth — chewing ice from a water glass, biting
+  supari instead of using a nut cutter, opening bottle caps with the
+  teeth, students biting pens during exam stress — plus the classic
+  "sharp pain on release of bite" symptom pattern and the diagnosis/
+  treatment ladder from bonding to crown, root canal, or extraction
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add Ramadan fasting and oral health blog post, English + Bangla
 - New bilingual post: "Fasting in Ramadan and Your Teeth: A Dentist's Guide
   for Bangladeshi Patients" (Patient Guide), answering the two questions
