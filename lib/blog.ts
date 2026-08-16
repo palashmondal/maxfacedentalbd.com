@@ -1776,6 +1776,72 @@ export const posts: BlogPost[] = [
     takeaway:
       "If biting down on something gives you a sharp, brief pain that a filling or a cavity doesn't explain, don't wait for it to become a root canal — book an assessment at Maxface Dental Care in Malibagh while a crown can still save the tooth.",
   },
+  {
+    slug: "dental-crowns-types-cost-lifespan-bangladesh",
+    title: "Dental Crowns in Bangladesh: Types, Real Costs, and How Long They Actually Last",
+    excerpt:
+      "Steel, PFM, or zirconia? A plain-language guide to choosing a dental crown in Dhaka — what each type costs, why cheap ones fail early, and how to make one last for decades.",
+    category: "Restorative Dentistry",
+    date: "2026-08-17",
+    readTime: "6 min read",
+    image: "/images/blog/implants.jpg",
+    imageAlt: "Dental model showing a crown fitted between natural teeth",
+    intro: [
+      "Sooner or later, many patients in Bangladesh hear the same sentence from their dentist: \"apnar ekta crown lagbe\" — you need a crown. It usually comes after a root canal, a large broken filling, or a tooth that has cracked from years of hard chewing. The word alone causes anxiety, mostly because of the price tag, and because the options — steel, porcelain, zirconia — are rarely explained clearly before the bill arrives.",
+      "A crown is simply a cap that covers a damaged tooth completely, restoring its shape and protecting it from further fracture. Which material is right, what it should reasonably cost in a Dhaka chamber, and why a rushed, cheap crown often costs more in the long run — these are the questions worth understanding before you sit in the chair.",
+    ],
+    sections: [
+      {
+        heading: "When a tooth actually needs a crown",
+        paragraphs: [
+          "A crown is not the default treatment for every damaged tooth — a filling is enough for smaller cavities. Dentists recommend a full crown when a tooth has lost too much of its own structure to hold a normal filling safely, or when it needs protection from the everyday force of chewing.",
+        ],
+        list: [
+          "After a root canal — the tooth loses its blood supply and becomes brittle; a crown holds it together under biting pressure",
+          "A large old filling that has cracked or is breaking down at the edges",
+          "A tooth fractured by biting something hard — ice, supari, a stone hidden in muri or chanachur",
+          "A badly discoloured or misshapen front tooth, for appearance as well as function",
+          "Anchoring a bridge, or covering an implant post",
+        ],
+      },
+      {
+        heading: "The three crown types available in Dhaka, honestly compared",
+        paragraphs: [
+          "Almost every chamber in Dhaka offers three broad options, and the price gap between them is the single biggest source of patient confusion.",
+        ],
+        list: [
+          "Metal (stainless steel or chrome-cobalt): the strongest and cheapest option, roughly ৳3,000–5,000 per tooth in most chambers. Rarely used on visible front teeth because of the colour; still a sound, durable choice for a back molar that does the heaviest chewing, or a temporary crown on a child's primary tooth",
+          "PFM (porcelain-fused-to-metal): a metal shell with a tooth-coloured porcelain layer bonded over it, typically ৳6,000–12,000 per tooth. Looks natural at first, but the metal margin at the gumline can show as a thin dark line years later as gums recede — a common complaint among patients who chose PFM for front teeth",
+          "Zirconia (or other all-ceramic): the most costly, generally ৳12,000–25,000 per tooth depending on the lab and brand, but strong, metal-free, and closest to the natural translucency of enamel — the standard recommendation for front teeth and increasingly used for back teeth too",
+        ],
+      },
+      {
+        heading: "Why the cheapest local fix often costs more later",
+        paragraphs: [
+          "Price pressure pushes some patients toward the lowest bidder — sometimes an unlicensed \"dental technician\" rather than a registered dentist. A poorly fitted crown leaves a gap at the margin that food and plaque pack into every day; the tooth underneath can decay quietly, out of sight, until the crown itself needs to be removed and the tooth is worse off than before.",
+          "Betel nut (supari), paan, and zarda chewing add their own local stress: the direct, repeated force on a crowned tooth can loosen a poorly cemented crown or chip a thin porcelain edge faster than normal chewing would.",
+        ],
+      },
+      {
+        heading: "How long a crown should really last",
+        paragraphs: [
+          "Dental associations, including the American Dental Association, generally note that a well-made crown typically lasts 5 to 15 years, and often much longer — 20 to 30 years is realistic — with good oral hygiene and regular check-ups. How long yours lasts depends far more on fit, cementation, and aftercare than on the material alone.",
+          "Night-time teeth grinding (bruxism), which dentists in Dhaka report seeing more often in patients under work or exam stress, is one of the fastest ways to wear down or crack a crown early. If you grind your teeth, mention it before the crown is made — a protective night guard afterward protects the investment.",
+        ],
+      },
+      {
+        heading: "Looking after a crowned tooth",
+        list: [
+          "Brush and floss it exactly like a natural tooth — the gumline around the crown margin is the spot most prone to decay and gum irritation, not the crown surface itself",
+          "Avoid biting ice, hard supari, or bones directly on a crowned tooth, even though it feels strong",
+          "Don't ignore lingering sensitivity to hot or cold weeks after a crown is fitted — it can mean the nerve underneath is under stress and needs a look",
+          "Keep your six-month check-up even after the crown feels fine; a loose margin is far cheaper to re-cement early than to treat after decay sets in underneath",
+        ],
+      },
+    ],
+    takeaway:
+      "A crown is only as good as the fit, the material, and the dentist behind it — the cheapest option in Dhaka is rarely the cheapest choice over ten years. Book a crown consultation with the doctors at Maxface Dental Care in Malibagh, and get a clear, honest recommendation on the material and cost that's right for your tooth.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1816,6 +1882,7 @@ const postTags: Record<string, string[]> = {
   "scaling-professional-teeth-cleaning-myths-facts": ["Scaling", "Gum Care", "Preventive Care"],
   "ramadan-fasting-oral-health-bangladesh": ["Ramadan", "Oral Hygiene", "Patient Guide"],
   "cracked-tooth-bad-habits-bangladesh": ["Cracked Tooth", "Restorative Dentistry", "Tooth Pain"],
+  "dental-crowns-types-cost-lifespan-bangladesh": ["Dental Crowns", "Restorative Dentistry", "Zirconia Crowns"],
 };
 
 export function getPostTags(post: BlogPost): string[] {

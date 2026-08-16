@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add dental crowns blog post, English + Bangla
+- New bilingual post: "Dental Crowns in Bangladesh: Types, Real Costs, and
+  How Long They Actually Last" (Restorative Dentistry), explaining when a
+  crown is actually needed vs. a filling, and an honest comparison of the
+  three materials offered in Dhaka chambers — metal, PFM, and zirconia —
+  with typical local price ranges for each
+- Covers why a poorly fitted crown from an unlicensed technician traps
+  decay under the margin, how supari/paan/zarda chewing and stress-driven
+  bruxism shorten a crown's life, ADA guidance on realistic crown lifespan
+  (5–15 years, often 20–30 with good care), and daily aftercare
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add cracked tooth syndrome blog post, English + Bangla
 - New bilingual post: "Cracked Tooth Syndrome: The Everyday Habits Silently
   Fracturing Bangladeshi Teeth" (Restorative Dentistry), covering local

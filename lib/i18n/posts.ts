@@ -44,6 +44,7 @@ const BN_BY_SLUG: Record<string, string> = {
   "scaling-professional-teeth-cleaning-myths-facts": "scaling-professional-teeth-cleaning-myths-facts-bn",
   "ramadan-fasting-oral-health-bangladesh": "ramadan-fasting-oral-health-bangladesh-bn",
   "cracked-tooth-bad-habits-bangladesh": "cracked-tooth-bad-habits-bangladesh-bn",
+  "dental-crowns-types-cost-lifespan-bangladesh": "dental-crowns-types-cost-lifespan-bangladesh-bn",
 };
 
 // Category label per locale (keeps the /bn filter chips in Bangla while the
