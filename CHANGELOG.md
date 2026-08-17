@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add orthodontic retainer blog post, English + Bangla
+- New bilingual post: "Retainers After Braces: Why Stopping Early Undoes
+  Your Treatment" (Orthodontics), explaining why teeth relapse without a
+  retainer, the three main retainer types (fixed/bonded, removable clear,
+  Hawley), and how to care for each
+- Covers Bangladesh-specific reasons retention fails — wedding/exam-season
+  stress causing missed wear, retainers lost wrapped in tissue at dawats,
+  humid weather encouraging bacterial/fungal buildup on damp cases, and
+  clear plastic warping from heat (hot cars, hot cha-temperature rinsing)
+  — plus early warning signs of relapse
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add dry mouth (xerostomia) blog post, English + Bangla
 - New bilingual post: "Dry Mouth: Why It's More Than Just Thirst, and Why
   Your Cavities Are Increasing" (Oral Health), explaining why saliva loss

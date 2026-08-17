@@ -1912,6 +1912,72 @@ export const posts: BlogPost[] = [
     takeaway:
       "A dry mouth quietly removes your natural protection against decay — don't mask it with paan or extra sugar in your cha. If your mouth feels persistently dry or you're getting new cavities faster than before, book a check-up at Maxface Dental Care in Malibagh; we'll look for the cause and protect your teeth while it's addressed.",
   },
+  {
+    slug: "retainer-after-braces-avoiding-relapse-bangladesh",
+    title: "Retainers After Braces: Why Stopping Early Undoes Your Treatment",
+    excerpt:
+      "Braces come off and teeth already start drifting back within days. In Dhaka, patients who skip or lose their retainer are the most common reason we redo orthodontic work that already succeeded once.",
+    category: "Orthodontics",
+    date: "2026-08-19",
+    readTime: "5 min read",
+    image: "/images/blog/aligners.jpg",
+    imageAlt: "Close-up of a person placing a clear removable orthodontic appliance onto their teeth",
+    intro: [
+      "The day braces or aligners finally come off feels like the finish line. Across chambers in Dhaka, it's often the appointment patients look forward to most — but it isn't actually the end of treatment. It's the start of the retention phase, and skipping it is the single most common reason a straightened smile drifts back toward where it started.",
+      "Teeth are held in the jawbone by a web of elastic ligament fibres (the tissue that anchors a tooth's root to bone) that take months to settle into a new position — and even after they settle, forces from chewing, tongue pressure and ageing keep pushing on teeth for life. A retainer is what holds the result still while that happens.",
+    ],
+    sections: [
+      {
+        heading: "Why teeth move back without one",
+        paragraphs: [
+          "This drift is called relapse, and it isn't a sign the original treatment failed — it's simply how teeth behave once the appliance holding them stops. The American Association of Orthodontists advises that some retainer wear, often lifelong to some degree, is necessary to keep teeth in their corrected position, because the biological forces that first allowed teeth to move never fully switch off.",
+          "Relapse can start within days of the braces coming off, well before most patients notice. The lower front teeth — usually the most crowded to begin with — are typically the first to shift.",
+        ],
+      },
+      {
+        heading: "The main types of retainers",
+        list: [
+          "Fixed (bonded) retainer — a thin wire glued behind the lower or upper front teeth, invisible, worn permanently; needs a floss threader or interdental brush to clean underneath it.",
+          "Removable clear retainer (Essix-type) — a thin, transparent tray similar to an aligner, worn nightly or as prescribed; easy to keep clean but easy to lose or forget.",
+          "Hawley retainer — a wire-and-acrylic plate, adjustable and durable, but more visible and bulkier in the mouth.",
+        ],
+      },
+      {
+        heading: "Why retention fails so often in Bangladesh",
+        paragraphs: [
+          "After spending a significant sum on braces or aligners, many patients start treating the retainer as optional the moment the smile looks right — exactly the moment it matters most.",
+        ],
+        list: [
+          "Wedding or exam-season stress — the retainer gets left in a drawer during the busiest weeks, and relapse begins during exactly the period a patient can least afford to notice.",
+          "Wrapped in tissue at a dawat or wedding buffet and cleared away with the rest of the table — one of the most common ways a retainer gets lost.",
+          "Humid weather — a retainer left damp in its case without being dried and cleaned properly grows bacterial and fungal buildup faster than in a drier climate.",
+          "Left in a hot car, near a stove, or rinsed in cha-temperature hot water — clear plastic retainers warp permanently in heat and lose their fit.",
+        ],
+      },
+      {
+        heading: "Caring for a retainer properly",
+        list: [
+          "Brush it gently with a soft brush and mild soap, or a retainer-cleaning tablet — never toothpaste, which is abrasive enough to scratch and dull clear plastic.",
+          "Never rinse or soak it in hot water; lukewarm water only.",
+          "Store it in its case the moment it comes out of your mouth — never in a tissue or a pocket.",
+          "For a fixed wire retainer, clean underneath it daily with an interdental brush or floss threader, the same way you would floss.",
+        ],
+      },
+      {
+        heading: "Signs your teeth are already relapsing",
+        paragraphs: [
+          "Catching relapse early is far cheaper and simpler to fix than catching it late.",
+        ],
+        list: [
+          "A removable retainer that used to slide in easily now feels tight or needs pressure to seat.",
+          "A new gap or overlap you can see, especially on the lower front teeth.",
+          "Your bite feels different — the way your upper and lower teeth meet has changed.",
+        ],
+      },
+    ],
+    takeaway:
+      "A retainer costs a fraction of what braces or aligners cost — wearing it as prescribed is the cheapest insurance on the smile you already paid for. If yours feels tight, is lost, or you're unsure how long to keep wearing it, book a retainer check at Maxface Dental Care in Malibagh before minor drift becomes a redo.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1954,6 +2020,7 @@ const postTags: Record<string, string[]> = {
   "cracked-tooth-bad-habits-bangladesh": ["Cracked Tooth", "Restorative Dentistry", "Tooth Pain"],
   "dental-crowns-types-cost-lifespan-bangladesh": ["Dental Crowns", "Restorative Dentistry", "Zirconia Crowns"],
   "dry-mouth-xerostomia-causes-relief-bangladesh": ["Dry Mouth", "Oral Health", "Saliva Care"],
+  "retainer-after-braces-avoiding-relapse-bangladesh": ["Retainers", "Orthodontics", "Braces Aftercare"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
