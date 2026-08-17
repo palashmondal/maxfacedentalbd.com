@@ -4,6 +4,22 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add dry mouth (xerostomia) blog post, English + Bangla
+- New bilingual post: "Dry Mouth: Why It's More Than Just Thirst, and Why
+  Your Cavities Are Increasing" (Oral Health), explaining why saliva loss
+  removes teeth's natural protection and why patients on Bangladesh's most
+  common medicine classes — blood pressure, diabetes, antihistamines — are
+  often affected without realising it
+- Covers Dhaka-specific drivers (mouth-breathing from dust/pollution,
+  Ramadan/heat dehydration), why reaching for paan, zarda, or extra-sweet
+  cha to relieve dryness backfires and accelerates gumline decay, warning
+  signs, and a practical relief list (hydration habits, sugar-free gum,
+  never self-adjusting prescribed medicine, high-fluoride toothpaste,
+  more frequent check-ups)
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add dental crowns blog post, English + Bangla
 - New bilingual post: "Dental Crowns in Bangladesh: Types, Real Costs, and
   How Long They Actually Last" (Restorative Dentistry), explaining when a

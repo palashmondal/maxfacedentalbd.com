@@ -45,6 +45,7 @@ const BN_BY_SLUG: Record<string, string> = {
   "ramadan-fasting-oral-health-bangladesh": "ramadan-fasting-oral-health-bangladesh-bn",
   "cracked-tooth-bad-habits-bangladesh": "cracked-tooth-bad-habits-bangladesh-bn",
   "dental-crowns-types-cost-lifespan-bangladesh": "dental-crowns-types-cost-lifespan-bangladesh-bn",
+  "dry-mouth-xerostomia-causes-relief-bangladesh": "dry-mouth-xerostomia-causes-relief-bangladesh-bn",
 };
 
 // Category label per locale (keeps the /bn filter chips in Bangla while the

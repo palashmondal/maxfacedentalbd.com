@@ -1842,6 +1842,76 @@ export const posts: BlogPost[] = [
     takeaway:
       "A crown is only as good as the fit, the material, and the dentist behind it — the cheapest option in Dhaka is rarely the cheapest choice over ten years. Book a crown consultation with the doctors at Maxface Dental Care in Malibagh, and get a clear, honest recommendation on the material and cost that's right for your tooth.",
   },
+  {
+    slug: "dry-mouth-xerostomia-causes-relief-bangladesh",
+    title: "Dry Mouth: Why It's More Than Just Thirst, and Why Your Cavities Are Increasing",
+    excerpt:
+      "A constantly dry mouth isn't just uncomfortable — it strips away your natural protection against decay. Common blood pressure and allergy medicines are often the hidden cause.",
+    category: "Oral Health",
+    date: "2026-08-18",
+    readTime: "5 min read",
+    image: "/images/blog/sensitive-teeth.jpg",
+    imageAlt: "Woman drinking a glass of water to relieve a dry mouth",
+    intro: [
+      "Many patients tell us the same thing: \"I drink enough water, but my mouth still feels dry and sticky, especially at night.\" A few months later, the same patient is back with three or four new cavities in places they never had trouble before — usually right along the gumline. The two complaints are connected, and the cause is rarely thirst.",
+      "Dry mouth, called xerostomia (zeer-oh-STOH-mee-uh) in medical language, means your salivary glands aren't making enough saliva. In Bangladesh, where blood pressure and diabetes medicines are taken by millions and Dhaka's dusty, polluted air pushes many people to breathe through their mouth, it is far more common than most patients realise — and far more damaging to teeth than it feels.",
+    ],
+    sections: [
+      {
+        heading: "Why saliva matters more than you'd think",
+        paragraphs: [
+          "Saliva is not just moisture. It constantly washes food and bacteria off your teeth, neutralises the acid that plaque produces after every meal, and carries calcium and phosphate that quietly repair early, invisible spots of tooth decay overnight. When saliva flow drops, all three of those protections drop with it.",
+          "That is why a dry mouth is not simply an annoyance — it is a mouth with its main defence system switched off, even while you keep brushing exactly as before.",
+        ],
+      },
+      {
+        heading: "Common causes we see in Bangladeshi patients",
+        paragraphs: [
+          "The American Dental Association notes that more than 500 commonly prescribed medicines list dry mouth as a side effect — and several of the most-used drug classes in Bangladesh are on that list.",
+        ],
+        list: [
+          "Blood pressure medicines (very widely used given how common hypertension is in Bangladesh) and diabetes medicines",
+          "Antihistamines and allergy tablets, taken often because of Dhaka's dust and traffic pollution",
+          "Antidepressants and anti-anxiety medicines",
+          "Mouth-breathing at night — from a blocked nose, allergies, or Dhaka's poor air quality — dries the mouth even in people on no medicine at all",
+          "Simple dehydration during the hot, humid months, or reduced fluid intake while fasting during Ramadan",
+        ],
+      },
+      {
+        heading: "Why paan and extra-sweet cha make it worse, not better",
+        paragraphs: [
+          "The instinctive local response to a dry, sticky mouth is often a piece of paan, a pinch of zarda, or another cup of heavily sweetened cha to \"get some moisture and taste back.\" Both make the underlying problem worse: sugary cha feeds the same bacteria that now have less saliva washing them away, and betel-nut products dry and irritate the oral tissue further while carrying their own, separately serious health risks.",
+          "The result we see often in the chamber is a patient with dry mouth, several new cavities forming right at the gumline in a matter of months, and a habit that feels soothing but is actively accelerating the damage.",
+        ],
+      },
+      {
+        heading: "Warning signs worth a dental visit",
+        list: [
+          "Saliva that feels thick, stringy, or simply absent, especially on waking",
+          "A burning or raw feeling on the tongue",
+          "Cracked lips or sore cracks at the corners of the mouth",
+          "Difficulty swallowing dry food like biscuits or muri without water",
+          "Bad breath that persists despite normal brushing",
+          "New cavities appearing faster than before, particularly near the gumline",
+          "Loose-feeling or uncomfortable dentures, for patients who wear them",
+        ],
+      },
+      {
+        heading: "What actually helps",
+        list: [
+          "Sip water steadily through the day rather than drinking a large glass occasionally — little and often keeps the mouth moist",
+          "Keep a water bottle at your desk or with you while commuting, rather than reaching for cha when the mouth feels dry",
+          "Chew sugar-free gum if available — it stimulates whatever natural saliva flow remains",
+          "Never stop or change a prescribed blood pressure, diabetes, or allergy medicine on your own — talk to your physician, who may be able to adjust the timing or dose",
+          "Ask your dentist about a high-fluoride toothpaste or an in-chamber fluoride varnish — cavity risk rises sharply with dry mouth, so extra protection matters",
+          "Treat a chronically blocked nose so you breathe through your nose, not your mouth, especially at night",
+          "If dry mouth persists, book check-ups every three to four months instead of six — new cavities form faster in a dry mouth and are easier to catch early",
+        ],
+      },
+    ],
+    takeaway:
+      "A dry mouth quietly removes your natural protection against decay — don't mask it with paan or extra sugar in your cha. If your mouth feels persistently dry or you're getting new cavities faster than before, book a check-up at Maxface Dental Care in Malibagh; we'll look for the cause and protect your teeth while it's addressed.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -1883,6 +1953,7 @@ const postTags: Record<string, string[]> = {
   "ramadan-fasting-oral-health-bangladesh": ["Ramadan", "Oral Hygiene", "Patient Guide"],
   "cracked-tooth-bad-habits-bangladesh": ["Cracked Tooth", "Restorative Dentistry", "Tooth Pain"],
   "dental-crowns-types-cost-lifespan-bangladesh": ["Dental Crowns", "Restorative Dentistry", "Zirconia Crowns"],
+  "dry-mouth-xerostomia-causes-relief-bangladesh": ["Dry Mouth", "Oral Health", "Saliva Care"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
