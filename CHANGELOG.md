@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add dental veneers blog post, English + Bangla
+- New bilingual post: "Dental Veneers: What They Actually Fix, and Where
+  the 'Smile Design' Trend Goes Wrong" (Cosmetic Dentistry), explaining
+  what a veneer is, what it can and can't treat, and the composite vs
+  porcelain trade-off (cost, staining, reversibility, longevity)
+- Covers the rise of social-media-driven "smile design" packages that file
+  down healthy teeth for a uniform veneer look without an actual exam, plus
+  Bangladesh-specific care notes — not using front teeth to open bottles or
+  crack shrimp/shutki shells, paan/zarda/gul staining and loosening veneer
+  bonds, and night-guard use for grinding-related fractures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add orthodontic retainer blog post, English + Bangla
 - New bilingual post: "Retainers After Braces: Why Stopping Early Undoes
   Your Treatment" (Orthodontics), explaining why teeth relapse without a

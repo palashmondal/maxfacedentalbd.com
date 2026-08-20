@@ -47,6 +47,7 @@ const BN_BY_SLUG: Record<string, string> = {
   "dental-crowns-types-cost-lifespan-bangladesh": "dental-crowns-types-cost-lifespan-bangladesh-bn",
   "dry-mouth-xerostomia-causes-relief-bangladesh": "dry-mouth-xerostomia-causes-relief-bangladesh-bn",
   "retainer-after-braces-avoiding-relapse-bangladesh": "retainer-after-braces-avoiding-relapse-bangladesh-bn",
+  "dental-veneers-cost-care-bangladesh": "dental-veneers-cost-care-bangladesh-bn",
 };
 
 // Category label per locale (keeps the /bn filter chips in Bangla while the

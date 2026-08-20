@@ -1978,6 +1978,57 @@ export const posts: BlogPost[] = [
     takeaway:
       "A retainer costs a fraction of what braces or aligners cost — wearing it as prescribed is the cheapest insurance on the smile you already paid for. If yours feels tight, is lost, or you're unsure how long to keep wearing it, book a retainer check at Maxface Dental Care in Malibagh before minor drift becomes a redo.",
   },
+  {
+    slug: "dental-veneers-cost-care-bangladesh",
+    title: "Dental Veneers: What They Actually Fix, and Where the 'Smile Design' Trend Goes Wrong",
+    excerpt:
+      "Instagram has made 'veneers' a household word in Dhaka, but a veneer is a specific fix for specific problems — not a shortcut past healthy teeth. Here's what they can and can't do.",
+    category: "Cosmetic Dentistry",
+    date: "2026-08-20",
+    readTime: "5 min read",
+    image: "/images/blog/whitening.jpg",
+    imageAlt: "Close-up of a bright, white, evenly aligned smile",
+    intro: [
+      "Wedding season and social media have turned 'veneers' into one of the most-asked-about words in the chamber. Patients arrive with a screenshot of a celebrity's smile and a request to 'get that' — without always knowing what a veneer actually is, or that it isn't the right fix for every smile.",
+      "A veneer is a thin shell bonded to the front surface of a tooth to change its colour, shape or length. It's a real, well-studied dental treatment — but it works on specific problems, and used carelessly, it can permanently damage healthy teeth that never needed it.",
+    ],
+    sections: [
+      {
+        heading: "What a veneer actually fixes",
+        list: [
+          "Deep discolouration that whitening alone can't lighten, including staining from old tetracycline antibiotics or a dead, darkened tooth",
+          "Chipped or slightly worn front-tooth edges",
+          "Small gaps between front teeth, without full orthodontic treatment",
+          "Teeth that are naturally a little short, narrow, or unevenly shaped compared to their neighbours",
+        ],
+      },
+      {
+        heading: "Composite vs porcelain: the real trade-off",
+        list: [
+          "Composite veneers — built up directly on the tooth in one visit, chairside, from a tooth-coloured resin. Lower cost, fully reversible in most cases, but they stain over time (a real concern with frequent cha and curry-heavy meals) and typically need replacing sooner.",
+          "Porcelain veneers — custom-made in a lab from a tooth impression, bonded in over two visits. Higher cost, more stain-resistant, and dental literature consistently reports them lasting well over a decade with good care — but a thin layer of enamel is usually shaved off first, which cannot be undone.",
+        ],
+      },
+      {
+        heading: "The 'smile design' trend, and where it goes wrong",
+        paragraphs: [
+          "A rising trend — driven by social media and cut-price 'smile makeover' packages — files down a full row of healthy teeth to fit a uniform veneer shape, regardless of whether those teeth needed anything at all. Once enamel is removed, it does not grow back, and the tooth depends on that veneer, and its replacements, for the rest of its life.",
+          "A properly planned veneer case starts with an examination of the bite, gum health and the individual tooth — not a photo. If a dentist offers a full set of veneers without checking any of that, that's a reason to get a second opinion, not book the appointment.",
+        ],
+      },
+      {
+        heading: "Living with veneers in daily Bangladeshi life",
+        list: [
+          "Don't use front teeth to open bottle caps, tear packets, or crack shrimp shells and hard shutki bones — a veneer chips or debonds under exactly this kind of load.",
+          "Paan, zarda and gul stain composite veneers and can loosen the bond over time on either type — the chamber will always advise against tobacco products regardless of your dental work.",
+          "Porcelain resists staining better than natural enamel, but composite veneers benefit from the same cha and curry habits as natural teeth — rinse with water afterward when you can.",
+          "Keep wearing a night guard if one is prescribed for grinding — grinding force is a common cause of veneer fracture.",
+        ],
+      },
+    ],
+    takeaway:
+      "A veneer should follow an honest look at your teeth and gums, not a screenshot — ask what problem it's actually solving before any enamel is touched. For a consultation on whether veneers, whitening or a simpler fix suits your smile, visit Maxface Dental Care in Malibagh.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -2021,6 +2072,7 @@ const postTags: Record<string, string[]> = {
   "dental-crowns-types-cost-lifespan-bangladesh": ["Dental Crowns", "Restorative Dentistry", "Zirconia Crowns"],
   "dry-mouth-xerostomia-causes-relief-bangladesh": ["Dry Mouth", "Oral Health", "Saliva Care"],
   "retainer-after-braces-avoiding-relapse-bangladesh": ["Retainers", "Orthodontics", "Braces Aftercare"],
+  "dental-veneers-cost-care-bangladesh": ["Veneers", "Cosmetic Dentistry", "Smile Design"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
