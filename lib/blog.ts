@@ -2029,6 +2029,67 @@ export const posts: BlogPost[] = [
     takeaway:
       "A veneer should follow an honest look at your teeth and gums, not a screenshot — ask what problem it's actually solving before any enamel is touched. For a consultation on whether veneers, whitening or a simpler fix suits your smile, visit Maxface Dental Care in Malibagh.",
   },
+  {
+    slug: "teeth-grinding-bruxism-stress-bangladesh",
+    title: "Teeth Grinding at Night: How Exam Season and Deadline Stress Are Wearing Down Dhaka's Teeth",
+    excerpt:
+      "Waking up with a sore jaw or a dull headache isn't always 'just stress' — it can be your teeth grinding against each other all night. Here's how to spot bruxism before it flattens your enamel.",
+    category: "TMJ & Jaw Care",
+    date: "2026-08-24",
+    readTime: "6 min read",
+    image: "/images/blog/tmj.jpg",
+    imageAlt: "Woman pressing a compress to her painful jaw",
+    intro: [
+      "A patient came in last exam season with a jaw so sore she could barely open wide enough for an examination. She hadn't been hit or injured — she'd been grinding her teeth in her sleep for months without knowing it, through HSC preparation and a stressful job change.",
+      "This habit, called bruxism, is common wherever exam pressure, traffic stress and long work hours pile up — which describes daily life in Dhaka for a lot of people. Left unchecked, it quietly flattens and cracks teeth that would otherwise last a lifetime.",
+    ],
+    sections: [
+      {
+        heading: "What bruxism actually is",
+        paragraphs: [
+          "Bruxism is clenching or grinding your teeth outside of normal chewing — usually without realising it. It can happen at night during sleep (sleep bruxism) or during the day, often unconsciously, while concentrating, driving in traffic, or under deadline pressure (awake bruxism).",
+          "A 2013 systematic review published in the Journal of Oral Rehabilitation found that self-reported sleep bruxism affects roughly 8% of adults, with rates measured by muscle activity running higher — meaning it is very likely under-reported, since most people who grind at night have no idea they do it until a partner mentions the sound, or a dentist spots the wear.",
+        ],
+      },
+      {
+        heading: "Warning signs you're grinding",
+        list: [
+          "Waking up with a sore, tight, or tired jaw, or a dull headache near the temples",
+          "A partner or family member telling you they hear grinding or clicking sounds at night",
+          "Teeth that look shorter, flatter, or more chipped at the edges than they used to",
+          "Increased sensitivity to cold water or sweet food as the protective enamel wears thin",
+          "Indentations on the inside of your cheeks or a scalloped edge on your tongue",
+        ],
+      },
+      {
+        heading: "Why Dhaka life makes it worse",
+        paragraphs: [
+          "Bruxism has no single cause, but stress and anxiety are the most consistently reported triggers — and exam pressure (SSC, HSC, admission tests), long commutes through Dhaka traffic, and demanding work schedules are exactly the kind of chronic stress linked to it.",
+          "Caffeine and nicotine are also known to increase grinding frequency. A late-night cup of strong cha, or paan and zarda use, adds another push on top of an already stressed jaw muscle.",
+        ],
+      },
+      {
+        heading: "What happens if it's left untreated",
+        list: [
+          "Enamel wears away faster than it can be replaced, exposing the softer, more sensitive layer underneath",
+          "Existing fillings and crowns crack or come loose under repeated night-time pressure",
+          "Chronic jaw muscle tension can develop into TMJ disorder — clicking, locking, or pain when chewing",
+          "Some patients develop headaches or ear-area pain that they never connect back to their teeth",
+        ],
+      },
+      {
+        heading: "What actually helps",
+        list: [
+          "A custom-fitted night guard — an acrylic shield made from an impression of your own teeth — absorbs grinding force so your enamel doesn't take the hit. It costs more upfront than a shop-bought 'boil and bite' guard but fits properly and lasts for years.",
+          "Managing the underlying stress: even simple steps like winding down without a screen before bed, or cutting late-evening cha, reduce grinding frequency for many patients.",
+          "Treating the damage already done — bonding a chipped edge, replacing a cracked filling — before it progresses to a cracked tooth that needs a crown or root canal.",
+          "A dental check-up is often how bruxism gets diagnosed in the first place, since the wear pattern on your teeth tells a dentist what months of grinding have looked like, even if you've never noticed a symptom.",
+        ],
+      },
+    ],
+    takeaway:
+      "If you wake up with a sore jaw or a headache, or someone has told you they hear you grinding at night, don't dismiss it as ordinary stress — it's a habit that permanently wears down teeth. Book a check-up at Maxface Dental Care in Malibagh so we can look at your enamel and fit you for a night guard before the damage adds up.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -2073,6 +2134,7 @@ const postTags: Record<string, string[]> = {
   "dry-mouth-xerostomia-causes-relief-bangladesh": ["Dry Mouth", "Oral Health", "Saliva Care"],
   "retainer-after-braces-avoiding-relapse-bangladesh": ["Retainers", "Orthodontics", "Braces Aftercare"],
   "dental-veneers-cost-care-bangladesh": ["Veneers", "Cosmetic Dentistry", "Smile Design"],
+  "teeth-grinding-bruxism-stress-bangladesh": ["Bruxism", "Night Guard", "TMJ Care"],
 };
 
 export function getPostTags(post: BlogPost): string[] {

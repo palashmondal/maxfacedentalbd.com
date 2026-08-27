@@ -4,6 +4,16 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add teeth grinding (bruxism) blog post, English + Bangla
+- New bilingual post: "Teeth Grinding at Night: How Exam Season and
+  Deadline Stress Are Wearing Down Dhaka's Teeth" (TMJ & Jaw Care) —
+  explains sleep vs awake bruxism, warning signs, and why exam pressure
+  (SSC/HSC/admission tests), Dhaka traffic stress and late-night cha/paan
+  make it worse locally
+- Cites a 2013 Journal of Oral Rehabilitation systematic review on sleep
+  bruxism prevalence; covers night guard treatment and stress management
+- Linked in `BN_BY_SLUG` under `teeth-grinding-bruxism-stress-bangladesh`
+
 ### Add dental veneers blog post, English + Bangla
 - New bilingual post: "Dental Veneers: What They Actually Fix, and Where
   the 'Smile Design' Trend Goes Wrong" (Cosmetic Dentistry), explaining

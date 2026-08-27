@@ -48,6 +48,7 @@ const BN_BY_SLUG: Record<string, string> = {
   "dry-mouth-xerostomia-causes-relief-bangladesh": "dry-mouth-xerostomia-causes-relief-bangladesh-bn",
   "retainer-after-braces-avoiding-relapse-bangladesh": "retainer-after-braces-avoiding-relapse-bangladesh-bn",
   "dental-veneers-cost-care-bangladesh": "dental-veneers-cost-care-bangladesh-bn",
+  "teeth-grinding-bruxism-stress-bangladesh": "teeth-grinding-bruxism-stress-bangladesh-bn",
 };
 
 // Category label per locale (keeps the /bn filter chips in Bangla while the
