@@ -2090,6 +2090,129 @@ export const posts: BlogPost[] = [
     takeaway:
       "If you wake up with a sore jaw or a headache, or someone has told you they hear you grinding at night, don't dismiss it as ordinary stress — it's a habit that permanently wears down teeth. Book a check-up at Maxface Dental Care in Malibagh so we can look at your enamel and fit you for a night guard before the damage adds up.",
   },
+  {
+    slug: "dental-anxiety-fear-of-dentist-bangladesh",
+    title: "Scared of the Dentist? Why Dental Anxiety Is So Common in Bangladesh — and How to Get Past It",
+    excerpt:
+      "From childhood horror stories about the village 'tooth puller' to a genuine fear of the needle, dental anxiety keeps thousands of people in Dhaka away from care until a small problem becomes an emergency. Here's how to actually get past it.",
+    category: "Patient Guide",
+    date: "2026-08-31",
+    readTime: "6 min read",
+    image: "/images/blog/clinic-dhaka.jpg",
+    imageAlt: "Empty, calm dental treatment room with a chair by a bright window",
+    intro: [
+      "A patient recently told us she had been living with a broken back tooth for almost two years. It didn't hurt most of the time, so she kept putting off the visit — but the real reason, she admitted, was that a local practitioner had pulled one of her teeth as a child without any numbing injection at all, and she had been afraid of dental chairs ever since.",
+      "Stories like this are common in Bangladesh. Between childhood memories of untrained 'tooth pullers,' parents who threaten misbehaving kids with 'the dentist will pull your tooth out,' and a general fear of injections, a huge number of people delay care for years — and end up needing far more treatment than if they had come in early.",
+    ],
+    sections: [
+      {
+        heading: "Why the fear is so common here",
+        list: [
+          "Childhood extractions by unlicensed local practitioners (not BMDC-registered dentists) — often done with no proper anaesthesia, leaving a lasting association between 'dentist' and pain",
+          "Being threatened as children with a visit to the dentist as a punishment, which teaches fear before any real experience happens",
+          "The sound of the drill, or the sight of a needle — fear of injections (needle phobia) is extremely common and not something to be embarrassed about",
+          "One genuinely bad past experience, sometimes decades ago, that never got replaced by a better one",
+        ],
+      },
+      {
+        heading: "What fear actually costs you",
+        paragraphs: [
+          "Dental fear is a real and well-documented condition, not a character flaw. A 2021 systematic review and meta-analysis pooling dozens of studies from around the world (published in the Journal of Dental Research) estimated that roughly one in three adults globally experiences some degree of dental fear, with a smaller group experiencing severe dental phobia that stops them from seeking care altogether.",
+          "The problem is what avoidance does to your mouth in the meantime. A small cavity that would need a five-minute filling today can turn into a root canal in a year, and an extraction after that — each step more invasive, more expensive, and often more uncomfortable than the visit that was originally being avoided.",
+        ],
+      },
+      {
+        heading: "Signs your anxiety is affecting your health",
+        list: [
+          "You've gone years without a check-up, even though you know you should go",
+          "You've cancelled or postponed an appointment more than once, even for pain",
+          "Just the smell of a clinic or the sound of a dental drill makes your heart race",
+          "You're currently in pain but are 'waiting to see if it goes away' rather than booking a visit",
+        ],
+      },
+      {
+        heading: "What a good clinic actually does differently",
+        list: [
+          "Explains every step before doing it — what you'll feel, how long it takes, what the tool is for",
+          "Agrees a simple stop signal with you (like raising your hand) so you're always in control and can pause",
+          "Uses a topical numbing gel on the gum before any injection, so the needle itself is far less noticeable",
+          "Lets you start with something small and low-stress, like a check-up and clean, rather than jumping straight into a big procedure",
+          "Never rushes you, and never starts an extraction or root canal within minutes of you sitting down without a proper examination and X-ray first",
+        ],
+      },
+      {
+        heading: "How to get past it",
+        paragraphs: [
+          "Say it out loud at the front desk or to your dentist before treatment starts: 'I'm nervous about this.' It changes how the whole visit is handled, and there's nothing unusual about saying it — most dental teams hear it every day.",
+          "Start small. A first visit that's just an examination and a cleaning, with no drilling at all, is often enough to reset years of built-up fear once you see that it isn't what you remembered. Bringing a friend or family member, or listening to music through earphones during treatment, also helps many patients get through it.",
+        ],
+      },
+    ],
+    takeaway:
+      "Dental fear built from a bad childhood experience is common, understandable, and completely manageable with the right clinic — it should never be the reason a small problem is left to become a big one. Book a simple check-up visit at Maxface Dental Care in Malibagh, tell us you're anxious when you arrive, and let us show you what a calm, unhurried appointment actually feels like.",
+  },
+  {
+    slug: "tooth-extraction-aftercare-dry-socket-bangladesh",
+    title: "After a Tooth Extraction: What to Do (and Avoid) to Prevent Dry Socket",
+    excerpt:
+      "The first three days after a tooth is pulled decide whether you heal smoothly or end up back in the chair with a painful dry socket. Paan, hot cha, and a bumpy rickshaw ride home are bigger risks than most patients realise.",
+    category: "Oral Surgery",
+    date: "2026-09-03",
+    readTime: "6 min read",
+    image: "/images/blog/wisdom-tooth.jpg",
+    imageAlt: "Panoramic dental X-ray showing all teeth including wisdom teeth",
+    intro: [
+      "Getting a tooth pulled — whether it's a broken molar, a badly decayed tooth, or an impacted wisdom tooth — is one of the most common procedures done at any dental chamber in Dhaka. Most patients heal without any trouble at all. But a small number come back two or three days later in worse pain than before the extraction, with a burning, throbbing ache and a bad taste in the mouth. That's usually dry socket — and it's almost always caused by something avoidable in the first 72 hours.",
+      "In Bangladesh, a few very ordinary habits make dry socket more likely than the textbooks from other countries suggest: paan and zarda use, a habit of gulping hot, heavily sweetened cha, and heading straight back out into Dhaka traffic on a rickshaw or motorbike right after the numbness wears off. None of this is discussed enough at the point of discharge, so here's what actually matters.",
+    ],
+    sections: [
+      {
+        heading: "Why the first 24–72 hours decide everything",
+        paragraphs: [
+          "After a tooth is removed, a blood clot forms in the socket. That clot is not just a scab — it protects the exposed bone and nerve underneath while new gum tissue grows over it. If the clot is dislodged or dissolves too early, the bone and nerve are left exposed to air, food, and bacteria. This is called dry socket (alveolar osteitis), and it is one of the most painful complications in routine dentistry, even though the extraction itself may have been simple.",
+          "Oral surgery research consistently shows dry socket is uncommon after routine extractions but far more common after a difficult lower wisdom tooth removal, and that smoking or any form of tobacco use — including smokeless tobacco like zarda and gul — is one of the strongest risk factors identified across studies. The habit of spitting, sucking, or rinsing forcefully in the days right after extraction is just as damaging as smoking, because the suction motion can pull the clot loose.",
+        ],
+      },
+      {
+        heading: "Bangladeshi habits that raise your risk without you realising it",
+        list: [
+          "Paan, zarda, and gul — the chewing, sucking, and repeated spitting motion pulls at the clot, and the tobacco itself slows healing and restricts blood flow to the socket",
+          "Hot, heavily sweetened cha sipped soon after the numbness wears off — heat encourages bleeding and swelling, and sipping motion can disturb the clot",
+          "Drinking through a straw for juice or a cold drink — the suction is one of the most direct ways to dislodge a fresh clot",
+          "Getting straight onto a rickshaw or motorbike in dusty traffic right after the appointment, instead of resting with the head slightly elevated for the rest of the day",
+          "Skipping the gauze-biting instructions because the bleeding 'looked like it stopped' — light oozing for a few hours is normal and the pad needs to stay in place with steady pressure",
+        ],
+      },
+      {
+        heading: "What to actually do in the first 24 hours",
+        list: [
+          "Bite firmly on the gauze pad for 30–45 minutes, replacing it with a fresh one if it's soaked through — don't keep peeking to check",
+          "Apply an ice pack to the outside of the cheek in 15–20 minute intervals for the first few hours to control swelling",
+          "Eat only soft, lukewarm food — khichuri, dal, mashed rice, soft fruit — and chew on the opposite side of the mouth",
+          "Take painkillers exactly as prescribed, even before pain sets in, rather than waiting until it becomes severe",
+          "Rest at home with your head slightly raised on a pillow; avoid bending down, heavy lifting, or exercise for the rest of the day",
+        ],
+      },
+      {
+        heading: "What to avoid for at least 3–4 days",
+        list: [
+          "No paan, zarda, gul, cigarettes, or any tobacco product — this is the single biggest controllable risk factor",
+          "No straws, no spitting, no forceful mouth rinsing — let saliva and liquid drain out naturally instead",
+          "No hot tea, hot soup, or spicy or very hard food near the extraction site",
+          "No brushing directly over the socket for the first day — gently rinse with lukewarm salt water instead, starting the day after extraction",
+          "No poking the socket with your tongue, a toothpick, or a finger, even though the gap feels strange",
+        ],
+      },
+      {
+        heading: "When to come back immediately",
+        paragraphs: [
+          "Mild soreness for two to three days, some swelling, and slight bruising are all normal. What is not normal is pain that gets worse on day two or three instead of better, especially a sharp, radiating ache toward the ear, an empty-looking socket, a foul taste, or bad breath that doesn't improve with rinsing. Those are the classic signs of dry socket, and it needs to be seen and treated — usually with a medicated dressing placed directly in the socket — rather than managed with more painkillers at home.",
+        ],
+      },
+    ],
+    takeaway:
+      "Most extraction pain fades within two to three days — pain that gets worse instead of better, especially with a bad taste or smell, means the clot has likely been lost and needs prompt treatment, not more painkillers at home. If you've had a tooth removed and something feels wrong, call or visit Maxface Dental Care in Malibagh right away — same-day dry socket treatment takes only a few minutes and brings fast relief.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -2135,6 +2258,8 @@ const postTags: Record<string, string[]> = {
   "retainer-after-braces-avoiding-relapse-bangladesh": ["Retainers", "Orthodontics", "Braces Aftercare"],
   "dental-veneers-cost-care-bangladesh": ["Veneers", "Cosmetic Dentistry", "Smile Design"],
   "teeth-grinding-bruxism-stress-bangladesh": ["Bruxism", "Night Guard", "TMJ Care"],
+  "dental-anxiety-fear-of-dentist-bangladesh": ["Dental Anxiety", "Patient Guide", "Dental Fear"],
+  "tooth-extraction-aftercare-dry-socket-bangladesh": ["Tooth Extraction", "Dry Socket", "Oral Surgery"],
 };
 
 export function getPostTags(post: BlogPost): string[] {

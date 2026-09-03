@@ -4,6 +4,18 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add tooth extraction aftercare / dry socket blog post, English + Bangla
+- New bilingual post: "After a Tooth Extraction: What to Do (and Avoid) to
+  Prevent Dry Socket" (Oral Surgery) — explains the 24–72 hour clot-healing
+  window, warning signs of dry socket (alveolar osteitis), and when to
+  return to the chamber
+- Covers Bangladesh-specific risk habits: paan/zarda/gul use right after
+  extraction, gulping hot sweet cha, drinking through a straw, and heading
+  straight into dusty rickshaw/motorbike traffic instead of resting
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add teeth grinding (bruxism) blog post, English + Bangla
 - New bilingual post: "Teeth Grinding at Night: How Exam Season and
   Deadline Stress Are Wearing Down Dhaka's Teeth" (TMJ & Jaw Care) —
