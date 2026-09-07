@@ -4,6 +4,18 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add sinus toothache vs cavity blog post, English + Bangla
+- New bilingual post: "Sinus Toothache or Cavity? Why Monsoon Season
+  Confuses the Two in Bangladesh" (Diagnostics) — explains how monsoon-season
+  sinus infections cause pain in the upper back teeth that mimics a cavity,
+  and how to tell the two apart before agreeing to any filling or root canal
+- Covers Bangladesh-specific monsoon context: waterlogging, humidity swings
+  between AC rooms and outdoor heat, and the seasonal rise in colds/sinus
+  infections that drives more misdiagnosed "toothaches" into the chamber
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add tooth extraction aftercare / dry socket blog post, English + Bangla
 - New bilingual post: "After a Tooth Extraction: What to Do (and Avoid) to
   Prevent Dry Socket" (Oral Surgery) — explains the 24–72 hour clot-healing

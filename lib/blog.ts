@@ -2213,6 +2213,68 @@ export const posts: BlogPost[] = [
     takeaway:
       "Most extraction pain fades within two to three days — pain that gets worse instead of better, especially with a bad taste or smell, means the clot has likely been lost and needs prompt treatment, not more painkillers at home. If you've had a tooth removed and something feels wrong, call or visit Maxface Dental Care in Malibagh right away — same-day dry socket treatment takes only a few minutes and brings fast relief.",
   },
+  {
+    slug: "sinus-toothache-monsoon-vs-cavity-bangladesh",
+    title: "Sinus Toothache or Cavity? Why Monsoon Season Confuses the Two in Bangladesh",
+    excerpt:
+      "Every rainy season, patients walk into the chamber convinced a back tooth needs a filling — when the real problem is a stuffy nose. Here's how to tell a sinus toothache from a real cavity before you start any treatment.",
+    category: "Diagnostics",
+    date: "2026-09-07",
+    readTime: "5 min read",
+    image: "/images/blog/xray.jpg",
+    imageAlt: "Dentist and patient reviewing a dental X-ray on a monitor beside the chair",
+    intro: [
+      "From June through September, Dhaka's clinics see a familiar pattern: a patient comes in holding their cheek, sure that an upper back tooth is decayed, only for the exam to show a perfectly healthy tooth. The real cause is sitting one floor up — a blocked, inflamed sinus, common during the humid, waterlogged monsoon months when colds and sinus infections spread easily.",
+      "Mixing up the two isn't a small mistake. A patient can end up asking for a filling, or even a root canal, on a tooth that was never the problem — while the actual sinus infection goes untreated. Knowing the difference before you sit in the chair saves you an unnecessary procedure and gets you to the right specialist faster.",
+    ],
+    sections: [
+      {
+        heading: "Why a stuffy nose can feel exactly like a toothache",
+        paragraphs: [
+          "The roots of your upper back teeth — the premolars and molars — sit very close to the floor of the maxillary sinus, the air-filled space behind your cheekbones. In many people, only a thin layer of bone or tissue separates the two. This is basic, well-established dental and ENT (ear-nose-throat) anatomy, not something specific to any one patient.",
+          "When the sinus lining swells and fills with mucus during a cold or sinus infection, that pressure presses directly against the nerve endings at the top of those tooth roots. Your brain reads the pressure as tooth pain, even though nothing is wrong with the tooth itself. Dentists call this 'sinus-related toothache,' and it is one of the most common reasons a healthy tooth is mistaken for a decayed one.",
+        ],
+      },
+      {
+        heading: "Signs it's your sinuses, not your tooth",
+        list: [
+          "Several upper back teeth ache at once, on one or both sides — a cavity almost never hurts in more than one tooth at the same time",
+          "Pain gets worse when you bend forward, lie down, or climb stairs, because the change in position shifts pressure inside the sinus",
+          "You also have a blocked or runny nose, thick nasal discharge, a heavy feeling under the eyes or across the forehead, or a mild fever",
+          "The pain is a dull, constant pressure rather than a sharp jab, and it doesn't get worse specifically when you bite down on one tooth",
+          "It started around the same time as a cold, flu, or after days of heavy rain and waterlogging in your area",
+        ],
+      },
+      {
+        heading: "Signs it's actually a cavity or a tooth problem",
+        list: [
+          "Only one specific tooth hurts, and you can usually point to it",
+          "Sharp pain when biting down, or when the tooth touches something hot, cold, or sweet — like sugary cha or a cold drink",
+          "Pain that wakes you up at night, which sinus pressure rarely does",
+          "A visible dark spot, hole, or broken piece on the tooth, or swelling and a pimple-like bump on the gum near just that tooth",
+          "No cold, nasal congestion, or facial pressure alongside the pain",
+        ],
+      },
+      {
+        heading: "Why monsoon makes this worse in Bangladesh",
+        paragraphs: [
+          "Waterlogged streets, sudden swings between air-conditioned rooms and humid outdoor heat, and crowded indoor spaces during heavy rain all make colds and upper respiratory infections spread faster — a pattern recognised by health authorities everywhere, not just here. More colds and sinus infections during these months naturally means more sinus-related toothaches showing up at the dental chamber, right when patients least expect a 'dental' problem to actually be a nose and sinus problem.",
+          "Because the two conditions can look identical to the patient, a dentist needs a proper exam — checking whether one tooth or several are tender, testing each tooth's response to cold and to biting pressure, and taking an X-ray when needed — before agreeing to any filling, root canal, or extraction.",
+        ],
+      },
+      {
+        heading: "What to do about it",
+        list: [
+          "Don't ask for a filling or root canal on a tooth just because it aches — let the dentist test and confirm which tooth, if any, is actually the source",
+          "If several upper back teeth ache together with nasal congestion, treat the sinus infection first — steam inhalation, nasal saline rinses, rest, and a doctor's advice on decongestants if needed",
+          "If the sinus symptoms clear up but tooth pain remains, that tooth needs a proper dental evaluation next",
+          "See a dentist for an exam and X-ray if you're not sure — figuring out which one it is takes a few minutes in the chair and avoids unnecessary treatment",
+        ],
+      },
+    ],
+    takeaway:
+      "If more than one upper back tooth aches at once and you also have a stuffy nose, facial pressure, or a cold, the cause is very likely monsoon sinusitis, not a cavity — don't agree to a filling or root canal until a proper exam confirms it. Book a check-up at Maxface Dental Care in Malibagh so an accurate exam, and an X-ray if needed, tells you exactly which tooth — if any — actually needs treatment.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -2260,6 +2322,7 @@ const postTags: Record<string, string[]> = {
   "teeth-grinding-bruxism-stress-bangladesh": ["Bruxism", "Night Guard", "TMJ Care"],
   "dental-anxiety-fear-of-dentist-bangladesh": ["Dental Anxiety", "Patient Guide", "Dental Fear"],
   "tooth-extraction-aftercare-dry-socket-bangladesh": ["Tooth Extraction", "Dry Socket", "Oral Surgery"],
+  "sinus-toothache-monsoon-vs-cavity-bangladesh": ["Sinus Toothache", "Diagnostics", "Monsoon Health"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
