@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add dental bridge blog post, English + Bangla
+- New bilingual post: "Lost a Tooth? Why a Dental Bridge Still Beats the DIY
+  Gap in Bangladesh" (Restorative Dentistry) — explains why leaving a missing
+  back tooth unreplaced lets neighbouring teeth tilt and the opposing tooth
+  over-erupt, the three bridge types, and an honest bridge-vs-implant-vs-
+  partial-denture cost/time comparison for Dhaka patients
+- Covers Bangladesh-specific factors: local per-unit bridge pricing (৳15,000–
+  35,000), why paan/supari/zarda chewing and skipping floss threaders under
+  the pontic cause early abutment decay, cites the WHO 2022 Global Oral
+  Health Status Report on untreated tooth loss
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add sinus toothache vs cavity blog post, English + Bangla
 - New bilingual post: "Sinus Toothache or Cavity? Why Monsoon Season
   Confuses the Two in Bangladesh" (Diagnostics) — explains how monsoon-season
