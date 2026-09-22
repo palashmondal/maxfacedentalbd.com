@@ -53,6 +53,7 @@ const BN_BY_SLUG: Record<string, string> = {
   "tooth-extraction-aftercare-dry-socket-bangladesh": "tooth-extraction-aftercare-dry-socket-bangladesh-bn",
   "sinus-toothache-monsoon-vs-cavity-bangladesh": "sinus-toothache-monsoon-vs-cavity-bangladesh-bn",
   "dental-bridge-missing-tooth-options-bangladesh": "dental-bridge-missing-tooth-options-bangladesh-bn",
+  "fissure-sealants-childrens-molars-bangladesh": "fissure-sealants-childrens-molars-bangladesh-bn",
 };
 
 // Category label per locale (keeps the /bn filter chips in Bangla while the

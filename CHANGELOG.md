@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add fissure sealants blog post, English + Bangla
+- New bilingual post: "Pit and Fissure Sealants: The Cheap Step That Stops
+  Most Kids' Molar Cavities" (Preventive Care) — explains why the deep pits
+  and grooves on a child's first permanent molars decay early, what a
+  sealant is, when to get one done (age 6 and age 12), and why sealing costs
+  far less than the filling or extraction that follows if you wait
+- Covers Bangladesh-specific context: school tiffin-box snacks (biscuits,
+  chanachur, chocolate) trapped in molar grooves, parents mistaking a new
+  permanent molar for a milk tooth, and cites the CDC finding that
+  sealant-free children get almost three times more molar cavities
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add dental bridge blog post, English + Bangla
 - New bilingual post: "Lost a Tooth? Why a Dental Bridge Still Beats the DIY
   Gap in Bangladesh" (Restorative Dentistry) — explains why leaving a missing

@@ -2337,6 +2337,63 @@ export const posts: BlogPost[] = [
     takeaway:
       "An empty back tooth rarely stays a small problem — it's the neighbouring teeth quietly tilting into the gap that turns a simple bridge into a bigger case a few years later. Visit Maxface Dental Care in Malibagh to have the gap assessed early and get an honest recommendation on whether a bridge, implant, or partial denture fits your tooth, budget, and timeline best.",
   },
+  {
+    slug: "fissure-sealants-childrens-molars-bangladesh",
+    title: "Pit and Fissure Sealants: The Cheap Step That Stops Most Kids' Molar Cavities",
+    excerpt:
+      "The deep grooves on a child's first back molars trap food a toothbrush can't reach — and that's where most childhood cavities begin. Sealing them takes one sitting and costs far less than the filling that follows if you wait.",
+    category: "Preventive Care",
+    date: "2026-09-22",
+    readTime: "5 min read",
+    image: "/images/blog/milk-teeth.jpg",
+    imageAlt: "Smiling child showing a full set of teeth",
+    intro: [
+      "Around age six, most Bangladeshi children get a new tooth at the very back of the mouth that parents often mistake for a milk tooth that will fall out on its own — the first permanent molar. It never gets a replacement, and its chewing surface is covered in narrow pits and grooves that are deeper and tighter than a single toothbrush bristle can reach. Biscuits, chanachur, chocolate and the sugary snacks in a school tiffin box settle right into those grooves and stay there.",
+      "This is why the first permanent molars are usually the first adult teeth to decay — often within a year or two of coming in, quietly, at the back of the mouth where a parent rarely looks. A pit and fissure sealant is a thin protective coating painted onto that chewing surface before decay starts. It takes a few minutes, needs no drilling or injection, and costs a fraction of the filling it prevents.",
+    ],
+    sections: [
+      {
+        heading: "Why back molars decay first",
+        paragraphs: [
+          "Front teeth and the sides of molars are smooth and easy to brush clean. The chewing surface of a molar is not — it's shaped like a mountain range of tiny pits and fissures where food and plaque pack in and bristles simply cannot follow. Saliva and fluoride toothpaste can protect smooth surfaces reasonably well, but they struggle to reach the base of a deep, narrow fissure.",
+          "Because the first permanent molars erupt around age six, quietly, behind the milk teeth, many parents don't even realise a new adult tooth has arrived — they assume the child still has a full set of milk teeth left to lose. That tooth then goes unnoticed and under-brushed for years, right when its grooves are most vulnerable.",
+        ],
+      },
+      {
+        heading: "What a sealant actually is",
+        paragraphs: [
+          "A sealant is a thin, tooth-coloured resin that the dentist flows into the pits and fissures of a molar's chewing surface and hardens in seconds with a curing light. It physically seals the grooves shut, so food and bacteria can no longer collect where a toothbrush can't clean. There is no drilling and no anaesthesia — the tooth surface is simply cleaned, dried and coated.",
+          "The U.S. Centers for Disease Control and Prevention reports that school-age children without sealants have almost three times more cavities in their molars than children with sealants — one of the better-documented figures in preventive dentistry, and the reason sealants are standard practice in school dental programmes in many countries.",
+        ],
+      },
+      {
+        heading: "When to get it done",
+        list: [
+          "First permanent molars: as soon as they erupt, usually around age 6, before any decay has started in the grooves",
+          "Second permanent molars: around age 12, the same way",
+          "Only sound, decay-free grooves can be sealed — once a cavity has started, the tooth needs a filling instead",
+          "Sealants are checked at every six-month visit; they can wear thin over the years and are simply reapplied if needed",
+        ],
+      },
+      {
+        heading: "Why it's cheaper to seal than to wait",
+        list: [
+          "A sealant, done in one short sitting, is a small fraction of the cost of a filling",
+          "A small cavity in a molar needs a filling — more time, more cost, and a child who now has to sit still for a local injection",
+          "A cavity left too long in a child's tooth can reach the nerve, needing pulp treatment or extraction of a permanent tooth that was supposed to last a lifetime",
+          "Losing a permanent molar early in childhood can let neighbouring teeth drift into the space, affecting how the adult teeth eventually line up",
+        ],
+      },
+      {
+        heading: "What parents can do",
+        paragraphs: [
+          "Ask about sealants as soon as your child's first back molar comes in — don't wait for a routine check-up to bring it up, since many parents in Bangladesh have simply never been offered the option. Sealants only protect the chewing surface, though, so brushing twice daily and cutting back on tiffin-box biscuits and carbonated drinks still matters just as much.",
+        ],
+      },
+    ],
+    takeaway:
+      "A sealant takes minutes and costs far less than the filling it prevents — bring your child to Maxface Dental Care in Malibagh as soon as their first back molar erupts, around age six, to get it sealed before a cavity ever gets the chance to start.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
@@ -2386,6 +2443,7 @@ const postTags: Record<string, string[]> = {
   "tooth-extraction-aftercare-dry-socket-bangladesh": ["Tooth Extraction", "Dry Socket", "Oral Surgery"],
   "sinus-toothache-monsoon-vs-cavity-bangladesh": ["Sinus Toothache", "Diagnostics", "Monsoon Health"],
   "dental-bridge-missing-tooth-options-bangladesh": ["Dental Bridge", "Missing Teeth", "Restorative Dentistry"],
+  "fissure-sealants-childrens-molars-bangladesh": ["Fissure Sealants", "Kids' Dental Care", "Preventive Care"],
 };
 
 export function getPostTags(post: BlogPost): string[] {
