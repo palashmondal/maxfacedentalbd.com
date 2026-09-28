@@ -2394,10 +2394,76 @@ export const posts: BlogPost[] = [
     takeaway:
       "A sealant takes minutes and costs far less than the filling it prevents — bring your child to Maxface Dental Care in Malibagh as soon as their first back molar erupts, around age six, to get it sealed before a cavity ever gets the chance to start.",
   },
+  {
+    slug: "tooth-erosion-acidic-food-tetul-achar-bangladesh",
+    title: "Tetul, Achar and Lemon Water: How Acidic Food Is Quietly Wearing Down Your Teeth",
+    excerpt:
+      "Tooth erosion isn't caused by sugar or germs — it's acid dissolving enamel directly. Fuchka tok, achar, lebu pani and soft drinks do it every day in Bangladesh, and the damage can't grow back.",
+    category: "Preventive Care",
+    date: "2026-09-28",
+    readTime: "6 min read",
+    image: "/images/blog/sensitive-teeth.jpg",
+    imageAlt: "Woman drinking a glass of cold water",
+    intro: [
+      "Most people in Bangladesh know sugar causes cavities. Far fewer know about a second, separate way teeth get damaged: dental erosion (acid wear) — the slow dissolving of the hard outer enamel by acid from food and drink, with no bacteria involved at all. Tetul and fuchka tok, achar with every meal, a glass of lebu pani to beat the heat, soft drinks and energy drinks, amra and jolpai makha from the street cart — our food culture is full of sour, acidic favourites.",
+      "One sour snack does no harm. The problem is frequency: sipping and snacking on acid all day gives enamel no time to recover. Erosion is painless at first, so most patients only notice it when teeth become sensitive, look yellower, or start chipping at the edges — and by then the lost enamel is gone for good. Enamel does not grow back.",
+    ],
+    sections: [
+      {
+        heading: "Erosion is not the same as a cavity",
+        paragraphs: [
+          "A cavity (tooth decay) happens when plaque bacteria turn sugar into acid in one spot, making a hole. Erosion is different: the acid comes straight from what you eat or drink, and it washes over every tooth surface at once. Instead of a hole, the whole tooth slowly thins and flattens.",
+          "It is general dental consensus that enamel starts to dissolve once the mouth becomes more acidic than about pH 5.5. Lemon juice, tamarind, vinegar-based achar and cola-type soft drinks are all far more acidic than that. Saliva neutralises acid and helps enamel re-harden — but only if it is given time between acid hits.",
+        ],
+      },
+      {
+        heading: "Common acid sources in a Bangladeshi diet",
+        list: [
+          "Fuchka and chotpoti tok (tetul water), tamarind chutney and tetul makha",
+          "Achar (mango, olive, chalta) — sour fruit plus vinegar or lemon",
+          "Lebu pani, lemon in hot water \"for weight loss\", and squeezing lemon over every meal",
+          "Soft drinks, energy drinks and packaged fruit juices — including \"diet\" and sugar-free versions, which are just as acidic",
+          "Sour street fruit with salt and chilli: kacha aam, amra, jolpai, chalta",
+          "Stomach acid: frequent acid reflux (gastric/\"gas\" problems), or repeated vomiting during pregnancy or illness",
+        ],
+      },
+      {
+        heading: "Warning signs to look for",
+        list: [
+          "Teeth sting with cold water, cha or sweets — the protective enamel has thinned",
+          "Front teeth look more yellow, because the darker dentine (the inner layer) is showing through",
+          "Biting edges of the front teeth look thin, see-through or chipped",
+          "Back teeth look flattened, with small shallow dips on their chewing surfaces",
+          "Old fillings seem to stand higher than the tooth around them",
+        ],
+      },
+      {
+        heading: "How to enjoy sour food without losing enamel",
+        list: [
+          "Keep acidic food and drinks to meal times instead of sipping or snacking on them all day",
+          "Drink soft drinks and juice through a straw, and finish them quickly — don't swish or hold them in the mouth",
+          "Rinse with plain water after fuchka, achar or lebu pani to wash the acid away",
+          "Wait about 30 minutes to an hour before brushing after anything acidic — brushing softened enamel scrubs it away faster",
+          "Use a soft toothbrush and fluoride toothpaste; fluoride helps enamel resist acid",
+          "If you have frequent acid reflux or heartburn, get it treated by a doctor — it erodes teeth from the inside",
+        ],
+      },
+      {
+        heading: "What a dentist can do",
+        paragraphs: [
+          "Early erosion can be slowed or stopped with diet changes, fluoride varnish and desensitising toothpaste. Where enamel has already worn thin, tooth-coloured composite bonding can cover and protect sensitive areas. Severe wear may need crowns or veneers — which is exactly why catching it early, when the fix is simple and cheap, matters.",
+          "At a check-up the dentist can spot erosion long before you feel it and compare over time whether it is getting worse. Bring an honest list of what you drink and snack on each day — it usually points straight to the cause.",
+        ],
+      },
+    ],
+    takeaway:
+      "Keep tetul, achar, lebu pani and soft drinks to meal times, rinse with water afterwards, and never brush straight after — and if your teeth are turning sensitive or yellow, book a check-up at Maxface Dental Care in Malibagh to catch erosion before the lost enamel needs costly repair.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "tooth-erosion-acidic-food-tetul-achar-bangladesh": ["Tooth Erosion", "Enamel Care", "Diet & Teeth"],
   "importance-of-regular-dental-checkups": ["Preventive Care", "Healthy Smile", "Dental Check-Up"],
   "root-canal-treatment-myths-vs-reality": ["Root Canal", "Tooth Pain", "Endodontics"],
   "braces-vs-clear-aligners": ["Braces", "Clear Aligners", "Smile Correction"],

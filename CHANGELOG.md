@@ -4,6 +4,19 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add tooth erosion blog post, English + Bangla
+- New bilingual post: "Tetul, Achar and Lemon Water: How Acidic Food Is
+  Quietly Wearing Down Your Teeth" (Preventive Care) — explains how dental
+  erosion differs from a cavity, the warning signs (sensitivity, yellowing,
+  thin or chipped edges), and practical habits to protect enamel
+- Covers Bangladesh-specific acid sources: fuchka/chotpoti tok, achar, lebu
+  pani, soft drinks, street-cart amra/jolpai/kacha aam makha, and gastric
+  reflux; uses general dental consensus (enamel's ~pH 5.5 critical point)
+  rather than invented figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add fissure sealants blog post, English + Bangla
 - New bilingual post: "Pit and Fissure Sealants: The Cheap Step That Stops
   Most Kids' Molar Cavities" (Preventive Care) — explains why the deep pits
