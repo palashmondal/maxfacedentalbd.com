@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add thumb-sucking and mouth breathing blog post, English + Bangla
+- New bilingual post: "Thumb-Sucking, Chusni and Mouth Breathing: Childhood
+  Habits That Shape Your Child's Teeth" (Paediatric Dentistry) — explains when
+  sucking habits are normal (AAPD: most children stop by ages 2–4), the signs
+  they are affecting the bite (open bite, flared front teeth, crossbite), and
+  gentle ways to help a child stop
+- Covers Bangladesh-specific context: chusni dipped in honey, sugar or mishri
+  water (with the WHO-backed warning against honey under 12 months), nani/dadi
+  remedies like neem or karela on the thumb, and mouth breathing from blocked
+  noses due to Dhaka dust, colds and monsoon allergies
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add tooth erosion blog post, English + Bangla
 - New bilingual post: "Tetul, Achar and Lemon Water: How Acidic Food Is
   Quietly Wearing Down Your Teeth" (Preventive Care) — explains how dental

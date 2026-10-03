@@ -2459,10 +2459,75 @@ export const posts: BlogPost[] = [
     takeaway:
       "Keep tetul, achar, lebu pani and soft drinks to meal times, rinse with water afterwards, and never brush straight after — and if your teeth are turning sensitive or yellow, book a check-up at Maxface Dental Care in Malibagh to catch erosion before the lost enamel needs costly repair.",
   },
+  {
+    slug: "thumb-sucking-pacifier-mouth-breathing-child-teeth-bangladesh",
+    title: "Thumb-Sucking, Chusni and Mouth Breathing: Childhood Habits That Shape Your Child's Teeth",
+    excerpt:
+      "A thumb or a chusni is perfectly normal for a toddler — but kept up past age four, or paired with constant mouth breathing, it can push teeth and jaws out of shape. Here's when to relax and when to act.",
+    category: "Paediatric Dentistry",
+    date: "2026-10-03",
+    readTime: "6 min read",
+    image: "/images/blog/milk-teeth.jpg",
+    imageAlt: "Smiling Bangladeshi child showing his milk teeth",
+    intro: [
+      "Almost every Bangladeshi family has heard the advice: \"Leave the child alone, the thumb habit will go by itself\" — or the opposite, a nani or dadi putting neem or bitter karela juice on the thumb to stop it. Meanwhile the chusni (pacifier) gets dipped in honey or sugar water to settle a crying baby, and nobody notices that the child sleeps with the mouth open every night.",
+      "Sucking is a natural comfort reflex, and in the first few years it does no lasting harm. The trouble starts when the habit carries on while permanent teeth are coming in, or when a blocked nose — common with Dhaka's dust, winter colds and monsoon allergies — turns a child into a full-time mouth breather. These habits can slowly change how the teeth bite and how the jaws grow, and they are far easier to correct early than with braces later.",
+    ],
+    sections: [
+      {
+        heading: "When is it normal, and when does it become a problem?",
+        paragraphs: [
+          "According to the American Academy of Pediatric Dentistry (AAPD), sucking on a thumb, finger or pacifier is normal in infants and young children, and most stop on their own between ages two and four. Up to this point, any small change in the front teeth usually corrects itself once the habit stops.",
+          "It is general dental consensus that a strong, frequent habit continuing beyond about age four — and especially once the first permanent teeth erupt around age six — can start to reshape the mouth. How hard and how often the child sucks matters more than simply whether they do.",
+        ],
+      },
+      {
+        heading: "Signs the habit is affecting the teeth",
+        list: [
+          "Open bite — a gap between the upper and lower front teeth even when the back teeth are closed",
+          "Upper front teeth flaring forward (\"buck teeth\") or lower front teeth tipping backward",
+          "Crossbite — some upper teeth biting inside the lower teeth, often from a narrowed upper jaw",
+          "A lisp, or the tongue pushing forward between the teeth when speaking or swallowing",
+          "A red, rough or calloused patch on the favourite thumb or finger",
+        ],
+      },
+      {
+        heading: "The chusni mistakes we see in Bangladesh",
+        list: [
+          "Dipping the chusni in honey, sugar, glucose or mishri water — this bathes new milk teeth in sugar and is a common cause of early, fast-spreading decay (early childhood caries)",
+          "Giving honey in any form to a baby under 12 months — health authorities including the WHO advise against it because of the risk of infant botulism, a rare but serious illness",
+          "Letting the baby sleep all night with a feeder bottle of sweetened milk in the mouth",
+          "Cleaning a dropped chusni by putting it in an adult's mouth — this passes cavity-causing germs to the baby",
+          "Using a hard, adult-sized or cracked chusni instead of a soft, age-appropriate, one-piece design",
+        ],
+      },
+      {
+        heading: "Mouth breathing: the habit nobody notices",
+        paragraphs: [
+          "A child who breathes mostly through the mouth — snoring, sleeping with lips apart, waking with a dry mouth or drooling on the pillow — is often doing it because the nose is blocked. Common causes are enlarged adenoids or tonsils, allergic rhinitis (a constantly runny or stuffy nose from dust and allergies) and repeated colds.",
+          "When the mouth stays open, the tongue rests low instead of against the palate, and over years the upper jaw can grow narrow, with crowded teeth and a long, tired-looking face. A dry mouth also loses saliva's protection, so mouth breathers tend to get more gum inflammation and cavities. The fix starts with the cause: a dentist can spot the signs, and a child specialist or ENT doctor can treat the blocked nose.",
+        ],
+      },
+      {
+        heading: "How to help your child stop — gently",
+        list: [
+          "Start with praise, not punishment: a sticker or star chart for thumb-free days works better than scolding",
+          "Notice when the habit happens — boredom, tiredness, watching cartoons on the phone — and give the hands something else to do",
+          "Phase out the chusni between ages one and two, starting with daytime use",
+          "Skip neem, karela or chilli on the thumb — it can sting the eyes and mouth, and shaming rarely works",
+          "For an older child who wants to stop but can't, ask the dentist about a reminder appliance",
+          "If your child snores or always breathes through the mouth, get the nose and throat checked rather than waiting for them to \"grow out of it\"",
+        ],
+      },
+    ],
+    takeaway:
+      "Let a toddler's thumb or chusni be, but never sweeten it with honey or sugar — and if the habit carries on past age four or your child sleeps with the mouth open, book a children's check-up at Maxface Dental Care in Malibagh so the bite can be guided back on track before braces are ever needed.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "thumb-sucking-pacifier-mouth-breathing-child-teeth-bangladesh": ["Thumb-Sucking", "Kids' Dental Care", "Mouth Breathing"],
   "tooth-erosion-acidic-food-tetul-achar-bangladesh": ["Tooth Erosion", "Enamel Care", "Diet & Teeth"],
   "importance-of-regular-dental-checkups": ["Preventive Care", "Healthy Smile", "Dental Check-Up"],
   "root-canal-treatment-myths-vs-reality": ["Root Canal", "Tooth Pain", "Endodontics"],
