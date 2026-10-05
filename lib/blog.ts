@@ -2523,10 +2523,73 @@ export const posts: BlogPost[] = [
     takeaway:
       "Let a toddler's thumb or chusni be, but never sweeten it with honey or sugar — and if the habit carries on past age four or your child sleeps with the mouth open, book a children's check-up at Maxface Dental Care in Malibagh so the bite can be guided back on track before braces are ever needed.",
   },
+  {
+    slug: "tooth-fillings-silver-vs-tooth-coloured-bangladesh",
+    title: "Tooth Fillings Explained: Silver vs Tooth-Coloured, How Long They Last, and When to Replace Them",
+    excerpt:
+      "\"Filling korle dant durbol hoye jay\" — a myth that keeps small cavities growing into root canals. Here's what a filling really does, which type suits you, and the signs an old one needs attention.",
+    category: "Restorative Dentistry",
+    date: "2026-10-05",
+    readTime: "6 min read",
+    image: "/images/blog/root-canal.jpg",
+    imageAlt: "Modern dental treatment room with dental chair and equipment",
+    intro: [
+      "A filling is the most common treatment in any dental chamber, yet it is surrounded by worry in Bangladesh. Patients ask whether a filling will weaken the tooth, whether the old \"silver\" filling is poisoning them, or whether they can wait until the hole \"gets bigger\" so the filling is worth the money. Many simply skip it because the tooth does not hurt yet.",
+      "That delay is expensive. The WHO's Global Oral Health Status Report (2022) found untreated tooth decay in permanent teeth to be the most common health condition in the world. With sugary cha several times a day and biscuits in between, Bangladeshi teeth are no exception — and a cavity that a simple filling could fix today can need a root canal and crown a year later.",
+    ],
+    sections: [
+      {
+        heading: "What a filling actually does",
+        paragraphs: [
+          "Tooth decay (a cavity) is a hole that bacteria make in the tooth by dissolving it with acid. Once the hole has formed, it cannot grow back — brushing and fluoride can stop very early spots, but an open cavity only gets deeper.",
+          "A filling stops that. The dentist removes the soft, decayed part, cleans the space and seals it with a strong material, so bacteria and food can no longer get in. It does not weaken a healthy tooth — it is the decay that weakens it. The smaller the cavity when it is filled, the more of your natural tooth is saved.",
+        ],
+      },
+      {
+        heading: "The main filling types, compared",
+        list: [
+          "Composite (tooth-coloured resin) — matches your tooth shade and bonds to the tooth, so less healthy tooth needs to be drilled; the usual choice today for front and back teeth",
+          "Amalgam (\"silver\" filling) — a metal mix containing mercury; very durable and low-cost, but dark in colour and needs more tooth removed to hold it in place",
+          "Glass ionomer — a tooth-coloured material that slowly releases fluoride; useful for children's milk teeth, cavities near the gum line and as a temporary filling, but less strong for heavy chewing",
+          "Inlays/onlays and crowns — made outside the mouth for teeth too damaged for a normal filling; covered in our crowns article",
+        ],
+      },
+      {
+        heading: "Is the old silver filling dangerous?",
+        paragraphs: [
+          "Dental amalgam does contain mercury, which is why many patients worry. The WHO and the FDI World Dental Federation consider existing amalgam fillings safe for most people. In 2020 the US FDA advised that certain higher-risk groups — such as pregnant or breastfeeding women, children under six and people with kidney problems or a mercury allergy — should receive other materials where possible.",
+          "Bangladesh is a party to the Minamata Convention on Mercury, the UN treaty that asks countries to phase down the use of dental amalgam, mainly to protect the environment. So tooth-coloured fillings are increasingly the default. But do not have sound old silver fillings drilled out just out of fear — removal releases more mercury vapour and removes more tooth. Replace them only when they are broken, leaking or decayed underneath.",
+        ],
+      },
+      {
+        heading: "Signs an old filling needs checking",
+        list: [
+          "Food getting stuck in the same spot every time you eat",
+          "A dark line or shadow at the edge of the filling",
+          "A sharp edge that cuts your tongue or cheek, or a piece that has chipped off",
+          "Pain on biting, or sensitivity to cold water or hot cha that lingers",
+          "A filling more than several years old that has never been checked — decay can start underneath without any pain",
+        ],
+      },
+      {
+        heading: "After your filling: what to expect",
+        list: [
+          "Wait until the numbness wears off (usually 1–3 hours) before eating, so you don't bite your cheek or tongue",
+          "Composite fillings are set hard with a blue light in the chamber — you can chew normally once the numbness is gone",
+          "Amalgam fillings take time to fully harden, so avoid chewing hard food like supari, bones or chanachur on that side for the first day",
+          "Mild sensitivity to cold for a few days is normal; if it keeps getting worse, or the bite feels high, come back so it can be adjusted",
+          "A filling seals one cavity, not your mouth — cut down sweet cha between meals and brush twice daily with fluoride toothpaste to avoid the next one",
+        ],
+      },
+    ],
+    takeaway:
+      "Fill a cavity while it is still small and painless — that is what keeps a tooth out of root canal territory — so book a check-up at Maxface Dental Care in Malibagh to have new cavities and old fillings examined before they start to hurt.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "tooth-fillings-silver-vs-tooth-coloured-bangladesh": ["Tooth Fillings", "Cavities", "Restorative Dentistry"],
   "thumb-sucking-pacifier-mouth-breathing-child-teeth-bangladesh": ["Thumb-Sucking", "Kids' Dental Care", "Mouth Breathing"],
   "tooth-erosion-acidic-food-tetul-achar-bangladesh": ["Tooth Erosion", "Enamel Care", "Diet & Teeth"],
   "importance-of-regular-dental-checkups": ["Preventive Care", "Healthy Smile", "Dental Check-Up"],

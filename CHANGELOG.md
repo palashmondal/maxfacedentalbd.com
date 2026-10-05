@@ -4,6 +4,20 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add tooth fillings blog post, English + Bangla
+- New bilingual post: "Tooth Fillings Explained: Silver vs Tooth-Coloured,
+  How Long They Last, and When to Replace Them" (Restorative Dentistry) —
+  explains what a filling does, compares composite, amalgam and glass
+  ionomer, lists signs an old filling needs checking, and aftercare
+- Covers Bangladesh-specific context: the "filling weakens the tooth" myth,
+  sweet cha and biscuit snacking, Bangladesh's membership of the Minamata
+  Convention (amalgam phase-down), and avoiding supari/chanachur on a fresh
+  amalgam; cites the WHO Global Oral Health Status Report 2022 and the 2020
+  FDA amalgam guidance rather than invented figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add thumb-sucking and mouth breathing blog post, English + Bangla
 - New bilingual post: "Thumb-Sucking, Chusni and Mouth Breathing: Childhood
   Habits That Shape Your Child's Teeth" (Paediatric Dentistry) — explains when
