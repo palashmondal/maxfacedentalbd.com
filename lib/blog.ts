@@ -2585,10 +2585,79 @@ export const posts: BlogPost[] = [
     takeaway:
       "Fill a cavity while it is still small and painless — that is what keeps a tooth out of root canal territory — so book a check-up at Maxface Dental Care in Malibagh to have new cavities and old fillings examined before they start to hurt.",
   },
+  {
+    slug: "antibiotics-painkillers-toothache-self-medication-bangladesh",
+    title: "Antibiotics and Painkillers for Toothache: Why the Pharmacy Strip Doesn't Fix the Tooth",
+    excerpt:
+      "A strip of antibiotics from the corner pharmacy makes the pain go quiet — then it comes back, worse. Here's what these medicines can and can't do for a tooth, and how to use painkillers safely until you're treated.",
+    category: "Patient Guide",
+    date: "2026-10-08",
+    readTime: "6 min read",
+    image: "/images/blog/checkups.jpg",
+    imageAlt: "Dentist reviewing a dental X-ray with a patient in the chair",
+    intro: [
+      "In Bangladesh, the first stop for a toothache is rarely a dentist. It is the pharmacy down the road, where a description of the pain is enough to walk away with a strip of antibiotics and a painkiller — often the same combination a neighbour or relative took last time. Two or three days later the pain settles, the strip goes in a drawer, and the tooth is forgotten until the next attack.",
+      "This feels like a cure, but it isn't one. The infection is still inside the tooth, and each round of half-finished antibiotics makes it a little harder to treat — for you and for everyone around you. Understanding what these medicines really do is the first step to saving both the tooth and your money.",
+    ],
+    sections: [
+      {
+        heading: "Why the pain comes back after the strip runs out",
+        paragraphs: [
+          "Most severe toothaches come from decay that has reached the pulp (the soft nerve and blood vessels inside the tooth), or from an abscess (a pocket of pus at the root tip). Inside a tooth, the infected pulp has almost no blood supply of its own, so medicine travelling through the bloodstream can barely reach it.",
+          "Antibiotics may calm the infection in the surrounding gum and bone for a while, which is why the swelling and pain ease. But the source — the decayed, infected tooth — stays exactly where it was. Once the tablets stop, the bacteria return, and the next flare-up is often bigger. The only lasting fixes are dental: a filling, a root canal treatment, draining an abscess, or in some cases removing the tooth.",
+        ],
+      },
+      {
+        heading: "What antibiotics can and can't do",
+        paragraphs: [
+          "The American Dental Association's 2019 clinical guideline on dental pain and swelling advises that, for most adults with a toothache from an inflamed nerve or a localised abscess, antibiotics should not be given at all — because they don't help, and the right dental treatment does. Antibiotics are reserved for infections that are spreading, cause fever or swollen glands, or for patients whose immunity is weak, and even then they go alongside treating the tooth, not instead of it.",
+          "There is a bigger cost too. The WHO lists antimicrobial resistance — bacteria evolving so that antibiotics no longer kill them — among the top global public health threats. Taking antibiotics when they aren't needed, or stopping after a few tablets, is exactly how resistance grows. In a country where antibiotics are still easy to buy without a prescription, every unnecessary strip adds to the problem.",
+        ],
+      },
+      {
+        heading: "Self-medication mistakes we see every week",
+        list: [
+          "Buying antibiotics on the pharmacist's guess, without anyone examining the tooth",
+          "Stopping after two or three days because the pain is gone, then keeping the rest \"for next time\"",
+          "Taking a relative's leftover tablets, or a different antibiotic each time the pain returns",
+          "Putting an aspirin or any tablet directly on the gum — it causes a painful chemical burn and does nothing for the tooth",
+          "Taking painkillers on an empty stomach, or doubling the dose because one tablet \"isn't working\"",
+          "Mixing paracetamol with cold and fever remedies that already contain paracetamol, without realising it",
+          "Living on pills for weeks, until a tooth that needed a simple filling now needs a root canal or extraction",
+        ],
+      },
+      {
+        heading: "Using painkillers safely until you're treated",
+        list: [
+          "Painkillers are for short-term relief while you arrange treatment — they treat the pain, not the cause",
+          "The ADA's guidance favours anti-inflammatory painkillers such as ibuprofen, alone or with paracetamol, for most dental pain — ask a doctor or dentist which suits you",
+          "Take ibuprofen and similar anti-inflammatories after food, not on an empty stomach; avoid them if you have a stomach ulcer, kidney disease, are in late pregnancy or take blood thinners, unless a doctor says otherwise",
+          "Never take more paracetamol than the label allows — for adults, generally no more than 4 g in 24 hours — as an overdose can seriously damage the liver",
+          "Use a cold compress on the cheek and rinse gently with warm salt water; avoid heat on a swollen face",
+          "If you need painkillers for more than two or three days, the tooth needs a dentist, not a bigger dose",
+        ],
+      },
+      {
+        heading: "Danger signs: go for treatment today",
+        paragraphs: [
+          "A tooth infection can occasionally spread into the face and neck, and this is a medical emergency. If you notice any of the signs below, seek care the same day — at a dental chamber, or at a hospital emergency department if it is late at night or you are struggling to breathe or swallow.",
+        ],
+        list: [
+          "Swelling that is spreading towards the eye, under the jaw or into the neck",
+          "Fever, chills or feeling generally unwell along with the toothache",
+          "Difficulty swallowing, breathing or opening the mouth",
+          "Swelling that keeps growing despite antibiotics",
+        ],
+      },
+    ],
+    takeaway:
+      "Antibiotics and painkillers only buy time — the infection lives inside the tooth and only dental treatment removes it — so instead of buying another strip, book an appointment at Maxface Dental Care in Malibagh and have the tooth properly treated while it can still be saved.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "antibiotics-painkillers-toothache-self-medication-bangladesh": ["Toothache", "Antibiotics", "Patient Safety"],
   "tooth-fillings-silver-vs-tooth-coloured-bangladesh": ["Tooth Fillings", "Cavities", "Restorative Dentistry"],
   "thumb-sucking-pacifier-mouth-breathing-child-teeth-bangladesh": ["Thumb-Sucking", "Kids' Dental Care", "Mouth Breathing"],
   "tooth-erosion-acidic-food-tetul-achar-bangladesh": ["Tooth Erosion", "Enamel Care", "Diet & Teeth"],

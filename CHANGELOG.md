@@ -4,6 +4,21 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add antibiotics and painkillers for toothache blog post, English + Bangla
+- New bilingual post: "Antibiotics and Painkillers for Toothache: Why the
+  Pharmacy Strip Doesn't Fix the Tooth" (Patient Guide) — explains why pain
+  returns after antibiotics (the infection lives inside the tooth), when
+  antibiotics are actually needed, common self-medication mistakes, safe
+  short-term painkiller use, and danger signs of a spreading infection
+- Covers Bangladesh-specific context: buying antibiotics over the pharmacy
+  counter without an exam, half-finished strips kept "for next time",
+  sharing a relative's leftover tablets, and aspirin placed on the gum;
+  cites the ADA 2019 guideline on antibiotics for dental pain and the WHO's
+  antimicrobial resistance warning rather than invented figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add tooth fillings blog post, English + Bangla
 - New bilingual post: "Tooth Fillings Explained: Silver vs Tooth-Coloured,
   How Long They Last, and When to Replace Them" (Restorative Dentistry) —
