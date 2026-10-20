@@ -2653,10 +2653,78 @@ export const posts: BlogPost[] = [
     takeaway:
       "Antibiotics and painkillers only buy time — the infection lives inside the tooth and only dental treatment removes it — so instead of buying another strip, book an appointment at Maxface Dental Care in Malibagh and have the tooth properly treated while it can still be saved.",
   },
+  {
+    slug: "miswak-neem-charcoal-gul-traditional-teeth-cleaning-bangladesh",
+    title: "Miswak, Neem Datun, Charcoal and Gul: Which Traditional Teeth Cleaners Are Safe?",
+    excerpt:
+      "Nani swore by kayla, many still chew a miswak, and the supermarket now sells black charcoal paste. Here's which traditional cleaners actually protect your teeth — and one \"tooth powder\" that is really tobacco.",
+    category: "Preventive Care",
+    date: "2026-10-20",
+    readTime: "6 min read",
+    image: "/images/blog/hygiene.jpg",
+    imageAlt: "Toothbrushes in a glass jar on a clean bathroom counter",
+    intro: [
+      "In Bangladesh, teeth have been cleaned with far more than a plastic brush. In the village, grandparents rubbed their teeth with kayla (coal powder), chhai (ash) or salt. Many people still chew a neem datun or use a miswak every morning. And supermarket shelves in Dhaka now carry charcoal toothpaste and herbal tooth powders promising a whiter, \"natural\" smile.",
+      "Some of these are genuinely useful, some do slow damage, and one is outright dangerous. The difference matters, because what you clean your teeth with twice a day, for decades, decides whether you keep them. Here is an honest look at each one — and what should actually be in your routine.",
+    ],
+    sections: [
+      {
+        heading: "Miswak and neem datun: helpful, but not enough on their own",
+        paragraphs: [
+          "Miswak (a chewing stick from the Salvadora persica tree) and neem datun (a fresh neem twig) are among the oldest toothbrushes in the world. Both contain natural compounds that act against bacteria, and when the tip is chewed into soft bristles and used carefully, they can remove plaque (the sticky layer of bacteria on teeth) from the outer surfaces quite well.",
+          "Their weakness is what they don't do. A stick cannot clean well between teeth or behind the back molars, and it does not give the cavity protection that fluoride toothpaste does. So a miswak is a fine extra — after midday prayers, or while travelling — but it should sit alongside brushing with fluoride toothpaste morning and night, not replace it.",
+        ],
+        list: [
+          "Peel back about 1 cm of bark and chew the tip until soft bristles form",
+          "Brush gently along the gum line — scrubbing hard with a stiff stick pushes the gums back",
+          "Cut off the used tip every day or two so old, bacteria-laden bristles don't stay in your mouth",
+          "Keep it dry and in the open air, not in a closed, damp box where mould can grow",
+        ],
+      },
+      {
+        heading: "Coal, ash and salt: the slow sandpaper",
+        paragraphs: [
+          "Kayla, chhai and coarse salt make teeth feel clean because they are scraping them. They are highly abrasive (rough enough to wear away the tooth surface). Rubbed on with a finger every day for years, they grind down enamel (the hard outer layer of the tooth) and push the gums back, exposing the softer root underneath.",
+          "The result is something we see in the chamber regularly: notched, yellowish, sensitive teeth near the gum line, with gums that have shrunk away. Worn enamel does not grow back. Salt with mustard oil (lobon-sorisher tel) is gentler, but it still does nothing to protect against cavities.",
+        ],
+      },
+      {
+        heading: "Charcoal toothpaste and herbal tooth powders",
+        paragraphs: [
+          "Black charcoal toothpaste is sold in Dhaka as a natural whitener. A 2017 literature review in the Journal of the American Dental Association found there was not enough clinical or laboratory evidence to back up the safety and effectiveness claims made for charcoal toothpastes and powders. Charcoal can lift some surface stain from cha and paan, but it is abrasive, many products contain little or no fluoride, and the black particles can settle into the edges of fillings and along the gum line.",
+          "Herbal tooth powders (dant majon) vary widely — some are gentle, others coarse. The simple test is the label: if fluoride is not listed in the ingredients, the product is not protecting you from cavities, however natural it sounds.",
+        ],
+      },
+      {
+        heading: "Gul is not a tooth powder — it is tobacco",
+        paragraphs: [
+          "Gul is powdered tobacco. In Bangladesh it is commonly rubbed on the teeth and gums as if it were a tooth powder, especially by women in rural areas, and many users genuinely think of it as a teeth cleaner. But the nicotine passes straight through the gum into the blood, which makes it highly addictive.",
+          "Smokeless tobacco such as gul, zarda and sadapata is a major cause of gum disease and mouth cancer, and it is widespread: the Global Adult Tobacco Survey (GATS) 2017 found that about one in five adults in Bangladesh uses smokeless tobacco. If someone in your family \"cleans\" their teeth with gul every morning, they are not cleaning — they are taking tobacco. Quitting is hard because of the nicotine, so ask a doctor or our team for support, and have any white or red patch, or a sore that won't heal, checked without delay.",
+        ],
+      },
+      {
+        heading: "What actually belongs in your routine",
+        paragraphs: [
+          "Fluoride toothpaste is the best-proven way to prevent cavities at home — in 2021 the WHO added it to its Model List of Essential Medicines. A soft brush and a tube of fluoride paste cost far less than a single filling.",
+        ],
+        list: [
+          "A soft-bristled toothbrush, replaced every 3–4 months or sooner if the bristles splay (the American Dental Association's advice)",
+          "Fluoride toothpaste for adults and children over six — check the label for sodium fluoride, sodium monofluorophosphate or stannous fluoride, ideally 1,000–1,500 ppm",
+          "Brush for two minutes twice a day — the last brush before bed is the most important",
+          "Spit out the foam but don't rinse with water, so the fluoride keeps working",
+          "Children under three: a rice-grain smear of fluoride toothpaste; ages three to six: a pea-sized amount, with an adult doing the brushing",
+          "Miswak or datun as a daytime extra if you like it — but never coal, ash or gul",
+        ],
+      },
+    ],
+    takeaway:
+      "Keep the miswak if you love it, but never let coal, ash or gul near your teeth — make a soft brush and fluoride toothpaste your twice-daily habit, and book a check-up at Maxface Dental Care in Malibagh so any wear, sensitivity or gum recession from old habits is caught early.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "miswak-neem-charcoal-gul-traditional-teeth-cleaning-bangladesh": ["Miswak & Datun", "Toothpaste", "Oral Hygiene"],
   "antibiotics-painkillers-toothache-self-medication-bangladesh": ["Toothache", "Antibiotics", "Patient Safety"],
   "tooth-fillings-silver-vs-tooth-coloured-bangladesh": ["Tooth Fillings", "Cavities", "Restorative Dentistry"],
   "thumb-sucking-pacifier-mouth-breathing-child-teeth-bangladesh": ["Thumb-Sucking", "Kids' Dental Care", "Mouth Breathing"],

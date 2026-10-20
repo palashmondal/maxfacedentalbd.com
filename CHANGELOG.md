@@ -4,6 +4,22 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add miswak, charcoal and gul traditional teeth cleaning blog post, English + Bangla
+- New bilingual post: "Miswak, Neem Datun, Charcoal and Gul: Which Traditional
+  Teeth Cleaners Are Safe?" (Preventive Care) — explains how to use a miswak or
+  neem datun properly and why it can't replace fluoride toothpaste, why coal,
+  ash and salt wear enamel and gums, what to check on charcoal pastes and
+  herbal tooth powders, and what belongs in a daily routine
+- Covers Bangladesh-specific context: kayla/chhai teeth rubbing in villages,
+  miswak after prayers, charcoal paste sold in Dhaka as a whitener, and gul
+  (powdered tobacco) used as a "tooth powder"; cites the 2017 JADA charcoal
+  dentifrice review, GATS 2017 smokeless tobacco use and the WHO's 2021
+  Essential Medicines listing of fluoride toothpaste rather than invented
+  figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add antibiotics and painkillers for toothache blog post, English + Bangla
 - New bilingual post: "Antibiotics and Painkillers for Toothache: Why the
   Pharmacy Strip Doesn't Fix the Tooth" (Patient Guide) — explains why pain
