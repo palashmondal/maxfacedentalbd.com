@@ -2720,10 +2720,102 @@ export const posts: BlogPost[] = [
     takeaway:
       "Keep the miswak if you love it, but never let coal, ash or gul near your teeth — make a soft brush and fluoride toothpaste your twice-daily habit, and book a check-up at Maxface Dental Care in Malibagh so any wear, sensitivity or gum recession from old habits is caught early.",
   },
+  {
+    slug: "baby-teething-fever-myths-safe-relief-bangladesh",
+    title: "Baby Teething: Is the Fever Really From the Tooth? Safe Relief and Myths to Drop",
+    excerpt:
+      "In Bangladeshi homes, almost every fever or loose stool in a baby gets blamed on \"dant uthche.\" Here's what teething really does, what it doesn't, and which popular remedies are not safe.",
+    category: "Paediatric Dentistry",
+    date: "2026-10-22",
+    readTime: "6 min read",
+    image: "/images/blog/milk-teeth.jpg",
+    imageAlt: "Smiling Bangladeshi child showing his milk teeth",
+    intro: [
+      "When a baby in Bangladesh turns cranky, drools, feels warm or has loose stools, someone in the family almost always says the same thing: \"Dant uthche\" — a tooth is coming. Nani nods, a tabiz goes on a black thread around the neck, and a little honey gets rubbed on the gums.",
+      "Teething is real, and it can make a baby miserable for a few days. But it is blamed for far more than it actually causes — and in a country where diarrhoea, pneumonia and, every monsoon and autumn, dengue still put young children in hospital, that mistake can delay care for a genuinely sick child. Here is what teething really looks like, what it doesn't do, and how to soothe it safely.",
+    ],
+    sections: [
+      {
+        heading: "What normal teething looks like",
+        paragraphs: [
+          "Most babies get their first tooth at around six months, though anywhere from four to twelve months is normal. The lower front teeth usually come first, followed by the upper front teeth. By about age three, most children have all 20 milk teeth (primary teeth).",
+          "A well-known 2000 study in the journal Pediatrics, which followed 125 babies through 475 new teeth, found that teething symptoms cluster in the few days just before and after a tooth breaks through the gum. Those symptoms were mild — and they did not include high fever.",
+        ],
+        list: [
+          "Extra drooling, sometimes with a mild rash on the chin from the wet skin",
+          "Biting and chewing on fingers, toys or anything within reach",
+          "Rubbing the gums, or pulling at the ear on the same side",
+          "Fussiness and broken sleep for a few nights",
+          "A swollen, red or slightly bluish bump on the gum where the tooth is coming",
+          "Eating a little less solid food for a day or two",
+          "At most, a slight rise in temperature — not a real fever",
+        ],
+      },
+      {
+        heading: "\"Dant uthche\" is not an explanation for every illness",
+        paragraphs: [
+          "Paediatric bodies such as the American Academy of Pediatrics are clear that teething does not cause high fever or diarrhoea — if those appear, look for another cause. Babies start teething at the same age they begin crawling, putting everything in their mouths and losing the protective antibodies they got from their mother, so infections are common in exactly this window. The tooth and the illness simply arrive at the same time.",
+          "In Bangladesh this mix-up is risky. Diarrhoea can dehydrate a small baby within hours, and a fever during dengue season needs proper assessment, not a wait-and-see because \"it's only a tooth.\" Take your baby to a doctor — rather than settling for the teething explanation — if you notice:",
+        ],
+        list: [
+          "Any fever (38°C or more) in a baby under three months, 39°C or more in an older baby, or a fever lasting more than two days",
+          "Watery stools more than a few times a day, or signs of dehydration: fewer wet nappies, a dry mouth, a sunken soft spot on the head, crying without tears",
+          "Fast or difficult breathing, a cough that won't settle, or unusual sleepiness",
+          "A rash with fever, refusing breastfeeds or food, or repeated vomiting",
+          "Swelling of the face, or pus on the gum",
+        ],
+      },
+      {
+        heading: "Popular remedies that are better left out",
+        paragraphs: [
+          "Many teething remedies passed around family WhatsApp groups and pharmacy counters are, at best, useless — and some carry real risk.",
+        ],
+        list: [
+          "Honey on the gums: honey can carry the spores that cause infant botulism, a rare but serious paralysing illness, so it should not be given to babies under one year — not on a dummy, not on the gums, and not as \"mukhe modhu\" after birth",
+          "Numbing gels with benzocaine: in 2018 the US Food and Drug Administration (FDA) warned against benzocaine teething products for children under two, because they can cause methaemoglobinaemia, a dangerous blood condition that cuts how much oxygen the blood carries. Gels also wash away with drool within minutes",
+          "Amber necklaces, or a tabiz on a thread around the neck: in 2018 the FDA warned that teething necklaces and bracelets can cause choking and strangulation. Anything tied around a baby's neck, or small beads they can bite off, is a hazard — especially during sleep",
+          "Homeopathic teething tablets: in 2016 the FDA told parents to stop using them after reports of serious reactions, and some were later found to contain inconsistent amounts of belladonna, a toxic plant substance",
+          "Hard biscuits, raw carrot pieces or a chicken bone to gnaw on: babies can bite off a piece and choke",
+          "Sugar, sweetened gripe water or biscuits to stop the crying: they comfort for a moment but feed the bacteria that cause cavities in brand-new teeth",
+          "Cutting or hard rubbing of the gum to \"help the tooth out\": it risks infection and does not make the tooth come any faster",
+        ],
+      },
+      {
+        heading: "What actually helps",
+        paragraphs: [
+          "Teething pain usually settles once the tooth breaks through. Until then, simple, clean comfort works best.",
+        ],
+        list: [
+          "Wash your hands and gently rub the sore gum with a clean finger for a minute or two",
+          "Give a solid rubber teething ring chilled in the fridge — not the freezer, which makes it hard enough to hurt the gum",
+          "Let the baby chew on a clean, damp cotton cloth (a soft gamchha corner works) cooled in the fridge, while you watch",
+          "Wipe drool off the chin often and pat it dry to prevent a rash",
+          "Extra cuddles, and keeping to the usual feeding and sleep routine",
+          "If the baby is clearly in pain, ask a doctor or pharmacist for the correct paracetamol syrup dose for your child's age and weight — never guess the dose, and never give a child aspirin",
+        ],
+      },
+      {
+        heading: "The first tooth is also the first toothbrush",
+        paragraphs: [
+          "Teething is a good reminder that tooth care starts the day the first tooth appears — not when the child starts school. Milk teeth can decay within months, especially with night-time bottle feeds or sweet snacks.",
+        ],
+        list: [
+          "Before teeth appear, wipe the gums once a day with a clean, soft, damp cloth",
+          "From the first tooth, brush twice a day with a soft baby brush and a rice-grain smear of fluoride toothpaste",
+          "Don't put the baby to sleep with a bottle of milk, juice or sugar water",
+          "Book a first dental visit by the first birthday, as the American Academy of Pediatric Dentistry recommends — a short, gentle check that is mostly advice for parents",
+          "If no tooth has appeared by around 18 months, or teeth come in discoloured, chipped or very crowded, have them checked",
+        ],
+      },
+    ],
+    takeaway:
+      "Teething brings drool, chewing and a few grumpy nights — not high fever or diarrhoea — so treat those as illness, skip the honey, numbing gels and neck threads, and when the first tooth arrives, book your baby's first gentle check-up at Maxface Dental Care in Malibagh.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "baby-teething-fever-myths-safe-relief-bangladesh": ["Teething", "Baby Care", "Kids' Dental Care"],
   "miswak-neem-charcoal-gul-traditional-teeth-cleaning-bangladesh": ["Miswak & Datun", "Toothpaste", "Oral Hygiene"],
   "antibiotics-painkillers-toothache-self-medication-bangladesh": ["Toothache", "Antibiotics", "Patient Safety"],
   "tooth-fillings-silver-vs-tooth-coloured-bangladesh": ["Tooth Fillings", "Cavities", "Restorative Dentistry"],

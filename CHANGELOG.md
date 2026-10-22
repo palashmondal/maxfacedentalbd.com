@@ -4,6 +4,22 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add baby teething fever myths and safe relief blog post, English + Bangla
+- New bilingual post: "Baby Teething: Is the Fever Really From the Tooth? Safe
+  Relief and Myths to Drop" (Paediatric Dentistry) — explains normal teething
+  timing and signs, why high fever and diarrhoea are not teething symptoms and
+  when to see a doctor instead, which remedies to avoid, what actually soothes
+  sore gums, and starting tooth care from the first tooth
+- Covers Bangladesh-specific context: "dant uthche" blamed for every illness,
+  honey on the gums and "mukhe modhu" at birth, tabiz on a thread around the
+  neck, gripe water, and dengue/diarrhoea season risks; cites the 2000
+  Pediatrics teething study, FDA warnings on benzocaine gels, teething
+  necklaces and homeopathic tablets, and AAP/AAPD guidance rather than
+  invented figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add miswak, charcoal and gul traditional teeth cleaning blog post, English + Bangla
 - New bilingual post: "Miswak, Neem Datun, Charcoal and Gul: Which Traditional
   Teeth Cleaners Are Safe?" (Preventive Care) — explains how to use a miswak or
