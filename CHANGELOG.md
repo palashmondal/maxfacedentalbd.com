@@ -4,6 +4,22 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add food stuck between teeth, toothpicks and flossing blog post, English + Bangla
+- New bilingual post: "Food Stuck Between Teeth After Biryani and Beef?
+  Toothpicks, Floss and When the Gap Needs a Dentist" (Gum Care) — explains
+  why food impaction keeps happening in the same spot (open contacts, cavities
+  between teeth, broken fillings, drifting teeth, gum recession), what trapped
+  food does to teeth and gums, why toothpicks and pins cause harm, safer
+  interdental cleaning options, and when to book a dental visit
+- Covers Bangladesh-specific context: kacchi, tehari and Eid beef, restaurant
+  counter toothpicks (khilal), safety pins, matchsticks and hairpins used as
+  picks, and ilish fish bones in the throat as a hospital emergency; cites the
+  2019 Cochrane interdental cleaning review (with its low-certainty caveat)
+  and ADA advice rather than invented figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add baby teething fever myths and safe relief blog post, English + Bangla
 - New bilingual post: "Baby Teething: Is the Fever Really From the Tooth? Safe
   Relief and Myths to Drop" (Paediatric Dentistry) — explains normal teething

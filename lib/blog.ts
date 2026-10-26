@@ -2811,10 +2811,95 @@ export const posts: BlogPost[] = [
     takeaway:
       "Teething brings drool, chewing and a few grumpy nights — not high fever or diarrhoea — so treat those as illness, skip the honey, numbing gels and neck threads, and when the first tooth arrives, book your baby's first gentle check-up at Maxface Dental Care in Malibagh.",
   },
+  {
+    slug: "food-stuck-between-teeth-toothpick-floss-bangladesh",
+    title: "Food Stuck Between Teeth After Biryani and Beef? Toothpicks, Floss and When the Gap Needs a Dentist",
+    excerpt:
+      "After every dawat, out come the toothpicks — and sometimes the safety pin. Here's why meat keeps getting trapped in the same spot, what to clean with instead, and when that gap is a problem only a dentist can fix.",
+    category: "Gum Care",
+    date: "2026-10-26",
+    readTime: "6 min read",
+    image: "/images/blog/gum-care.jpg",
+    imageAlt: "Dentist holding periodontal examination instruments",
+    intro: [
+      "Kacchi at a wedding, beef bhuna at Eid, a plate of tehari after Friday prayers — in Bangladesh, a good meal often ends with a toothpick from the restaurant counter. If that doesn't work, people reach for whatever is nearby: a safety pin, a matchstick, a hairpin, the corner of a bill. Getting that stubborn piece of meat out feels like a small victory.",
+      "Occasional food stuck between teeth is normal. But if it happens in the same spot after almost every meal, your mouth is telling you something — usually that there is a gap, a cavity or a broken filling that shouldn't be there. And the way most of us dig it out can quietly injure the gum. Here is what is really going on, and how to clean safely.",
+    ],
+    sections: [
+      {
+        heading: "Why food gets trapped in the same place every time",
+        paragraphs: [
+          "Healthy neighbouring teeth touch each other tightly. Dentists call this the \"contact point\", and it stops food from being pushed down into the gum when you chew. When that contact opens up, stringy foods like beef, mutton, chicken and shak fibres get wedged into the gap with every bite. Dentists call this \"food impaction\".",
+          "Common reasons the contact opens up include:",
+        ],
+        list: [
+          "A cavity between two teeth, which hollows out the side of the tooth",
+          "A filling or crown that has cracked, worn down or was never shaped to touch the next tooth",
+          "A missing tooth that was never replaced — the teeth around it slowly tip and drift, opening new gaps",
+          "Gum recession (the gum shrinking back), often from gum disease or years of hard brushing, which leaves small triangular spaces near the gum line",
+          "Teeth that have shifted with age, crowding or an uneven bite",
+        ],
+      },
+      {
+        heading: "What trapped food does if it stays",
+        paragraphs: [
+          "A piece of meat left between teeth is not just annoying. Within hours, the bacteria in plaque (the sticky, soft film that builds up on teeth) start breaking it down. That produces acid, which attacks the tooth, and toxins that inflame the gum.",
+          "The result is usually a sore, swollen, bleeding spot between two teeth, a bad taste or bad smell, and — if it keeps happening — a cavity in the side of the tooth or deeper gum damage. Occasionally, a food particle or a splinter pushed under the gum leads to a gum abscess (a painful pocket of pus) that needs urgent treatment.",
+        ],
+      },
+      {
+        heading: "Toothpicks, pins and matchsticks: what goes wrong",
+        paragraphs: [
+          "A toothpick used gently, once in a while, at the edge of the gum is unlikely to cause harm. The trouble is how we usually use them — hard, deep and every day, and often with objects that were never meant to go in the mouth.",
+        ],
+        list: [
+          "Wooden toothpicks can splinter, and a tiny sliver left under the gum can cause swelling and infection",
+          "Digging pushes food deeper towards the root instead of lifting it out",
+          "Forcing a toothpick into the same gap every day can widen it and push the gum back further",
+          "Safety pins, hairpins and needles easily scratch the gum and the tooth surface, and are not clean",
+          "Matchsticks and paper are not hygienic and leave fibres behind",
+          "Picking at a sore spot hides the real problem — the gap or cavity keeps getting worse",
+        ],
+      },
+      {
+        heading: "Better ways to clean between your teeth",
+        paragraphs: [
+          "A toothbrush cleans the front, back and biting surfaces of teeth, but it cannot reach between them. That is why dental bodies, including the American Dental Association, recommend cleaning between the teeth once a day. A 2019 Cochrane review, which pooled many clinical trials, found that using floss or interdental brushes in addition to brushing may reduce gum inflammation more than brushing alone. The evidence quality was rated low, but the general advice from dentists is consistent: brushing alone misses these surfaces.",
+          "Most of these are available at pharmacies and superstores in Dhaka, and a pack lasts weeks.",
+        ],
+        list: [
+          "Dental floss: slide it gently between two teeth, curve it into a \"C\" shape around each tooth and move it up and down — don't snap it into the gum",
+          "Floss picks (a short piece of floss on a plastic handle): easier for beginners, older family members and after meals outside home",
+          "Interdental brushes (tiny bottle-brush-like brushes): the best choice for wider gaps, under bridges and around braces — pick a size that fits snugly without forcing",
+          "Water flosser (a device that sprays a thin jet of water): useful for people with braces or bridges, but optional",
+          "Rinsing with plain water straight after a meat-heavy meal helps loosen bits until you can clean properly",
+          "If a piece won't come out, try floss with a small knot tied in it, then leave it and brush — don't keep digging",
+        ],
+      },
+      {
+        heading: "When the gap needs a dentist, not a toothpick",
+        paragraphs: [
+          "Food impaction is often a sign of a problem a toothpick cannot fix. A dentist can find the cause — sometimes with a small X-ray, because cavities between teeth are often invisible from outside — and close the gap with a new filling, a reshaped crown, or by replacing a missing tooth.",
+          "Book a dental visit if you notice:",
+        ],
+        list: [
+          "Food getting stuck in the same spot after most meals",
+          "A gap that has appeared or widened recently, or a filling that feels rough or broken",
+          "Gum that is swollen, painful or bleeds every time you clean that spot",
+          "A bad taste, bad smell or pus from between two teeth",
+          "Something lodged under the gum — a splinter, a husk or a bone fragment — that you can't remove within a day",
+          "Note: a fish bone (for example from ilish) stuck in the throat rather than the gum is a medical emergency — go to a hospital, not a dental chamber",
+        ],
+      },
+    ],
+    takeaway:
+      "If food gets trapped in the same spot after every meal, put down the toothpick and safety pin, switch to floss or an interdental brush tonight — and book a check-up at Maxface Dental Care in Malibagh so we can find and fix the gap that keeps catching it.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "food-stuck-between-teeth-toothpick-floss-bangladesh": ["Food Impaction", "Flossing", "Gum Care"],
   "baby-teething-fever-myths-safe-relief-bangladesh": ["Teething", "Baby Care", "Kids' Dental Care"],
   "miswak-neem-charcoal-gul-traditional-teeth-cleaning-bangladesh": ["Miswak & Datun", "Toothpaste", "Oral Hygiene"],
   "antibiotics-painkillers-toothache-self-medication-bangladesh": ["Toothache", "Antibiotics", "Patient Safety"],
