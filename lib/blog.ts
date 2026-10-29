@@ -2895,10 +2895,93 @@ export const posts: BlogPost[] = [
     takeaway:
       "If food gets trapped in the same spot after every meal, put down the toothpick and safety pin, switch to floss or an interdental brush tonight — and book a check-up at Maxface Dental Care in Malibagh so we can find and fix the gap that keeps catching it.",
   },
+  {
+    slug: "heart-disease-bp-blood-thinners-dental-treatment-bangladesh",
+    title: "Heart Patient, High BP or on Blood Thinners? How to Get Dental Treatment Safely",
+    excerpt:
+      "Many people in Bangladesh quietly stop their Ecosprin or skip their BP tablet before a tooth extraction — and that can be more dangerous than the treatment itself. Here's what to tell your dentist, what not to stop, and why heart patients need their teeth looked after more, not less.",
+    category: "Patient Guide",
+    date: "2026-10-29",
+    readTime: "6 min read",
+    image: "/images/blog/checkups.jpg",
+    imageAlt: "Dentist reviewing a dental X-ray with a patient in the chair",
+    intro: [
+      "In almost every Bangladeshi family there is someone with a thick prescription file — a father on BP tablets, an uncle who had a stent at a Dhaka heart hospital, a mother on blood thinners after a valve operation. When that person gets a toothache, the advice from relatives comes fast: \"Stop the aspirin for a week before the tooth is pulled\", or \"Heart patients shouldn't take the dentist's injection\". So the tooth is ignored for months, or the medicine is stopped without asking anyone.",
+      "Both choices carry real risk. The good news is that heart and blood pressure problems almost never mean you can't have dental treatment — they mean your dentist needs the full picture and plans around it. Here is how to make your visit safe.",
+    ],
+    sections: [
+      {
+        heading: "Bring the whole file, not just the toothache",
+        paragraphs: [
+          "Your dentist can only plan safely around what they know. Before any treatment — especially an extraction, scaling or gum surgery — tell them about every heart or blood condition and every medicine, including ones you take \"only sometimes\". The easiest way is to bring your prescription file or a photo of your medicine strips on your phone.",
+          "Make sure your dentist knows if you have or take:",
+        ],
+        list: [
+          "High blood pressure, and what your usual reading is",
+          "A previous heart attack, angina (chest pain from the heart), a stent or bypass surgery — and roughly when",
+          "A replaced or repaired heart valve, rheumatic heart disease, or a past infection of the heart lining (endocarditis)",
+          "A pacemaker or other heart device",
+          "Any blood thinner: aspirin (for example Ecosprin), clopidogrel, ticagrelor, warfarin, rivaroxaban, apixaban, dabigatran",
+          "Diabetes, kidney disease or a bleeding disorder, which also change how treatment is planned",
+        ],
+      },
+      {
+        heading: "Blood thinners: don't stop them on your own",
+        paragraphs: [
+          "Blood thinners are prescribed to stop clots that cause heart attacks and strokes. If you stop them yourself — especially within months of a stent — the risk of a clot can rise sharply, and that is far more dangerous than a little extra bleeding from a tooth socket.",
+          "For most routine dental work, including simple extractions, guidance such as the Scottish Dental Clinical Effectiveness Programme (SDCEP) guideline on patients taking anticoagulants or antiplatelet drugs advises that aspirin and clopidogrel are usually continued. The dentist controls bleeding locally instead — with stitches, a dissolving dressing in the socket and firm pressure with gauze.",
+        ],
+        list: [
+          "Aspirin or clopidogrel: usually continued for fillings, scaling and simple extractions",
+          "Warfarin: your INR (a blood test that shows how thin your blood is) is usually checked shortly before an extraction — ideally within 24 hours — so bring a recent report",
+          "Rivaroxaban, apixaban, dabigatran: for some procedures the dentist may ask you to delay or skip one dose — only follow this on your dentist's or cardiologist's specific advice",
+          "Never stop or change a blood thinner because a relative, pharmacy or another patient told you to",
+          "After treatment, avoid ibuprofen and similar painkillers unless your doctor approves — they can add to bleeding; paracetamol is usually the safer choice",
+        ],
+      },
+      {
+        heading: "High blood pressure and the dental chair",
+        paragraphs: [
+          "High blood pressure is very common in Bangladesh, and many people only discover it when a reading is taken at a clinic. A common fear is that the dental anaesthetic (the numbing injection) is dangerous for BP patients because it contains a small amount of adrenaline. In people whose BP is reasonably controlled, standard dental doses are generally considered safe, and a dentist can choose a limited dose or a different anaesthetic when needed. Pain and anxiety without numbing push blood pressure up more.",
+        ],
+        list: [
+          "Take your usual BP and heart tablets on the morning of treatment, with your normal breakfast",
+          "Don't skip a tablet \"to be safe\" — that is exactly when BP rises",
+          "Ask for your BP to be checked before treatment; good chambers do this for patients with known hypertension",
+          "If the reading is very high (around 180/110 or above), non-urgent treatment is usually postponed and you are sent back to your doctor first",
+          "Prefer a morning appointment, eat beforehand and tell the dentist if you feel anxious — a calm, unhurried visit keeps BP steadier",
+          "Get up slowly from the chair; some BP medicines can make you dizzy when you stand quickly",
+        ],
+      },
+      {
+        heading: "Heart conditions that need extra planning",
+        paragraphs: [
+          "After a recent heart attack, stent or heart surgery, non-urgent dental treatment is usually postponed for a period, and your dentist may want a short note from your cardiologist. Emergency care for pain or infection can still be given with precautions — don't sit at home with a swollen face because of the heart.",
+          "People with a replaced heart valve, or who have had endocarditis before, are at higher risk if mouth bacteria enter the blood during treatment. For these highest-risk groups, the American Heart Association recommends an antibiotic dose before certain dental procedures, such as extractions and deep scaling. For most other heart patients — including most people with high BP, stents or angina — routine antibiotics before dental work are not recommended. Your dentist will decide this with you; don't take a leftover antibiotic strip on your own.",
+        ],
+      },
+      {
+        heading: "Your mouth and your heart affect each other",
+        paragraphs: [
+          "A 2012 scientific statement from the American Heart Association found that gum disease and heart disease are associated, but there is not enough evidence to say one directly causes the other. Still, an infected, bleeding mouth is not good for anyone with heart disease — and for valve patients, a healthy mouth is part of protecting the heart.",
+          "Some heart and BP medicines also change the mouth, so regular check-ups matter more, not less:",
+        ],
+        list: [
+          "Amlodipine and similar BP tablets can cause gingival overgrowth (the gums slowly swelling up over the teeth); good cleaning and scaling help, and your doctor may consider another medicine",
+          "Some BP tablets and water tablets cause dry mouth, which raises the risk of cavities",
+          "Blood thinners can make gums bleed more when you brush — keep brushing gently, but report bleeding that won't stop",
+          "Swollen, bleeding gums are often a sign of gum disease that needs treatment, not a reason to stop brushing",
+        ],
+      },
+    ],
+    takeaway:
+      "Never stop your blood thinner or skip your BP tablet before dental treatment — bring your prescription file, take your morning medicines as usual, and book your visit at Maxface Dental Care in Malibagh, where we plan your treatment around your heart, not in spite of it.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "heart-disease-bp-blood-thinners-dental-treatment-bangladesh": ["Heart Patients", "Blood Thinners", "Patient Safety"],
   "food-stuck-between-teeth-toothpick-floss-bangladesh": ["Food Impaction", "Flossing", "Gum Care"],
   "baby-teething-fever-myths-safe-relief-bangladesh": ["Teething", "Baby Care", "Kids' Dental Care"],
   "miswak-neem-charcoal-gul-traditional-teeth-cleaning-bangladesh": ["Miswak & Datun", "Toothpaste", "Oral Hygiene"],

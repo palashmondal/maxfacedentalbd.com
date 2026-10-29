@@ -4,6 +4,25 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add heart disease, high BP and blood thinners dental safety blog post, English + Bangla
+- New bilingual post: "Heart Patient, High BP or on Blood Thinners? How to Get
+  Dental Treatment Safely" (Patient Guide) — what to tell the dentist and why
+  to bring the prescription file, why not to stop aspirin/clopidogrel/warfarin
+  or newer blood thinners on your own, taking BP tablets on treatment day and
+  the adrenaline-in-anaesthetic myth, when treatment is postponed, antibiotic
+  cover only for high-risk heart patients, and how BP medicines like
+  amlodipine affect the gums
+- Covers Bangladesh-specific context: relatives' advice to stop Ecosprin
+  before an extraction, stents at Dhaka heart hospitals, rheumatic heart
+  disease and valve patients on warfarin, skipping BP tablets "to be safe",
+  and leftover antibiotic strips; cites the SDCEP anticoagulant/antiplatelet
+  guideline and American Heart Association guidance (endocarditis
+  prophylaxis, 2012 gum disease–heart disease statement) rather than invented
+  figures
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add food stuck between teeth, toothpicks and flossing blog post, English + Bangla
 - New bilingual post: "Food Stuck Between Teeth After Biryani and Beef?
   Toothpicks, Floss and When the Gap Needs a Dentist" (Gum Care) — explains
