@@ -4,6 +4,21 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add elderly parents' dental care blog post, English + Bangla
+- New bilingual post: "Caring for Your Elderly Parent's Teeth: What Bangladeshi
+  Families Often Miss" (Oral Health) — why tooth loss isn't automatic with age,
+  root decay, medicine-related dry mouth and gum swelling, how to help a parent
+  brush safely, dentures, warning signs and planning the visit
+- Covers Bangladesh-specific context: the "boyosh hoyeche" belief, soft rice
+  diets, paan/zarda/gul and sweet cha, family caregiving and Dhaka traffic;
+  cites the WHO oral health fact sheet, the 2022 census via The Daily Star, a
+  2013 Bangladeshi village study (International Medical Journal), a 2002
+  Japanese nursing-home trial, the 2022 Cochrane review and the American
+  College of Prosthodontists denture guidelines
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add heart disease, high BP and blood thinners dental safety blog post, English + Bangla
 - New bilingual post: "Heart Patient, High BP or on Blood Thinners? How to Get
   Dental Treatment Safely" (Patient Guide) — what to tell the dentist and why

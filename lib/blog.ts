@@ -2977,10 +2977,88 @@ export const posts: BlogPost[] = [
     takeaway:
       "Never stop your blood thinner or skip your BP tablet before dental treatment — bring your prescription file, take your morning medicines as usual, and book your visit at Maxface Dental Care in Malibagh, where we plan your treatment around your heart, not in spite of it.",
   },
+  {
+    slug: "elderly-parents-teeth-care-guide-bangladesh",
+    title: "Caring for Your Elderly Parent's Teeth: What Bangladeshi Families Often Miss",
+    excerpt:
+      "\"At this age, teeth are supposed to fall out.\" Many parents in Bangladesh quietly live with pain and eat only soft rice because of that belief. Here's what really goes wrong in an older mouth, and how to help without taking away their dignity.",
+    category: "Oral Health",
+    date: "2026-11-05",
+    readTime: "6 min read",
+    image: "/images/blog/hygiene.jpg",
+    imageAlt: "Toothbrushes in a glass jar on a clean bathroom counter",
+    intro: [
+      "In many Bangladeshi homes, we notice everything about our parents' health: the sugar test, the BP machine, the row of tablets on the table. But few of us ever look inside Abba's or Amma's mouth. They rarely complain. They say \"boyosh hoyeche\" (it's just age), push the fish aside, and eat a little more soft rice and dal.",
+      "Bangladesh's 2022 census counted over 1.53 crore people aged above 60, around 9% of the population, and many of them depend on their children for care. A sore mouth can quietly change what they eat and how much they enjoy a meal. Much of this can be prevented or treated, even late in life, and much of the help can start at home.",
+    ],
+    sections: [
+      {
+        heading: "Losing teeth is common in old age, but it isn't automatic",
+        paragraphs: [
+          "The WHO estimates that about 23% of people aged 60 or older worldwide have lost all their natural teeth. That number is high, but it also means most older people have not. According to the WHO, tooth loss usually follows a lifetime of tooth decay and severe gum disease. Age alone is not the cause.",
+          "Bangladesh has no national survey of older people's teeth, so we only have small local studies. In one study of 172 people over 60 in a Bangladeshi village (International Medical Journal, 2013), 61.4% still had 20 to 28 good teeth, and that group reported the best quality of life related to their mouths. Only 1.7% used dentures. It is one village, so it can't speak for the whole country, but it shows that keeping your teeth at this age is possible, and that it matters.",
+        ],
+      },
+      {
+        heading: "Why an older mouth gets into trouble",
+        paragraphs: [
+          "An older person's mouth faces problems that a younger person's usually doesn't. Many of these have nothing to do with how carefully they once looked after their teeth:",
+        ],
+        list: [
+          "Root decay: when gums shrink, the soft root of the tooth is exposed. It decays more easily than the hard enamel on top",
+          "Dry mouth: many common medicines, including some for blood pressure, depression and allergies, reduce saliva. Saliva protects teeth, so cavities can then form quickly",
+          "Gum disease and diabetes: each makes the other harder to control, and diabetes is common among older Bangladeshis",
+          "Swollen gums from medicine: amlodipine, a very common BP tablet, can make gums grow over the teeth in some people. Don't stop it; tell the doctor and dentist",
+          "Weak hands or memory: after a stroke, or with arthritis or dementia, a person may no longer brush properly, and may be too embarrassed to say so",
+          "Lifelong habits: paan with zarda, gul rubbed on the gums and many cups of sweet cha through the day all do more harm in a dry mouth",
+        ],
+      },
+      {
+        heading: "How to help them brush, without taking over",
+        paragraphs: [
+          "Let your parent do as much as they can on their own. If they need more help, offer it as part of the daily routine, like giving their tablets, so it doesn't feel like a loss of respect. A soft brush and fluoride toothpaste from the local pharmacy are all you need to begin.",
+        ],
+        list: [
+          "Choose a soft brush and a fluoride toothpaste, and brush twice a day. Bedtime matters most",
+          "If gripping is hard, make the handle thicker with a rubber band or a strip of cloth, or try an electric brush",
+          "Sit them upright in a chair with their head slightly forward. Never brush someone who is lying flat, as they may choke",
+          "If you're brushing for them, stand slightly behind or beside them, use a small amount of toothpaste, and go slowly along the gum line",
+          "Ask them to spit out the extra toothpaste without rinsing with lots of water, so the fluoride stays on the teeth",
+          "Use small sips of water through the day for a dry mouth, and avoid alcohol-based mouthwash",
+          "If they cough or choke when swallowing, or have dementia and refuse brushing, ask the dentist or their doctor to show you a safe way",
+        ],
+      },
+      {
+        heading: "A clean mouth may also help protect the chest",
+        paragraphs: [
+          "Germs from the mouth can be breathed into the lungs, especially in frail people who have trouble swallowing. A Japanese nursing-home trial published in 2002 found fewer cases of pneumonia when caregivers brushed residents' teeth after meals. A 2022 Cochrane review, which pools the best available trials, found that professional oral care may reduce deaths from pneumonia in nursing homes, but the evidence is low-certainty and it can't yet say which routine works best.",
+          "So brushing is not a guaranteed protection against pneumonia. But it is cheap and safe when done sitting upright, and it matters even more for a parent who is bedridden or recovering from a stroke.",
+        ],
+      },
+      {
+        heading: "Dentures, warning signs and planning the visit",
+        paragraphs: [
+          "If your parent wears dentures, guidelines from the American College of Prosthodontists give simple rules. Dentures shouldn't be worn 24 hours a day, they should be cleaned every day, and they should be checked once a year, even if every natural tooth is gone. They also warn never to put dentures in boiling water, which is a common way of \"sterilising\" them at home. Store them in plain water when they are out of the mouth.",
+          "Don't wait for your parent to complain, because many won't. Look inside their mouth with a torch once a month, and bring them in if you notice any of these:",
+        ],
+        list: [
+          "Pushing away meat, fish or vegetables, or eating only soft food",
+          "A wound or ulcer that hasn't healed in two weeks, or a white or red patch, especially with a paan, zarda or gul habit (this needs checking for mouth cancer)",
+          "Loose teeth, bleeding gums, a bad smell or facial swelling",
+          "Dentures that have become loose, or that cause sores",
+          "Before the visit: bring the full medicine file and let them take their usual tablets, because blood thinners and BP medicines should not be stopped without their doctor's advice",
+          "When booking: mention if walking or stairs are difficult, choose a time that avoids the worst Dhaka traffic, and have a family member come along",
+        ],
+      },
+    ],
+    takeaway:
+      "Don't accept \"it's just age\" as an answer: look inside your parent's mouth this week, help them brush with a soft brush and fluoride toothpaste, and book them a check-up at Maxface Dental Care in Malibagh, with their medicine file in hand.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "elderly-parents-teeth-care-guide-bangladesh": ["Elderly Care", "Root Decay", "Family Care"],
   "heart-disease-bp-blood-thinners-dental-treatment-bangladesh": ["Heart Patients", "Blood Thinners", "Patient Safety"],
   "food-stuck-between-teeth-toothpick-floss-bangladesh": ["Food Impaction", "Flossing", "Gum Care"],
   "baby-teething-fever-myths-safe-relief-bangladesh": ["Teething", "Baby Care", "Kids' Dental Care"],
