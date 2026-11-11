@@ -4,6 +4,21 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add dental care before chemo and radiotherapy blog post, English + Bangla
+- New bilingual post: "Starting Chemo or Radiotherapy? Why a Dental Check-Up
+  Should Come First" (Oral Health) — why chemo and head and neck radiation
+  harm the mouth, what the pre-treatment dental visit covers, gentle daily
+  mouth care during treatment, and the lifelong osteoradionecrosis and
+  bone-medicine jaw risks afterwards
+- Covers Bangladesh-specific context: oncology serials and district-to-Dhaka
+  travel, paan/zarda/gul-linked head and neck cancer, jhal bhorta, tok achar
+  and sweet cha during mouth sores, Dhaka heat and load-shedding, kabiraji
+  remedies and roadside extractions; cites the NIDCR two-week advice and the
+  NCI PDQ summary on oral complications of cancer therapy
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add elderly parents' dental care blog post, English + Bangla
 - New bilingual post: "Caring for Your Elderly Parent's Teeth: What Bangladeshi
   Families Often Miss" (Oral Health) — why tooth loss isn't automatic with age,

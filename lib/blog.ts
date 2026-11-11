@@ -3054,10 +3054,87 @@ export const posts: BlogPost[] = [
     takeaway:
       "Don't accept \"it's just age\" as an answer: look inside your parent's mouth this week, help them brush with a soft brush and fluoride toothpaste, and book them a check-up at Maxface Dental Care in Malibagh, with their medicine file in hand.",
   },
+  {
+    slug: "cancer-treatment-chemo-radiotherapy-dental-care-bangladesh",
+    title: "Starting Chemo or Radiotherapy? Why a Dental Check-Up Should Come First",
+    excerpt:
+      "When a family hears the word cancer, teeth are the last thing on anyone's mind. But a bad tooth left untreated before chemo or radiotherapy can turn into a serious problem later. Here's what to do before, during and after treatment.",
+    category: "Oral Health",
+    date: "2026-11-11",
+    readTime: "6 min read",
+    image: "/images/blog/checkups.jpg",
+    imageAlt: "Dentist reviewing a dental X-ray with a patient in the chair",
+    intro: [
+      "When a doctor says \"cancer\", a Bangladeshi family's whole life changes overnight. There are biopsy reports, oncologist serials, trips from the district to Dhaka, and long queues for radiotherapy. Nobody thinks about a cavity or a loose tooth. Most of the time, nobody even mentions it.",
+      "But chemotherapy and radiotherapy to the head and neck affect the mouth more than most people expect. Head and neck cancers are among the more common cancers in Bangladesh, closely linked to paan with zarda, gul and smoking, so many patients start treatment with gums and teeth that already need care. A short dental visit before treatment can prevent pain, infection and treatment delays later.",
+    ],
+    sections: [
+      {
+        heading: "Why the mouth suffers during cancer treatment",
+        paragraphs: [
+          "Chemotherapy attacks fast-growing cells. Cancer cells grow fast, but so do the cells lining your mouth, and so do the blood cells that fight infection. Radiotherapy to the head and neck can also damage the salivary glands (the glands that make spit) and the jawbone in its path. The US National Cancer Institute (NCI) lists the most common mouth problems from cancer treatment as:",
+        ],
+        list: [
+          "Mucositis: painful, red, raw sores inside the mouth and throat",
+          "Infections: fungal (white patches of thrush), viral or bacterial, which spread more easily when immunity is low",
+          "Dry mouth: less saliva, so food sticks, swallowing hurts and cavities form fast",
+          "Changes in taste: food may taste bland, bitter or metallic",
+          "Pain, which can make eating and drinking difficult at the very time the body needs nutrition",
+        ],
+      },
+      {
+        heading: "The dental visit before treatment starts",
+        paragraphs: [
+          "The US National Institute of Dental and Craniofacial Research (NIDCR) advises seeing a dentist at least two weeks before chemotherapy or head and neck radiation begins. The aim is simple: find and fix anything that could flare up while your immunity is low or your jaw is healing poorly. If treatment has already started, it is still worth going as soon as you can.",
+          "In Bangladesh, the oncology serial often comes quickly once a date is fixed, so plan the dental visit the same week you get the diagnosis. Bring your reports and tell the dentist your treatment plan. At the visit, expect the dentist to:",
+        ],
+        list: [
+          "Check every tooth and the gums, and take X-rays to find hidden infection at the root tips",
+          "Fill cavities and do a scaling (professional cleaning) to calm the gums",
+          "Remove teeth that cannot be saved, early enough for the socket to heal before radiation",
+          "Smooth sharp edges and check dentures so they won't rub sores in a tender mouth",
+          "Talk to your oncologist, or give you a note for them, so both teams plan together",
+        ],
+      },
+      {
+        heading: "Daily mouth care during treatment",
+        paragraphs: [
+          "Mouth sores and dry mouth can make brushing hurt, so many patients simply stop. That is when infections and decay take hold. Gentle, regular care works better than giving up:",
+        ],
+        list: [
+          "Brush gently twice a day with an extra-soft brush and fluoride toothpaste. Soften the bristles in warm water first if your mouth is sore",
+          "Rinse several times a day with a mild homemade rinse. The NCI suggests 1/4 teaspoon of baking soda and 1/8 teaspoon of salt in a cup of warm water",
+          "Avoid mouthwashes that contain alcohol, as they sting and dry the mouth further",
+          "Sip water through the day. In Dhaka's heat and during load-shedding, carry a water bottle everywhere",
+          "Skip jhal bhorta, tok (sour) achar, very hot cha and hard, crunchy snacks while the mouth is sore",
+          "Don't sweeten your way through dry mouth with sugary cha, juice or lozenges, because a dry mouth decays very quickly",
+          "Stop paan, zarda, gul and cigarettes completely. They slow healing and raise the risk of the cancer coming back",
+          "Don't apply kabiraji pastes, herbal powders or pharmacy ointments to mouth sores without asking your cancer team",
+        ],
+      },
+      {
+        heading: "After radiotherapy: a lifelong reason to tell your dentist",
+        paragraphs: [
+          "The NCI notes that people who have had high-dose radiation to the head and neck can stay at risk of osteoradionecrosis for life. This means the jawbone in the radiation area heals so poorly that, after a tooth is pulled or a wound forms, the bone can stay exposed and die. It is far easier to prevent than to treat.",
+          "Some medicines for cancer that has spread to the bones, such as zoledronic acid or denosumab, carry a similar risk to the jaw. Dental guidelines advise a dental check before these medicines are started.",
+        ],
+        list: [
+          "Always tell any dentist, even years later, that you had head and neck radiation or bone-strengthening injections",
+          "Never have a tooth pulled at a roadside chamber or by someone who doesn't know your history",
+          "Keep up dental check-ups every few months after treatment, because dry mouth can cause decay that spreads fast",
+          "Ask your dentist about extra fluoride, such as a high-fluoride toothpaste or gel, if your mouth stays dry",
+          "Come in quickly if you notice exposed bone, a sore that doesn't heal, jaw pain or swelling, or difficulty opening your mouth",
+        ],
+      },
+    ],
+    takeaway:
+      "If you or a family member is about to start chemo or head and neck radiotherapy, book a dental check-up at Maxface Dental Care in Malibagh at least two weeks before the first session, and bring your reports so we can plan with your oncologist.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "cancer-treatment-chemo-radiotherapy-dental-care-bangladesh": ["Cancer Care", "Dry Mouth", "Patient Safety"],
   "elderly-parents-teeth-care-guide-bangladesh": ["Elderly Care", "Root Decay", "Family Care"],
   "heart-disease-bp-blood-thinners-dental-treatment-bangladesh": ["Heart Patients", "Blood Thinners", "Patient Safety"],
   "food-stuck-between-teeth-toothpick-floss-bangladesh": ["Food Impaction", "Flossing", "Gum Care"],
