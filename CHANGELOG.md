@@ -4,6 +4,21 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add bleeding gums during dengue blog post, English + Bangla
+- New bilingual post: "Bleeding Gums During Dengue: A Warning Sign, and How to
+  Care for Your Mouth" (Gum Care) — why low platelets make gums bleed, which
+  bleeding signs mean go to the doctor the same day, gentle mouth care during
+  dengue, avoiding NSAID painkillers for toothache, postponing dental work,
+  and a gum check-up after recovery
+- Covers Bangladesh-specific context: Dhaka's monsoon-to-autumn dengue season,
+  pharmacy ibuprofen/diclofenac/aspirin habits, ORS, daab water, glucose water
+  and sweet cha, khilal, paan/supari/zarda/gul; cites the IFRC Bangladesh 2023
+  dengue response report (321,179 admissions, 1,705 deaths) and WHO/CDC dengue
+  warning signs and NSAID advice
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add dental care before chemo and radiotherapy blog post, English + Bangla
 - New bilingual post: "Starting Chemo or Radiotherapy? Why a Dental Check-Up
   Should Come First" (Oral Health) — why chemo and head and neck radiation

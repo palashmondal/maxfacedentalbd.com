@@ -3130,10 +3130,84 @@ export const posts: BlogPost[] = [
     takeaway:
       "If you or a family member is about to start chemo or head and neck radiotherapy, book a dental check-up at Maxface Dental Care in Malibagh at least two weeks before the first session, and bring your reports so we can plan with your oncologist.",
   },
+  {
+    slug: "dengue-bleeding-gums-mouth-care-bangladesh",
+    title: "Bleeding Gums During Dengue: A Warning Sign, and How to Care for Your Mouth",
+    excerpt:
+      "Gums that suddenly bleed during dengue are not a dental problem to fix with a new toothpaste. They can be a warning sign your doctor needs to know about today. Here's what it means, what to do, and how to protect your mouth until you recover.",
+    category: "Gum Care",
+    date: "2026-11-12",
+    readTime: "6 min read",
+    image: "/images/blog/gum-care.jpg",
+    imageAlt: "Dentist holding periodontal examination instruments",
+    intro: [
+      "Every monsoon and autumn, dengue fills Dhaka's hospitals. In 2023, Bangladesh's worst dengue year on record, the IFRC's response report counted 321,179 hospital admissions and 1,705 deaths. Almost every family in the city now knows someone who has had it: the fever, the body ache, the daily platelet test.",
+      "In the middle of it, many patients notice something frightening: blood on the toothbrush, pink spit, or gums that ooze on their own. People often ask if this is a dental problem. Usually it is not. It is the dengue. Here is what bleeding gums mean during dengue, when to rush to the doctor, and how to look after your mouth safely until you are well.",
+    ],
+    sections: [
+      {
+        heading: "Why gums can bleed in dengue",
+        paragraphs: [
+          "Dengue lowers the platelets in your blood. Platelets are tiny cells that plug a cut and stop bleeding. Dengue can also make small blood vessels leaky. Gums are full of tiny blood vessels and get rubbed every day by brushing and chewing, so they are one of the first places to bleed when platelets fall.",
+          "Gums that were already inflamed bleed the most. If you had gingivitis (early gum disease: red, puffy gums caused by plaque) before the fever, a drop in platelets can turn a little pink spit into steady oozing. That is one more reason to keep your gums healthy before illness strikes.",
+        ],
+      },
+      {
+        heading: "When bleeding gums are a warning sign",
+        paragraphs: [
+          "The World Health Organization (WHO) lists mucosal bleeding, such as bleeding from the gums or nose, among the warning signs of severe dengue. The US Centers for Disease Control and Prevention (CDC) does the same. Tell your doctor about any gum bleeding, even a little. It helps them judge which way the illness is going.",
+          "These warning signs often appear around the time the fever comes down, which is exactly when many families relax. Go to your doctor or the hospital the same day, not to a dental chamber, if you notice:",
+        ],
+        list: [
+          "Gums that bleed on their own without brushing, or bleeding that won't stop after 10–15 minutes of gentle pressure",
+          "Nosebleeds, blood in vomit, or black or bloody stools",
+          "Small red or purple spots on the skin",
+          "Severe stomach pain, repeated vomiting, fast breathing, or unusual drowsiness or restlessness",
+          "Passing very little urine, or cold, clammy hands and feet",
+        ],
+      },
+      {
+        heading: "Mouth care while you have dengue",
+        paragraphs: [
+          "You don't need to stop cleaning your teeth. A dirty mouth bleeds more. You just need to be gentle:",
+        ],
+        list: [
+          "Brush slowly with a soft or extra-soft toothbrush and fluoride toothpaste, without scrubbing. If your gums are actively bleeding, wipe your teeth with clean, soft gauze or cloth for a day or two instead",
+          "Skip floss, toothpicks and khilal until your platelets recover",
+          "If a spot bleeds, press a clean piece of gauze or cloth soaked in cold water on it for 10–15 minutes. Don't keep spitting to check, because that disturbs the clot",
+          "Rinse gently with plain water or mild salt water, and avoid alcohol-based mouthwash",
+          "Keep drinking: ORS, daab (green coconut) water and plain water fight dehydration and dry mouth. After glucose water, juice or sweet cha, rinse with plain water",
+          "No paan, supari, zarda or gul. They scrape and irritate the gums",
+        ],
+      },
+      {
+        heading: "Toothache during dengue: what to take and what to postpone",
+        paragraphs: [
+          "Many people in Bangladesh buy ibuprofen, diclofenac or aspirin from the pharmacy for a toothache without a second thought. During dengue, this is dangerous. The CDC and WHO advise against aspirin and ibuprofen-type painkillers (NSAIDs) in dengue, because they raise the risk of bleeding. For pain or fever, paracetamol is the usual choice, at the dose your doctor gives.",
+          "Planned dental work can wait. Scaling, extractions, root canal treatment and anything else that can make the gums bleed is usually postponed until you have fully recovered and your blood counts are back to normal. If a dental emergency can't wait, such as a badly swollen face, call your dentist first and say you have or recently had dengue, so they can plan with your doctor. At any dental visit after dengue, tell the dentist:",
+        ],
+        list: [
+          "When you had dengue, and whether you were admitted to hospital",
+          "Your latest platelet count or CBC (complete blood count) report, if you have one",
+          "Any medicines you are still taking",
+        ],
+      },
+      {
+        heading: "After recovery: a check-up worth booking",
+        paragraphs: [
+          "Once your doctor says you are well, notice whether your gums still bleed when you brush. Bleeding caused by dengue should settle as your platelets recover. If it keeps happening, the cause is most likely plaque and tartar: gum disease that was there before the fever.",
+          "A scaling (professional cleaning) and a check-up then make sense. Healthy gums cope much better if dengue comes back to your home, and WHO notes that catching dengue a second time, from a different type of the virus, raises the risk of severe dengue.",
+        ],
+      },
+    ],
+    takeaway:
+      "If your gums bleed during dengue, see your doctor the same day and take paracetamol, not ibuprofen or aspirin, for pain; once you have recovered, book a gentle gum check-up at Maxface Dental Care in Malibagh to find out whether the bleeding was dengue or gum disease.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "dengue-bleeding-gums-mouth-care-bangladesh": ["Dengue", "Bleeding Gums", "Patient Safety"],
   "cancer-treatment-chemo-radiotherapy-dental-care-bangladesh": ["Cancer Care", "Dry Mouth", "Patient Safety"],
   "elderly-parents-teeth-care-guide-bangladesh": ["Elderly Care", "Root Decay", "Family Care"],
   "heart-disease-bp-blood-thinners-dental-treatment-bangladesh": ["Heart Patients", "Blood Thinners", "Patient Safety"],
