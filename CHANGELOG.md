@@ -4,6 +4,21 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add winter cracked lips, mouth corners and cold sores blog post, English + Bangla
+- New bilingual post: "Winter Lips: Cracked Mouth Corners, Cold Sores, and
+  When It's More Than Dry Weather" (Oral Health) — telling chapped lips,
+  angular cheilitis and cold sores apart, why winter and loose dentures make
+  them worse, stopping cold sore spread (especially to newborns), safe home
+  care, and when a non-healing lip sore needs a check
+- Covers Bangladesh-specific context: Poush-Magh dry winds, jorthosa after
+  fever, anaemia and diabetes as hidden causes, paan chun burns, mustard oil
+  and ghee on lips, pharmacy steroid "mixed" creams, tok achar on open
+  cracks; cites the WHO herpes simplex fact sheet (about two in three people
+  under 50 carry HSV-1) and uses plain medical consensus elsewhere
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add bleeding gums during dengue blog post, English + Bangla
 - New bilingual post: "Bleeding Gums During Dengue: A Warning Sign, and How to
   Care for Your Mouth" (Gum Care) — why low platelets make gums bleed, which

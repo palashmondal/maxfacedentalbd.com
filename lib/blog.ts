@@ -3203,10 +3203,93 @@ export const posts: BlogPost[] = [
     takeaway:
       "If your gums bleed during dengue, see your doctor the same day and take paracetamol, not ibuprofen or aspirin, for pain; once you have recovered, book a gentle gum check-up at Maxface Dental Care in Malibagh to find out whether the bleeding was dengue or gum disease.",
   },
+  {
+    slug: "winter-cracked-lips-mouth-corners-cold-sores-bangladesh",
+    title: "Winter Lips: Cracked Mouth Corners, Cold Sores, and When It's More Than Dry Weather",
+    excerpt:
+      "Every winter the corners of the mouth split, lips peel, and a painful blister appears after a fever. Most of it heals with simple care, but some of it spreads, and some of it should never be covered with a pharmacy cream. Here's how to tell the difference.",
+    category: "Oral Health",
+    date: "2026-11-16",
+    readTime: "6 min read",
+    image: "/images/blog/whitening.jpg",
+    imageAlt: "Close-up of a smile showing the lips and front teeth",
+    intro: [
+      "As Poush and Magh arrive, the air in Bangladesh turns dry and the north wind starts to bite. Within a few weeks, many people notice the same things: lips that peel and sting, painful cracks at the corners of the mouth, and, after a cold or a fever, a cluster of small blisters on the lip that families call jorthosa (fever blister).",
+      "Most of this is minor and heals with simple care. But a cracked mouth corner that keeps coming back can point to loose dentures, low iron or uncontrolled diabetes. A cold sore is contagious and can be dangerous for a newborn. And a lip sore that never heals is not a winter problem at all. Here is what is going on, what helps, and what to avoid.",
+    ],
+    sections: [
+      {
+        heading: "Three different problems that look alike",
+        paragraphs: [
+          "People often call all of these \"winter cracks\", but they have different causes and need different care:",
+        ],
+        list: [
+          "Dry, chapped lips: the whole lip is rough, peeling or split in thin lines. Caused by dry air, wind, not drinking enough water, and licking the lips. Not contagious",
+          "Angular cheilitis (sore, cracked mouth corners): red, painful splits at one or both corners, sometimes with a white or yellow crust. Saliva collects in the corner fold, the skin stays wet and breaks down, and yeast (candida) or bacteria often move in. Not usually passed by kissing",
+          "Cold sore (herpes labialis, the jorthosa): starts as tingling or burning on the lip edge, then a cluster of small fluid-filled blisters that burst, crust and heal in about 7–10 days. Caused by the herpes simplex virus (HSV-1), and it is contagious",
+        ],
+      },
+      {
+        heading: "Why winter makes it worse in Bangladesh",
+        paragraphs: [
+          "Dry winter air pulls moisture out of the thin skin of the lips. The instinct is to lick them, but saliva evaporates quickly and leaves the lips drier than before. Children do this constantly, and that is why so many get a red ring of irritated skin around the mouth in winter.",
+          "Cracked mouth corners have a few common local triggers:",
+        ],
+        list: [
+          "Old or loose dentures: as the jaw shrinks over the years, the bite sinks and the mouth corners fold deeper, trapping saliva. This is one of the most common causes in elderly parents",
+          "Low iron or vitamin B (B2, B12) levels: anaemia is common among women and children in Bangladesh, and repeated corner cracks can be an early clue",
+          "Diabetes: high blood sugar makes yeast infections easier, so corner cracks that keep returning are worth a sugar test",
+          "Chun (slaked lime) from paan: it is caustic and can burn and crack the corners and inner lips of regular paan chewers",
+          "Drooling at night, mouth breathing from a blocked winter nose, and lip-licking or lip-biting habits",
+        ],
+      },
+      {
+        heading: "Cold sores: why they appear after a fever, and how to stop spreading them",
+        paragraphs: [
+          "The World Health Organization (WHO) estimates that about two in every three people under 50 worldwide carry HSV-1. Most catch it in childhood, often from a kiss by a relative, and the virus then sleeps in a nerve for life. A fever, a winter cold, strong sun, stress or exam pressure can wake it up, which is why the sore so often shows up right after a fever.",
+          "A cold sore is most contagious while the blisters are open and weeping. Until it has fully crusted and healed:",
+        ],
+        list: [
+          "Don't kiss babies or young children. A herpes infection in a newborn can be very serious, so anyone with an active cold sore should keep their face away from a new baby",
+          "Don't share glasses, cups, spoons, towels or lip balm",
+          "Don't pick or burst the blisters, and wash your hands after touching the sore. Be especially careful never to touch your eyes",
+          "If your dental appointment falls on a day with an active cold sore, call the chamber first. Routine work is usually postponed for a few days, because stretching the lips is painful and can spread the virus",
+        ],
+      },
+      {
+        heading: "What helps, and what to avoid",
+        paragraphs: [
+          "For dry lips, a plain petroleum jelly or a simple fragrance-free lip balm, used several times a day and before bed, works well. Drink enough water even when it is cold, and try to break the licking habit. Mustard oil or ghee on the lips is a common home habit; it is harmless, but it does not work better than petroleum jelly. For sore mouth corners, keep the area clean and dry and put on a thin layer of petroleum jelly at night.",
+          "A cold sore usually heals by itself. A doctor or dentist may prescribe an antiviral cream or tablet, which works best if started at the very first tingle, and that is worth asking about if you get sores often. Some common habits make things worse:",
+        ],
+        list: [
+          "Putting toothpaste, lime, alcohol or garlic on a sore. These burn the skin and slow healing",
+          "Buying a steroid or \"mixed\" skin cream from the pharmacy for a lip sore. Steroids can make a viral or fungal infection spread and last longer. Use a cream only when a doctor or dentist has looked at the sore",
+          "Peeling off dry skin or crusts, which reopens the wound and invites infection",
+          "Very spicy food, tok achar and lemon on open cracks, which sting and keep them raw",
+        ],
+      },
+      {
+        heading: "When to come to the chamber",
+        paragraphs: [
+          "Most winter lip problems settle within one to two weeks. Have it checked if you notice:",
+        ],
+        list: [
+          "Mouth-corner cracks that keep coming back, especially in someone who wears dentures. The fix is often a denture reline or a new set that restores the bite, not another cream",
+          "Cold sores several times a year, or sores that spread widely or come with a high fever",
+          "Any sore near the eye, or a sore in someone with a weak immune system, such as a person on chemotherapy",
+          "A sore, rough patch or crusted spot on the lip that has not healed after two to three weeks, particularly in smokers, paan, zarda or gul users, or people who work long hours in the sun. Lip cancer can begin like this, and early checks matter",
+        ],
+      },
+    ],
+    takeaway:
+      "In winter, swap lip-licking for petroleum jelly and keep cold sores away from babies, but if your mouth corners keep cracking or a lip sore hasn't healed in two to three weeks, book a check-up at Maxface Dental Care in Malibagh so we can find the real cause, whether it's a tired denture or something that needs a closer look.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "winter-cracked-lips-mouth-corners-cold-sores-bangladesh": ["Winter Care", "Cold Sores", "Lip Health"],
   "dengue-bleeding-gums-mouth-care-bangladesh": ["Dengue", "Bleeding Gums", "Patient Safety"],
   "cancer-treatment-chemo-radiotherapy-dental-care-bangladesh": ["Cancer Care", "Dry Mouth", "Patient Safety"],
   "elderly-parents-teeth-care-guide-bangladesh": ["Elderly Care", "Root Decay", "Family Care"],
