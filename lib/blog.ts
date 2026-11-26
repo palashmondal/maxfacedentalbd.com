@@ -3285,10 +3285,90 @@ export const posts: BlogPost[] = [
     takeaway:
       "In winter, swap lip-licking for petroleum jelly and keep cold sores away from babies, but if your mouth corners keep cracking or a lip sore hasn't healed in two to three weeks, book a check-up at Maxface Dental Care in Malibagh so we can find the real cause, whether it's a tired denture or something that needs a closer look.",
   },
+  {
+    slug: "probashi-home-leave-dental-treatment-plan-bangladesh",
+    title: "Home on Leave from Abroad? How to Plan Your Dental Treatment Before You Fly Back",
+    excerpt:
+      "A few weeks at home, a long list of things to do, and a tooth that has been hurting since last winter. Here's what can really be finished in one visit home, what needs months, and how to plan so you don't fly back with half-done treatment.",
+    category: "Patient Guide",
+    date: "2026-11-26",
+    readTime: "6 min read",
+    image: "/images/blog/checkups.jpg",
+    imageAlt: "Dentist reviewing a dental X-ray with a patient in the chair",
+    intro: [
+      "Millions of Bangladeshis work abroad — in Saudi Arabia, the UAE, Malaysia, Qatar, Oman, Singapore and beyond. The Bureau of Manpower, Employment and Training (BMET) has recorded more than a million workers leaving for jobs overseas in recent years. For many of them, a toothache abroad means pain they keep quiet about: dental care can be costly, time off is hard to get, and explaining a problem in another language is not easy. So the tooth waits for the trip home.",
+      "Then the leave finally comes — a wedding to attend, family to visit, papers to sort out — and the dentist gets pushed to the last few days. That is when problems start: a root canal left half-done, a tooth pulled the day before the flight, a crown that was never fitted. A little planning lets you get proper treatment finished in the time you have.",
+    ],
+    sections: [
+      {
+        heading: "Why a small dental problem gets worse while you are away",
+        paragraphs: [
+          "Tooth decay (a cavity) and gum disease don't stop because you are busy. A small hole that needs a simple filling today can reach the nerve in a year or two, and then you need a root canal treatment (cleaning out the infected inside of the tooth) or an extraction. Long working hours in the heat, sweet tea, soft drinks and energy drinks, and less time for brushing all speed this up.",
+          "Flying can also bring a hidden problem to the surface. Some people feel sudden tooth pain during a flight. This is called barodontalgia — tooth pain triggered by changes in air pressure. A healthy tooth rarely hurts this way; it usually happens in a tooth that already has decay, a leaking old filling or an infection at the root. If a tooth hurts every time you fly, it is telling you something needs treatment.",
+        ],
+      },
+      {
+        heading: "What can be finished in one trip — and what can't",
+        paragraphs: [
+          "Every mouth is different, so your dentist will give you an exact plan after an examination and, when needed, an X-ray. As a general guide:",
+        ],
+        list: [
+          "Check-up, X-ray and scaling (professional cleaning): usually one visit",
+          "Fillings: usually one visit, though several teeth may be spread over two or three",
+          "Root canal treatment: often one to three visits, a few days apart; the tooth then usually needs a crown (cap) to protect it",
+          "Crown or bridge: usually two or more visits about a week apart, because it is made in a dental lab",
+          "Tooth extraction: one visit, but give it a week to heal before you travel",
+          "Removable partial denture: several visits over one to two weeks for impressions and fitting",
+          "Dental implant: the screw needs a few months to bond with the bone before the tooth is fitted, so plan it across two trips",
+          "Braces: need regular check-ups for a year or more, so start them only if you can keep coming back, or ask your orthodontist what is realistic",
+        ],
+      },
+      {
+        heading: "Plan before you land",
+        paragraphs: [
+          "The most common mistake is leaving the dentist for the last week. Treatment needs time between visits, and the days before and after Eid are when chambers are busiest. A few simple steps make a big difference:",
+        ],
+        list: [
+          "Call or message the chamber from abroad and book your first appointment for your first week home",
+          "Describe the problem and share any photos, old X-rays or dental reports you have, so the dentist can plan ahead",
+          "Bring a list of your medicines and reports for any health problems, such as diabetes, high blood pressure or blood thinners",
+          "Ask for a full treatment plan with costs at the first visit, so you can decide what to do now and what can wait for the next leave",
+          "Keep the most urgent work first: pain, infection and broken teeth before cosmetic treatment",
+        ],
+      },
+      {
+        heading: "Before you fly back",
+        paragraphs: [
+          "Try not to leave a treatment half-finished. A tooth with a temporary filling after part of a root canal can break or get infected again over the following months, and you may end up paying twice. If something can't be completed in time, ask your dentist what is safest to do before you go.",
+        ],
+        list: [
+          "Have any extraction at least a week before your flight, so you are still here if a problem like dry socket (a painful, empty socket where the clot is lost) shows up in the first few days",
+          "Ask for a short written summary of the treatment you received, in English, and copies of your X-rays — useful if you need a dentist abroad",
+          "Pack a soft toothbrush, fluoride toothpaste and floss — don't run out in the first week",
+          "Know which painkillers are safe for you, but don't carry a stock of antibiotics to take without a dentist's advice",
+        ],
+      },
+      {
+        heading: "Protecting your teeth until the next leave",
+        paragraphs: [
+          "The best plan is to come home with less to fix. These habits cost almost nothing:",
+        ],
+        list: [
+          "Brush twice a day with fluoride toothpaste, and clean between your teeth once a day",
+          "Drink water through the day instead of soft drinks and energy drinks, especially when working in the heat",
+          "Avoid gul, zarda, paan and smoking — they damage the gums and raise the risk of mouth cancer",
+          "Don't ignore early warning signs like bleeding gums, sensitivity or a dark spot on a tooth — get them checked early, there or here",
+        ],
+      },
+    ],
+    takeaway:
+      "Book your dentist for the first week of your leave, not the last — message Maxface Dental Care in Malibagh before you fly home, and we'll plan your treatment so it's finished before you fly back.",
+  },
 ];
 
 /** Display tags per post, shown on the article page next to the share row. */
 const postTags: Record<string, string[]> = {
+  "probashi-home-leave-dental-treatment-plan-bangladesh": ["Working Abroad", "Treatment Planning", "Patient Guide"],
   "winter-cracked-lips-mouth-corners-cold-sores-bangladesh": ["Winter Care", "Cold Sores", "Lip Health"],
   "dengue-bleeding-gums-mouth-care-bangladesh": ["Dengue", "Bleeding Gums", "Patient Safety"],
   "cancer-treatment-chemo-radiotherapy-dental-care-bangladesh": ["Cancer Care", "Dry Mouth", "Patient Safety"],

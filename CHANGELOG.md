@@ -4,6 +4,21 @@ All notable changes on the `nextjs-rebuild` branch. One entry per commit.
 
 ## [Unreleased]
 
+### Add home-on-leave dental treatment planning blog post for workers abroad, English + Bangla
+- New bilingual post: "Home on Leave from Abroad? How to Plan Your Dental
+  Treatment Before You Fly Back" (Patient Guide) — why dental problems grow
+  while working abroad, tooth pain on flights (barodontalgia), what can be
+  finished in one trip vs. what needs months (crowns, dentures, implants,
+  braces), booking the first week not the last, and what to sort out before
+  the return flight
+- Covers Bangladesh-specific context: probashi workers in the Gulf, Malaysia
+  and Singapore, the Eid rush at chambers, heat, sweet cha and energy drinks,
+  and gul/zarda/paan; cites BMET's recent figures of over a million workers
+  going abroad per year
+- Added to `lib/blog.ts` (English) and `lib/blog-bn.ts` (Bangla), linked via
+  `BN_BY_SLUG` in `lib/i18n/posts.ts`; both `/en/blog/` and `/bn/blog/`
+  routes build and sitemap.xml picks it up automatically
+
 ### Add winter cracked lips, mouth corners and cold sores blog post, English + Bangla
 - New bilingual post: "Winter Lips: Cracked Mouth Corners, Cold Sores, and
   When It's More Than Dry Weather" (Oral Health) — telling chapped lips,
